@@ -1909,6 +1909,7 @@
 			$i=0;
 			if($search_fields!=NULL  || in_array($table_name,$except_table))
 			{
+				error_log('DEBUG datatable_generator: table_name=' . $table_name . ', table_cols count=' . count((array)$this->table_cols));
 				foreach((array)$this->table_cols as $cols)
 					{
 
@@ -1922,6 +1923,7 @@
 
 					}
 				}
+				error_log('DEBUG datatable_generator: Generated ' . $i . ' column headers');
 				//echo $table_cols;
 
 				/**************TABLE FETCH DATAS OF TABLE************/

@@ -924,8 +924,10 @@ if ($file_used == "sql_table") {
     // Initialize table_cols to prevent empty thead when no data
     // Use basic column set as fallback
     if (!isset($this->table_cols) || empty($this->table_cols)) {
+        error_log('DEBUG: fetch_data_details.php - table_cols is empty, setting fallback columns');
         $pw_detail_view = $this->pw_get_woo_requests('pw_view_details', 'no', true);
         $pw_show_cog = $this->pw_get_woo_requests('pw_show_cog', 'no', true);
+        error_log('DEBUG: pw_detail_view = ' . $pw_detail_view . ', pw_show_cog = ' . $pw_show_cog);
         
         if ($pw_detail_view == "yes") {
             $this->table_cols = array(
