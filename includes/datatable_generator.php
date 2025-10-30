@@ -358,19 +358,20 @@
 
 
 
-					//CUSTOM WORK - 12412
-					case 'product_variation_qty':
-						require("fetch_data_product_variation_qty.php");
-					break;
-
-				}
-
-				if(isset($sql)) {
-					$wpdb->query('SET SQL_BIG_SELECTS = 1');
-					return $wpdb->get_results( $sql );
-				}
+				//CUSTOM WORK - 12412
+				case 'product_variation_qty':
+					require("fetch_data_product_variation_qty.php");
+				break;
 
 			}
+		}
+
+		if(isset($sql)) {
+			$wpdb->query('SET SQL_BIG_SELECTS = 1');
+			return $wpdb->get_results( $sql );
+		}
+
+	}
 
 
 			//////////////////////////////
