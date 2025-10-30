@@ -78,20 +78,24 @@ if ( ! class_exists('pw_report_wcreport_class')) {
         public $our_menu = '';
         public $our_menu_fav = '';
 
-        ////ADDED IN VER4.0
-        //CHECK LICENSE & UPDATE
-        public $plugin_slug = '';
-        public $username = '';
-        public $email = '';
-        public $api_key = '';
-        public $item_valid_id = '';
-        public $domain = '';
-        public $license_key = '';
-        public $api_url = '';
+    ////ADDED IN VER4.0
+    //CHECK LICENSE & UPDATE
+    public $plugin_slug = '';
+    public $username = '';
+    public $email = '';
+    public $api_key = '';
+    public $item_valid_id = '';
+    public $domain = '';
+    public $license_key = '';
+    public $api_url = '';
+    
+    // Dynamic properties (PHP 8.2+ compatibility)
+    public $sizes = array();
+    public $t_products = array();
 
-        //public $menu_fields='';
+    //public $menu_fields='';
 
-        function __construct()
+    function __construct()
         {
 
             //Included Variation and CrossTab
@@ -4016,8 +4020,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             $pw_from_date,
             $pw_to_date,
             $title = "Daily",
-            $pw_hide_os,
-            $pw_shop_order_status
+            $pw_hide_os='',
+            $pw_shop_order_status=''
         ) {
             $body = '';
             include("includes/fetch_data_dailymail.php");
@@ -4030,8 +4034,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             $start_date,
             $end_date,
             $title = "Daily",
-            $post_status,
-            $shop_order_status
+            $post_status='',
+            $shop_order_status=''
         ) {
             $body = '';
             include("includes/fetch_data_dailymail_purchase_by_customer.php");
@@ -4132,7 +4136,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             }
         }
 
-        function pw_intelligence_product_images($title = 'No Title', $id, $url = false)
+        function pw_intelligence_product_images($title = 'No Title', $id='', $url = false)
         {
             $first_letter = strtolower($title[0]);
 

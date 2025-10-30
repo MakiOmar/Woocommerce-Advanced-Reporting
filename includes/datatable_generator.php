@@ -5842,7 +5842,7 @@
 
 			}
 
-			function pw_get_por_amount_individual($order_id_string = array(),$order_item_id,$based='order',$pw_from_date='',$pw_to_date=''){
+			function pw_get_por_amount_individual($order_id_string = array(),$order_item_id='',$based='order',$pw_from_date='',$pw_to_date=''){
 				global $wpdb;
 
 				$date_format = $this->pw_date_format($pw_from_date);
@@ -6461,7 +6461,7 @@
 			}
 
 			//GET COUNTRY CROSS TAB
-			function pw_get_woo_cp_items($type = 'limit_row', $items_only = true, $id = '-1',$params,$pw_region_code=NULL){
+			function pw_get_woo_cp_items($type = 'limit_row', $items_only = true, $id = '-1',$params=array(),$pw_region_code=NULL){
 				global $wpdb;
 
 				$pw_from_date=isset($params['pw_from_date']) ? $params['pw_from_date'] :'';
@@ -7891,7 +7891,7 @@
 			}
 
 			var $request_string = array();
-			function pw_get_woo_sm_requests($id=1,$string, $default = NULL){
+			function pw_get_woo_sm_requests($id=1,$string='', $default = NULL){
 
 				if(isset($this->request_string[$id])){
 					$string = $this->request_string[$id];
@@ -8279,7 +8279,7 @@
 				///$this->print_array($order_items);
 			}
 
-			function pw_get_dashboard_value($data = NULL, $id, $default = ''){
+			function pw_get_dashboard_value($data = NULL, $id='', $default = ''){
 				if($data){
 					if($data->$id)
 						return $data->$id;
