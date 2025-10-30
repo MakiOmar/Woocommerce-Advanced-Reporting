@@ -127,12 +127,12 @@ if($file_used=="sql_table")
 				$datatable_value.= $order_id;
 			$datatable_value.=("</td>");
 
-			//Name
-			$display_class='';
-			if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
-			$datatable_value.=("<td style='".$display_class."'>");
-				$datatable_value.= $fetch_other_data['billing_first_name'].' '.$fetch_other_data['billing_last_name'];
-			$datatable_value.=("</td>");
+		//Name
+		$display_class='';
+		if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
+		$datatable_value.=("<td style='".$display_class."'>");
+			$datatable_value.= ($fetch_other_data['billing_first_name'] ?? '').' '.($fetch_other_data['billing_last_name'] ?? '');
+		$datatable_value.=("</td>");
 			
 			//Email
 			$display_class='';
@@ -194,12 +194,12 @@ if($file_used=="sql_table")
 			$datatable_value.=isset($fetch_other_data['order_currency']) ? $fetch_other_data['order_currency'] : "";
 			$datatable_value.=("</td>");
 
-			//Gross Amt.
-			$display_class='';
-			if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
-			$datatable_value.=("<td style='".$display_class."'>");
-				$datatable_value.= $this->price(($pw_order_total + $total_discount) - ($fetch_other_data['order_shipping'] +  $fetch_other_data['order_shipping_tax'] + $fetch_other_data['order_tax'] ),array("currency" => $fetch_other_data['order_currency']));
-			$datatable_value.=("</td>");
+		//Gross Amt.
+		$display_class='';
+		if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
+		$datatable_value.=("<td style='".$display_class."'>");
+			$datatable_value.= $this->price(($pw_order_total + $total_discount) - (($fetch_other_data['order_shipping'] ?? 0) +  ($fetch_other_data['order_shipping_tax'] ?? 0) + ($fetch_other_data['order_tax'] ?? 0) ),array("currency" => $fetch_other_data['order_currency']));
+		$datatable_value.=("</td>");
 			
 			//Order Discount Amt.
 			$display_class='';

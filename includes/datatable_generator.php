@@ -3968,9 +3968,9 @@
 						$currency  = $this->constants['woocommerce_currency'];
 					}
 				}
-				//return $currency;
-				$args['currency'] 	= $currency;
-				$value 				= trim($value);
+			//return $currency;
+			$args['currency'] 	= $currency;
+			$value 				= trim((string)$value);
 				$withoutdecimal 	= str_replace(".","d",$value);
 
 				if(!isset($this->constants['price_format'][$currency][$withoutdecimal])){
@@ -5208,11 +5208,11 @@
 					if(isset($return[$order_id])){
 						foreach($meta_keies as $meta_key => $refund_meta_key){
 
-							$v1 = isset($return[$order_id]->$refund_meta_key) ? $return[$order_id]->$refund_meta_key : 0;
-							$v2 = isset($order_item->$refund_meta_key) ? $order_item->$refund_meta_key : 0;
+					$v1 = isset($return[$order_id]->$refund_meta_key) ? floatval($return[$order_id]->$refund_meta_key) : 0;
+					$v2 = isset($order_item->$refund_meta_key) ? floatval($order_item->$refund_meta_key) : 0;
 
 
-							$return[$order_id]->$refund_meta_key = $v1 + $v2;
+					$return[$order_id]->$refund_meta_key = $v1 + $v2;
 
 						}
 					}else{

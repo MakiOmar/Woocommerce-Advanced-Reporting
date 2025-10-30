@@ -92,6 +92,7 @@ if ( ! class_exists('pw_report_wcreport_class')) {
     // Dynamic properties (PHP 8.2+ compatibility)
     public $sizes = array();
     public $t_products = array();
+    public $constants = array();
 
     //public $menu_fields='';
 
