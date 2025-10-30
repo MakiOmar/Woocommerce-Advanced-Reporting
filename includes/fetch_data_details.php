@@ -1013,7 +1013,7 @@ if ($file_used == "sql_table") {
     $default_country = get_option("woocommerce_default_country");
     $default_country = (explode(":", str_replace("", " ", $default_country)))[0];
 
-    foreach ($this->results as $items) {
+    foreach ((array)$this->results as $items) {
 
 
         //CUSTOM WORK - 12679
