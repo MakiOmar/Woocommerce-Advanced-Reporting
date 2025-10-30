@@ -948,7 +948,7 @@ if ($file_used == "sql_table") {
     $order_items = $this->results;
     $categories  = array();
     $order_meta  = array();
-    if (count($order_items) > 0) {
+    if (is_array($order_items) && count($order_items) > 0) {
         foreach ($order_items as $key => $order_item) {
 
             $order_id                              = $order_item->order_id;

@@ -1906,10 +1906,10 @@
 				$cols_controls='';
 				$table_cols='';
 
-				$i=0;
-				if($search_fields!=NULL  || in_array($table_name,$except_table))
-				{
-					foreach($this->table_cols as $cols)
+			$i=0;
+			if($search_fields!=NULL  || in_array($table_name,$except_table))
+			{
+				foreach((array)$this->table_cols as $cols)
 					{
 
 						$checked='checked'; $display='';
