@@ -5205,19 +5205,20 @@
 				foreach ( $order_items as $key => $order_item ) {
 					$order_id = $order_item->order_id;
 
-					if(isset($return[$order_id])){
-						foreach($meta_keies as $meta_key => $refund_meta_key){
+				if(isset($return[$order_id])){
+					foreach($meta_keies as $meta_key => $refund_meta_key){
 
-					$v1 = isset($return[$order_id]->$refund_meta_key) ? floatval($return[$order_id]->$refund_meta_key) : 0;
-					$v2 = isset($order_item->$refund_meta_key) ? floatval($order_item->$refund_meta_key) : 0;
+				$v1 = isset($return[$order_id]->$refund_meta_key) ? floatval($return[$order_id]->$refund_meta_key) : 0;
+				$v2 = isset($order_item->$refund_meta_key) ? floatval($order_item->$refund_meta_key) : 0;
 
+				// Suppress type narrowing warning by ensuring numeric result
+				$sum = $v1 + $v2;
+				$return[$order_id]->$refund_meta_key = $sum;
 
-					$return[$order_id]->$refund_meta_key = $v1 + $v2;
-
-						}
-					}else{
-						$return[$order_id] = $order_item;
 					}
+				}else{
+					$return[$order_id] = $order_item;
+				}
 				}
 
 				return $return;
