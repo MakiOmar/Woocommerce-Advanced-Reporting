@@ -522,6 +522,19 @@ jQuery( document ).ready(function( $ ) {
             datatable_args["columnDefs"]=[];
         }
 
+        // PHP 8+ Fix: Validate columnDefs targets against actual columns
+        if(datatable_args.columnDefs && datatable_args.columnDefs.length > 0) {
+            var columnCount = $('.datatable thead th').length;
+            datatable_args.columnDefs = datatable_args.columnDefs.filter(function(def) {
+                if(def.targets && Array.isArray(def.targets)) {
+                    def.targets = def.targets.filter(function(target) {
+                        return typeof target === 'number' && target < columnCount;
+                    });
+                    return def.targets.length > 0;
+                }
+                return true;
+            });
+        }
 
         var table = $('.datatable').DataTable(datatable_args);
 
