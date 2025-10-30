@@ -136,8 +136,8 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 awr-allmenu-footer">
-                <h3><?php echo esc_html__('WOOCommerce Advance Reporting System',__PW_REPORT_WCREPORT_TEXTDOMAIN__); ?></h3>
-                <span>Powered By <a href="http://codecanyon.net/user/proword/portfolio">Proword</a></span>
+                <h3><?php echo esc_html__('WooCommerce Advanced Reporting by Makiomar',__PW_REPORT_WCREPORT_TEXTDOMAIN__); ?></h3>
+                <span><?php echo esc_html__('White Label Version',__PW_REPORT_WCREPORT_TEXTDOMAIN__); ?></span>
             </div>
         </div><!--row -->
     </div>

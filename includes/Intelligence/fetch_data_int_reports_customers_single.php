@@ -401,7 +401,10 @@
 
                         <div class="pw-xs-font pwl-lbl pw-left-align">'.$customer_city.' '.$customer_state.' '.$customer_coutry.'</div>
                         <div class="pw-customer-map-img">
-                            <img width="600" src="https://maps.googleapis.com/maps/api/staticmap?center='.$google_map_address.'&zoom=9&scale=1&size=200x100&maptype=roadmap&format=png&visual_refresh=true" >
+                            <!-- REMOVED: Google Maps API for white label version -->
+                            <p style="text-align: center; padding: 20px; background: #f5f5f5; border: 1px solid #ddd;">
+                                <?php echo esc_html__("Map display removed in white label version", __PW_REPORT_WCREPORT_TEXTDOMAIN__); ?>
+                            </p>
                         </div>
                     </div>
                 </div>
