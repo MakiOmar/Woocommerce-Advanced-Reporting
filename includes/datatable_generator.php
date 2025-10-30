@@ -57,22 +57,29 @@
 			// Sanitize table name for file system
 			$table_name_safe = sanitize_file_name( $table_name );
 
-			// Handle special dashboard mappings (maintain backward compatibility)
-			$file_map = array(
-				'order_summary'      => 'fetch_data_dashboard_order_summary.php',
-				'sale_order_status'  => 'fetch_data_dashboard_sale_order_status.php',
-				'top_5_products'     => 'fetch_data_dashboard_top_5_products.php',
-				'top_5_category'     => 'fetch_data_dashboard_top_5_category.php',
-				'top_5_country'      => 'fetch_data_dashboard_top_5_country.php',
-				'top_5_state'        => 'fetch_data_dashboard_top_5_state.php',
-				'top_5_customer'     => 'fetch_data_dashboard_top_5_customer.php',
-				'top_5_coupon'       => 'fetch_data_dashboard_top_5_coupon.php',
-				'top_5_gateway'      => 'fetch_data_dashboard_top_5_gateway.php',
-				'recent_5_order'     => 'fetch_data_dashboard_recent_5_order.php',
-				'monthly_summary'    => 'fetch_data_dashboard_monthly_summary.php',
+		// Handle special dashboard mappings (maintain backward compatibility)
+		$file_map = array(
+			'order_summary'      => 'fetch_data_dashboard_order_summary.php',
+			'sale_order_status'  => 'fetch_data_dashboard_sale_order_status.php',
+			'top_5_products'     => 'fetch_data_dashboard_top_5_products.php',
+			'top_5_category'     => 'fetch_data_dashboard_top_5_category.php',
+			'top_5_country'      => 'fetch_data_dashboard_top_5_country.php',
+			'top_5_state'        => 'fetch_data_dashboard_top_5_state.php',
+			'top_5_customer'     => 'fetch_data_dashboard_top_5_customer.php',
+			'top_5_coupon'       => 'fetch_data_dashboard_top_5_coupon.php',
+			'top_5_gateway'      => 'fetch_data_dashboard_top_5_gateway.php',
+			'recent_5_order'     => 'fetch_data_dashboard_recent_5_order.php',
+			'monthly_summary'    => 'fetch_data_dashboard_monthly_summary.php',
+		);
 
-					//CUSTOM WORK - 12679
-					case 'clinic':
+		// Use file map if available, otherwise use switch statement
+		if ( isset( $file_map[ $table_name ] ) ) {
+			require( $file_map[ $table_name ] );
+		} else {
+			switch ( $table_name ) {
+
+				//CUSTOM WORK - 12679
+				case 'clinic':
 						require("fetch_data_clinic.php");
 						break;
 
