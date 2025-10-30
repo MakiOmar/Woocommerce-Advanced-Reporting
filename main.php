@@ -202,6 +202,7 @@ if ( ! class_exists('pw_report_wcreport_class')) {
             add_action('admin_head', array($this, 'pw_report_backend_enqueue'));
             add_action('plugins_loaded', array($this, 'loadTextDomain'));
             add_action('admin_menu', array($this, 'pw_report_setup_menus'));
+            add_filter('admin_title', array($this, 'pw_report_fix_admin_title'), 10, 2);
 
             $field                  = __PW_REPORT_WCREPORT_FIELDS_PERFIX__ . 'activate_purchase_code';
             $this->pw_plugin_status = get_option($field);
@@ -2488,6 +2489,18 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOMIZE MENUS
             do_action('pw_report_wcreport_admin_menu');
 
+        }
+
+        /**
+         * Fix admin title to prevent strip_tags null error
+         * WordPress admin-header.php calls strip_tags on $title which can be null for hidden submenu pages
+         */
+        function pw_report_fix_admin_title($admin_title, $title) {
+            // If title is null or empty, provide a default
+            if (empty($title)) {
+                $title = esc_html__('WooCommerce Advanced Reporting', __PW_REPORT_WCREPORT_TEXTDOMAIN__);
+            }
+            return $admin_title;
         }
 
         function wcx_plugin_dashboard($display = "all")
