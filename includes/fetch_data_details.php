@@ -922,8 +922,82 @@ if ($file_used == "sql_table") {
 } elseif ($file_used == "data_table") {
 
     // Initialize table_cols to prevent empty thead when no data
+    // Use basic column set as fallback
     if (!isset($this->table_cols) || empty($this->table_cols)) {
-        $this->table_cols = $this->table_columns('details');
+        $pw_detail_view = $this->pw_get_woo_requests('pw_view_details', 'no', true);
+        $pw_show_cog = $this->pw_get_woo_requests('pw_show_cog', 'no', true);
+        
+        if ($pw_detail_view == "yes") {
+            $this->table_cols = array(
+                array('lable' => esc_html__('رقم الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('رقم الفاتورة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('اسم العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('رقم الهاتف', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('تاريخ التعديل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('تاريخ الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الدولة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('العنوان', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('المدينة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الحالة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('وسيلة الدفع', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الرقم الضريبي', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('المحفظة / خصم', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('القسيمة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('المنتجات', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('SKU', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('التصنيفات', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('مسمى الحجم', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الأحجام', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الكمية', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('السعر', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('المجموع', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('خصم القسيمة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الشحن', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('القيمة المضافة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الإجمالي', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Invoice Action', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            );
+            if ($pw_show_cog == 'yes') {
+                $this->table_cols[] = array('lable' => esc_html__('C.O.G', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency');
+                $this->table_cols[] = array('lable' => esc_html__('Profit', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency');
+            }
+            $this->table_cols[] = array('lable' => esc_html__('ملاحظات العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show');
+        } else {
+            $this->table_cols = array(
+                array('lable' => esc_html__('رقم الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('رقم الفاتورة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('اسم العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('رقم الهاتف', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('تاريخ التعديل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('تاريخ الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الدولة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('العنوان', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('المدينة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('الحالة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('Tax Name', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('Shipping Method', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('وسيلة الدفع', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('المحفظة / خصم', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Order Currency', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('القسيمة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('المنتجات', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('Gross Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Order Discount Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Cart Discount Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Total Discount Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Shipping Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Shipping Tax Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Order Tax Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Total Tax Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Part Refund Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+                array('lable' => esc_html__('Net Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+            );
+            if ($pw_show_cog == 'yes') {
+                $this->table_cols[] = array('lable' => esc_html__('C.O.G', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency');
+                $this->table_cols[] = array('lable' => esc_html__('Profit', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency');
+            }
+            $this->table_cols[] = array('lable' => esc_html__('Invoice Action', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show');
+        }
     }
 
     //CUSTOM WORK - 12679
