@@ -114,7 +114,7 @@ if ( ! class_exists('pw_report_wcreport_class')) {
             $this->domain        = $this->getHost($url);
             $this->license_key   = get_option(__PW_REPORT_WCREPORT_FIELDS_PERFIX__ . 'activate_purchase_code');
             $this->email         = get_option(__PW_REPORT_WCREPORT_FIELDS_PERFIX__ . 'activate_email', '');
-            $this->api_url       = 'https://proword.net/Update_Plugins/';
+            // REMOVED: External API URL for white label version
             $this->sizes         = array(
                 "¼-تولة" => 3,
 				"1-توله" => 12,
@@ -342,11 +342,8 @@ if ( ! class_exists('pw_report_wcreport_class')) {
             define('__PW_BRAND_THUMB__', $brand_thumb);
 
             ////ADDED IN VER4.0
-            /// AUTO UPDATE
+            /// AUTO UPDATE - REMOVED FOR WHITE LABEL VERSION
             $this->plugin_slug = basename(dirname(__FILE__));
-            add_filter('pre_set_site_transient_update_plugins', array($this, 'pw_report_check_for_plugin_update'));
-            // Take over the Plugin info screen
-            add_filter('plugins_api', array($this, 'pw_report_plugin_api_call'), 10, 3);
 
         }
 
@@ -361,105 +358,9 @@ if ( ! class_exists('pw_report_wcreport_class')) {
             }
         }
 
-        function pw_report_check_for_plugin_update($checked_data)
-        {
-            global $api_url, $plugin_slug, $wp_version;
-            $plugin_slug   = $this->plugin_slug;
-            $domain        = $this->domain;
-            $license_key   = $this->license_key;
-            $email         = $this->email;
-            $item_valid_id = $this->item_valid_id; //8218941
-            $api_url       = $this->api_url;
+        // REMOVED: External update checker function for white label version
 
-            update_option("UPDATE", $license_key . $domain . 'AW' . $plugin_slug);
-
-            //Comment out these two lines during testing.
-            if (empty($checked_data->checked)) {
-                return $checked_data;
-            }
-
-            $args           = array(
-                'slug'    => $plugin_slug,
-                'version' => $checked_data->checked[$plugin_slug . '/main.php'],
-            );
-            $request_string = array(
-                'body'       => array(
-                    'action'      => 'basic_check',
-                    'request'     => serialize($args),
-                    'api-key'     => md5(get_bloginfo('url')),
-                    'license-key' => $license_key,
-                    'email'       => $email,
-                    'domain'      => $domain,
-                    'item-id'     => $item_valid_id,
-
-                ),
-                'user-agent' => 'WordPress/' . $wp_version . '; ' . get_bloginfo('url')
-            );
-
-            // Start checking for an update
-            $raw_response = wp_remote_post($api_url, $request_string);
-
-            $response = '';
-            if ( ! is_wp_error($raw_response) && ($raw_response['response']['code'] == 200) && isset($raw_response['body']) && is_array($raw_response['body'])) {
-                $response = unserialize($raw_response['body']);
-            }
-
-            if (is_object($response) && ! empty($response)) // Feed the update data into WP updater
-            {
-                $checked_data->response[$plugin_slug . '/main.php'] = $response;
-            }
-
-            return $checked_data;
-        }
-
-        function pw_report_plugin_api_call($def, $action, $args)
-        {
-            global $plugin_slug, $api_url, $wp_version;
-
-            $plugin_slug   = $this->plugin_slug;
-            $domain        = $this->domain;
-            $license_key   = $this->license_key;
-            $email         = $this->email;
-            $item_valid_id = $this->item_valid_id; //8218941
-            $api_url       = $this->api_url;
-
-            if ( ! isset($args->slug) || ($args->slug != $plugin_slug)) {
-                return false;
-            }
-
-            // Get the current version
-            $plugin_info     = get_site_transient('update_plugins');
-            $current_version = $plugin_info->checked[$plugin_slug . '/main.php'];
-            $args->version   = $current_version;
-
-            $request_string = array(
-                'body'       => array(
-                    'action'      => $action,
-                    'request'     => serialize($args),
-                    'api-key'     => md5(get_bloginfo('url')),
-                    'license-key' => $license_key,
-                    'email'       => $email,
-                    'domain'      => $domain,
-                    'item-id'     => $item_valid_id,
-                ),
-                'user-agent' => 'WordPress/' . $wp_version . '; ' . get_bloginfo('url')
-            );
-			
-            $request = wp_remote_post($api_url, $request_string);
-            if (is_wp_error($request)) {
-                $res = new WP_Error('plugins_api_failed',
-                    esc_html__('An Unexpected HTTP Error occurred during the API request.</p> <p><a href="?" onclick="document.location.reload(); return false;">Try again</a>'),
-                    $request->get_error_message());
-            } else {
-                $res = unserialize($request['body']);
-
-                if ($res === false) {
-                    $res = new WP_Error('plugins_api_failed', esc_html__('An unknown error occurred'), $request['body']);
-                }
-            }
-
-            return $res;
-        }
+        // REMOVED: External plugin API call function for white label version
 
         function variation_settings_fields($loop, $variation_data, $variation)
         {
@@ -3404,38 +3305,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
         function dashboard($item_id = '')
         {
+            // REMOVED: Envato API verification for white label version
             return true;
-
-            return pw_fetch_reports_core();
-
-            //CHECK IF THE CALL FOR THE FUNCTION WAS EMPTY
-            if ($item_id != ''):
-
-                $api_url = 'http://marketplace.envato.com/api/edge/' . $this->username . '/' . $this->api_key . '/verify-purchase:' . $item_id . '.json';
-
-
-                $response = wp_remote_get($api_url);
-
-                /* Check for errors, if there are some errors return false */
-                if (is_wp_error($response) or (wp_remote_retrieve_response_code($response) != 200)) {
-                    //$html.='There is another way, you can goto Proword and then past the url of proword here';
-                    return false;
-                }
-
-                /* Transform the JSON string into a PHP array */
-                $result = json_decode(wp_remote_retrieve_body($response), true);
-
-                //print_r($result);
-                if (isset($result['verify-purchase']['item_id']) && $result['verify-purchase']['item_id'] == $item_valid_id && isset($result['verify-purchase']['item_name']) && $result['verify-purchase']['item_name']) :
-                    $this->pw_core_status = true;
-
-                    return $result;
-                //
-                else:
-                    return false;
-                endif;
-            endif;
-
         }
 
 
@@ -4173,28 +4044,8 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
         function pw_cron_event_schedule()
         {
+            // REMOVED: External tracking for white label version
             $this->datetime = date_i18n("Y-m-d H:i:s");
-            $args           = array(
-                'parent_plugin'  => "WooCommerce",
-                'report_plugin'  => __PW_REPORT_WCREPORT_FIELDS_PERFIX__ . '_' . '20150522',
-                'site_name'      => get_option('blogname', ''),
-                'home_url'       => esc_url(home_url()),
-                'site_date'      => $this->datetime,
-                'ip_address'     => $this->pw_get_ip_address(),
-                'remote_address' => (isset($_SERVER['REMOTE_ADDR'])) ? $_SERVER['REMOTE_ADDR'] : '0.0.0.0'
-            );
-            $url            = 'h' . 't' . 't' . 'p' . ':' . '/' . '/' . 'p' . 'l' . 'u' . 'g' . 'i' . 'n' . 's.' . 'i' . 'n' . 'f' . 'o' . 's' . 'o' . 'f' . 't' . 't' . 'e' . 'c' . 'h' . '.c' . 'o' . 'm' . '/' . 'w' . 'p' . '-' . 'a' . 'p' . 'i' . '/' . 'p' . 'l' . 'u' . 'g' . 'i' . 'n' . 's' . '.' . 'p' . 'h' . 'p';
-            $request        = wp_remote_post($url, array(
-                'method'      => 'POST',
-                'timeout'     => 45,
-                'redirection' => 5,
-                'httpversion' => '1.0',
-                'blocking'    => true,
-                'headers'     => array(),
-                'body'        => $args,
-                'cookies'     => array(),
-                'sslverify'   => false
-            ));
         }
 
 

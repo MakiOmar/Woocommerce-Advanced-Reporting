@@ -1346,49 +1346,11 @@ pw_posts.ID=meta.post_id $pw_order_status_join where meta.meta_key='pw_cartitems
 
 
 	function pw_fetch_reports_core(){
-
-
+		// REMOVED: External license check for white label version
+		// White label version always returns true
 		global $pw_rpt_main_class;
-
-
-		if(($pw_rpt_main_class->email=="" || !filter_var($pw_rpt_main_class->email, FILTER_VALIDATE_EMAIL)) && isset($_GET["smenu"]) && $_GET["smenu"]!="wcx_wcreport_plugin_active_report"){
-			header("location:".admin_url()."admin.php?page=wcx_wcreport_plugin_active_report&parent=active_plugin");
-			return false;
-		}
-
-		/////////////
-		/// /// CHECK LICENSE PLUGIN
-		/////////////
-		$request_string = array(
-			"body" => array(
-				"action" => "insert_licensekey",
-				"license-key" => $pw_rpt_main_class->license_key,
-				"email" => $pw_rpt_main_class->email,
-				"domain" => $pw_rpt_main_class->domain,
-				"item-id" => $pw_rpt_main_class->item_valid_id,
-			)
-		);
-
-		if($pw_rpt_main_class->license_key!="" && (filter_var($pw_rpt_main_class->email, FILTER_VALIDATE_EMAIL))){
-			$response = wp_remote_post($pw_rpt_main_class->api_url, $request_string);
-
-			if ( is_wp_error( $response ) or ( wp_remote_retrieve_response_code( $response ) != 200 ) ) {
-				return false;
-			}
-			$result = json_decode( wp_remote_retrieve_body( $response ), true );
-
-			//$result=$result[0];
-			if(isset($result["verify-purchase"]["status"]) && $result["verify-purchase"]["status"]=="valid"){
-				$pw_rpt_main_class->pw_core_status=true;
-				return $result;
-			}
-			else if(isset($result["verify-purchase"]["status"]) && $result["verify-purchase"]["status"]!="valid"){
-				return $result;
-			}
-			else{
-				return false;
-			}
-		}
+		$pw_rpt_main_class->pw_core_status = true;
+		return true;
 	}
 
 
@@ -1429,7 +1391,7 @@ pw_posts.ID=meta.post_id $pw_order_status_join where meta.meta_key='pw_cartitems
 		$content=$my_array_of_vars['awr_content'];
 		$email_optimize 		= $pw_rpt_main_class->get_options(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'optimize_email','');
 
-		$email_send_to = $pw_rpt_main_class->reformat_email_text('reporting_support@proword.net');
+		$email_send_to = $pw_rpt_main_class->reformat_email_text(get_option('admin_email'));
 		$email_from_email = $pw_rpt_main_class->reformat_email_text($email);
 
 		$date_format 					= get_option( 'date_format', "Y-m-d" );
@@ -1464,63 +1426,11 @@ pw_posts.ID=meta.post_id $pw_order_status_join where meta.meta_key='pw_cartitems
 	}
 
 	////ADDED IN VER4.0
-	/// UPDATE NOTIFICATION
+	/// UPDATE NOTIFICATION - REMOVED FOR WHITE LABEL
 	add_action('wp_ajax_pw_rpt_update_notification_date', 'pw_rpt_update_notification_date');
 	add_action('wp_ajax_nopriv_pw_rpt_update_notification_date', 'pw_rpt_update_notification_date');
 	function pw_rpt_update_notification_date() {
-		global $wpdb;
-		global $pw_rpt_main_class;
-        die();
-		parse_str( $_POST['postdata'], $my_array_of_vars );
-
-		$nonce = $_POST['nonce'];
-
-		$type = $_POST['type'];
-
-		if ( ! wp_verify_nonce( $nonce, 'pw_livesearch_nonce' ) ) {
-			$arr = array(
-				'success'  => 'no-nonce',
-				'products' => array()
-			);
-			print_r( $arr );
-			die();
-		}
-
-		$read_date=get_option("pw_news_read_date");
-		//$read_date='';
-
-		//GET FROM XML
-		$api_url='http://proword.net/xmls/Woo_Reporting/report-news.php';
-
-		$response = wp_remote_get(  $api_url );
-
-		/* Check for errors, if there are some errors return false */
-		if ( is_wp_error( $response ) or ( wp_remote_retrieve_response_code( $response ) != 200 ) ) {
-			return false;
-		}
-
-		/* Transform the JSON string into a PHP array */
-		$result = json_decode( wp_remote_retrieve_body( $response ), true );
-		$add_ons_status='';
-		$news_count=0;
-
-		if($read_date=='' && is_array($result))
-		{
-			$i=0;
-
-			foreach($result as $add_ons){
-
-				if ($add_ons === reset($result)){
-					update_option("pw_news_read_date",$add_ons['date']);
-				}
-			}
-		}else if(is_array($result)){
-			foreach($result as $add_ons){
-
-			}
-			update_option("pw_news_read_date",$add_ons['date']);
-		}
-		//echo $add_ons['date'];
+		// REMOVED: External news feed for white label version
 		die();
 	}
 
