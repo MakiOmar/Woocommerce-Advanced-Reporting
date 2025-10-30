@@ -260,9 +260,8 @@ wp_enqueue_style(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'css-chosen_select2');
 
 
 	//wp_register_script(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'js-custom', __PW_REPORT_WCREPORT_JS_URL__. 'back-end/custom-js.js', true);
-	// TEMPORARILY DISABLED FOR DEBUGGING
-	//wp_register_script(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'js-custom', __PW_REPORT_WCREPORT_JS_URL__. 'back-end/custom-js.js', false, time());
-	//wp_enqueue_script(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'js-custom');
+	wp_register_script(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'js-custom', __PW_REPORT_WCREPORT_JS_URL__. 'back-end/custom-js.js', false, time());
+	wp_enqueue_script(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'js-custom');
 
 	$ajax_url=admin_url( 'admin-ajax.php');
 
