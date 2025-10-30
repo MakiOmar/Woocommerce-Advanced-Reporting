@@ -3,7 +3,7 @@
 ## PW Advanced Woocommerce Reporting System
 
 **Refactoring Project**: October 30, 2025  
-**Version**: 6.0 → 6.1
+**Version**: 1.0.0 (White-labeled by Makiomar)
 
 ---
 

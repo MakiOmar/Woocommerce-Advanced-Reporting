@@ -237,7 +237,7 @@ Copy-Item -Recurse PW-Advanced-Woocommerce-Reporting-System.backup-[TIMESTAMP] P
 ### Nice to Have:
 - [ ] Load time <3s
 - [ ] No PHP notices/warnings
-- [ ] Performance better than v6.0
+- [ ] Performance optimized for v1.0.0
 - [ ] All 73 files refactored (currently 62)
 
 ---

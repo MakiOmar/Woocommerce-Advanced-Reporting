@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Advanced Reporting by Makiomar
 Plugin URI: 
 Description: WooCommerce Advance Reporting plugin is a comprehensive and the most complete reporting system.
-Version: 6.0
+Version: 1.0.0
 Author: Makiomar
 Author URI: 
 Text Domain: woocommerce-advanced-reporting
@@ -12,10 +12,12 @@ Domain Path: /languages/
 
 
 /*
-v6.0
-    Fixed: Some security issues
-    Fixed: Optimize performance
-    Fixed: Some Functionality issues
+v1.0.0
+    Initial white-labeled release by Makiomar
+    Based on comprehensive refactoring and optimization
+    Fixed: Security issues
+    Fixed: Performance optimization
+    Fixed: Functionality improvements
 
 v5.9
     Fixed: Recent Order Report Query
