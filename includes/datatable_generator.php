@@ -1893,6 +1893,12 @@
 					$this->table_cols =$this->table_columns($refund_type);
 				}else if( in_array ( $table_name,array('details','details_depot', 'details_user_id','details_combined','details_full','details_full_shipping','details_full_shipping_tax','abandoned_cart','abandoned_product','details_product_options','product','product_per_users','category','tags','details_order_country','details_brands','details_tax_field','prod_per_month','variation_per_month','prod_per_country','prod_per_state','country_per_month','payment_per_month','ord_status_per_month','summary_per_month','variation','stock_summary_avg','stock_list','stock_list_sales','variation_stock','tax_reports','customer_role_total_sale','customer_role_top_products','customer_role_bottom_products','details_tickera','stock_zero_level','stock_max_level') ) )
 				{
+					// For these tables, columns are set inside the fetch file
+					// We need to call fetch_sql to set columns even if search_fields is null
+					if($search_fields==NULL && !isset($this->table_cols)) {
+						error_log('DEBUG: Calling fetch_sql for ' . $table_name . ' to set columns');
+						$this->fetch_sql($table_name, $search_fields);
+					}
 					//$this->table_cols =$this->table_columns($table_name);
 				}else{
 
