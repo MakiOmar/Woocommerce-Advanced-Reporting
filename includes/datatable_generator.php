@@ -6000,18 +6000,20 @@
 
 			}
 
-			//GET TAX GROSS
-			function pw_get_number_percentage($first_value = 0, $second_value = 0, $default = 0){
-				$return = $default;
-				$first_value = trim($first_value);
-				$second_value = trim($second_value);
+		//GET TAX GROSS
+		function pw_get_number_percentage($first_value = 0, $second_value = 0, $default = 0){
+			$return = $default;
+			
+			// Convert to numeric values (PHP 8+ strict type checking)
+			$first_value = is_numeric($first_value) ? floatval($first_value) : 0;
+			$second_value = is_numeric($second_value) ? floatval($second_value) : 0;
 
-				if($first_value > 0  and $second_value > 0){
-					$return = ($first_value/$second_value)*100;
-				}
-
-				return $return;
+			if($first_value > 0  and $second_value > 0){
+				$return = ($first_value/$second_value)*100;
 			}
+
+			return $return;
+		}
 
 
 			////ADDED IN VER4.5
