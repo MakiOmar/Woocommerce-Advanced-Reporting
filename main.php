@@ -2301,62 +2301,62 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 array($this, 'wcx_plugin_mani_settings'));
 
 
-            add_submenu_page(null, esc_html__('Dashboard', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Dashboard', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Dashboard', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_dashboard',
                 array($this, 'wcx_plugin_dashboard'));
 
-            add_submenu_page(null, esc_html__('My Dashboard', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('My Dashboard', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('My Dashboard', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_plugin_menu_my_dashboard',
                 array($this, 'wcx_plugin_menu_my_dashboard'));
 
-            add_submenu_page(null, esc_html__('Details', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Details', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Details', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_details',
                 array($this, 'wcx_plugin_menu_details'));
 
-            add_submenu_page(null, esc_html__('Details Depot', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Details Depot', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Details Depot', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_details_depot',
                 array($this, 'wcx_plugin_menu_details_depot'));
 
-            add_submenu_page(null, esc_html__('Details With user ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Details With user ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Details With user ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_details_user_id',
                 array($this, 'wcx_plugin_menu_details_user_id'));
 
             //CUSTOM WORK - 12300
-            //add_submenu_page(null, esc_html__('Details Tickera',__PW_REPORT_WCREPORT_TEXTDOMAIN__), esc_html__('Details Tickera',__PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_details_tickera',   array($this,'wcx_plugin_menu_details_tickera' ) );
+            //add_submenu_page('', esc_html__('Details Tickera',__PW_REPORT_WCREPORT_TEXTDOMAIN__), esc_html__('Details Tickera',__PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_details_tickera',   array($this,'wcx_plugin_menu_details_tickera' ) );
 
             //CUSTOM WORK - 4186
-            add_submenu_page(null, esc_html__('Details Full', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Details Full', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Details Full', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_details_full', array($this, 'wcx_plugin_menu_details_full'));
 
             //CUSTOM WORK - 53
-            add_submenu_page(null, esc_html__('Details Full Billing/Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Details Full Billing/Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Details Full Billing/Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_details_full_shipping', array($this, 'wcx_plugin_menu_details_full_shipping'));
 
 
             //CUSTOM WORK - 522
-            add_submenu_page(null, esc_html__('Combined Orders', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Combined Orders', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Combined Orders', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_details_combined', array($this, 'wcx_plugin_menu_details_combined'));
 
             //CUSTOM WORK - 16
-            add_submenu_page(null, esc_html__('Details Full Billing|Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Details Full Billing|Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Details Full Billing|Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_details_full_shipping_tax', array($this, 'wcx_plugin_menu_details_full_shipping_tax'));
 
             //CUSTOM WORK - 4179
-            add_submenu_page(null, esc_html__('Status Change', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Status Change', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Status Change', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_order_status_change', array($this, 'wcx_plugin_menu_order_status_change'));
 
             ////ADDED IN VER4.0
             /// ORDER PER COUNTRY
-            add_submenu_page(null, esc_html__('All Orders (Custom Taxonomy, Field)', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('All Orders (Custom Taxonomy, Field)', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('All Orders (Custom Taxonomy, Field)', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_details_order_country', array($this, 'wcx_plugin_menu_details_order_country'));
 
-            add_submenu_page(null, esc_html__('Order/Country', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Order/Country', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Order Per Country', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_order_per_country', array($this, 'wcx_plugin_menu_order_per_country'));
 
@@ -2367,69 +2367,69 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //CUSTOM TAX & FIELDS
 
             //ALL DETAILS
-            add_submenu_page(null, esc_html__('Product', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Product', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Product', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_product',
                 array($this, 'wcx_plugin_menu_product'));
 
 
-            add_submenu_page(null, esc_html__('Stock List', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Stock List', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Stock List', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_stock_list',
                 array($this, 'wcx_plugin_menu_stock_list'));
 
-            add_submenu_page(null, esc_html__('Stock List Sales', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Stock List Sales', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Stock List', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_stock_list_sales',
                 array($this, 'wcx_plugin_menu_stock_list_sales'));
 
             ////ADDED IN VER4.5
             //CUSTOM WORK
-            add_submenu_page(null, esc_html__('Product/Users', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Product/Users', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Product/Users', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_product_per_users', array($this, 'wcx_plugin_menu_product_per_users'));
 
 
-            add_submenu_page(null, esc_html__('Profit', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Profit', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Profit', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_profit',
                 array($this, 'wcx_plugin_menu_profit'));
-            add_submenu_page(null, esc_html__('Category', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Category', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Category', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_category',
                 array($this, 'wcx_plugin_menu_category'));
             ////ADDED IN VER4.0
-            add_submenu_page(null, esc_html__('Tag', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Tag', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Tag', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_tags',
                 array($this, 'wcx_plugin_menu_tags'));
-            add_submenu_page(null, esc_html__('Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_customer',
                 array($this, 'wcx_plugin_menu_customer'));
-            add_submenu_page(null, esc_html__('Billing Country', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Billing Country', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Billing Country', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_billingcountry', array($this, 'wcx_plugin_menu_billingcountry'));
-            add_submenu_page(null, esc_html__('Billing State', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Billing State', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Billing State', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_billingstate', array($this, 'wcx_plugin_menu_billingstate'));
             ////ADDED IN VER4.0
-            add_submenu_page(null, esc_html__('Billing City', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Billing City', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Billing City', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_billingcity', array($this, 'wcx_plugin_menu_billingcity'));
-            add_submenu_page(null, esc_html__('Payment Gateway', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Payment Gateway', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Payment Gateway', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_paymentgateway', array($this, 'wcx_plugin_menu_paymentgateway'));
-            add_submenu_page(null, esc_html__('Order Status', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Order Status', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Order Status', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_orderstatus', array($this, 'wcx_plugin_menu_orderstatus'));
-            add_submenu_page(null, esc_html__('Recent Order', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Recent Order', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Recent Order', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_recentorder', array($this, 'wcx_plugin_menu_recentorder'));
-            add_submenu_page(null, esc_html__('Tax Report', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Tax Report', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Tax Report', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_taxreport',
                 array($this, 'wcx_plugin_menu_taxreport'));
-            add_submenu_page(null, esc_html__('Purchased Product by Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Purchased Product by Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Purchased Product by Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_customrebuyproducts', array($this, 'wcx_plugin_menu_customrebuyproducts'));
 
 
             //CUSTOM WORK - 17427
             if (is_array(__CUSTOMWORK_ID__) && in_array('17427', __CUSTOMWORK_ID__)) {
-                add_submenu_page(null, esc_html__('Purchased Category by Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+                add_submenu_page('', esc_html__('Purchased Category by Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                     esc_html__('Purchased Category by Customer', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                     'wcx_wcreport_plugin_customer_category', array(
                         $this,
@@ -2440,7 +2440,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
             //CUSTOM WORK - 15092
             if (is_array(__CUSTOMWORK_ID__) && in_array('15092', __CUSTOMWORK_ID__)) {
-                add_submenu_page(null, esc_html__('Order Per Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+                add_submenu_page('', esc_html__('Order Per Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                     esc_html__('Order Per Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                     'wcx_wcreport_plugin_order_per_custom_shipping', array(
                         $this,
@@ -2449,16 +2449,16 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             }
 
 
-            add_submenu_page(null, esc_html__('Refund Details', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Refund Details', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Refund Details', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_refunddetails', array($this, 'wcx_plugin_menu_refunddetails'));
-            add_submenu_page(null, esc_html__('Coupon', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Coupon', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Coupon', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_coupon',
                 array($this, 'wcx_plugin_menu_coupon'));
 
             //CUSTOM WORK - 12679
             if (is_array(__CUSTOMWORK_ID__) && in_array('12679', __CUSTOMWORK_ID__)) {
-                add_submenu_page(null, esc_html__('Total Sales per Clinic', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+                add_submenu_page('', esc_html__('Total Sales per Clinic', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                     esc_html__('Total Sales per Clinic', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                     'wcx_wcreport_plugin_clinic', array($this, 'wcx_plugin_menu_clinic'));
             }
@@ -2469,17 +2469,17 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //////////////////////////////////////////////
             /////ADDED IN VER4.0
             /// OTHER SUMMARY
-            add_submenu_page(null, esc_html__('Coupon Discount', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Coupon Discount', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Coupon Discount', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_coupon_discount', array($this, 'wcx_plugin_menu_coupon_discount'));
-            add_submenu_page(null, esc_html__('Customer Analysis', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Customer Analysis', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Customer Analysis', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_customer_analysis', array($this, 'wcx_plugin_menu_customer_analysis'));
-            //add_submenu_page(null, esc_html__('Frequently Order Customer',__PW_REPORT_WCREPORT_TEXTDOMAIN__), esc_html__('Frequently Order Customer',__PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_customer_order_frequently',   array($this,'wcx_plugin_menu_customer_order_frequently' ) );
-            add_submenu_page(null, esc_html__('Customer in Price Point', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            //add_submenu_page('', esc_html__('Frequently Order Customer',__PW_REPORT_WCREPORT_TEXTDOMAIN__), esc_html__('Frequently Order Customer',__PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability, 'wcx_wcreport_plugin_customer_order_frequently',   array($this,'wcx_plugin_menu_customer_order_frequently' ) );
+            add_submenu_page('', esc_html__('Customer in Price Point', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Customer in Price Point', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_customer_min_max', array($this, 'wcx_plugin_menu_customer_min_max'));
-            add_submenu_page(null, esc_html__('Customer/Non Purchase', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Customer/Non Purchase', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Customer/Non Purchase', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_customer_no_purchased', array($this, 'wcx_plugin_menu_customer_no_purchased'));
 
@@ -2489,19 +2489,19 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //////////////////////////////////////////////
             //STOCK REOPRTS
             /////ADDED IN VER4.0
-            add_submenu_page(null, esc_html__('Zero Level Stock', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Zero Level Stock', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Zero Level Stock', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_stock_zero_level', array($this, 'wcx_plugin_menu_stock_zero_level'));
 
-            add_submenu_page(null, esc_html__('Minimum Level Stock', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Minimum Level Stock', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Minimum Level Stock', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_stock_min_level', array($this, 'wcx_plugin_menu_stock_min_level'));
 
-            add_submenu_page(null, esc_html__('Most Stocked', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Most Stocked', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Most Stocked', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_stock_max_level', array($this, 'wcx_plugin_menu_stock_max_level'));
 
-            add_submenu_page(null, esc_html__('Summary Stock Planner', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Summary Stock Planner', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Summary Stock Planner', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_stock_summary_avg', array($this, 'wcx_plugin_menu_stock_summary_avg'));
 
@@ -2510,10 +2510,10 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //////////////////////////////////////////////
             //ORDER ANALYSIS
             /////ADDED IN VER4.0
-            add_submenu_page(null, esc_html__('Analysis Simple products', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Analysis Simple products', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Analysis Simple products', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_order_product_analysis', array($this, 'wcx_plugin_menu_order_product_analysis'));
-            add_submenu_page(null, esc_html__('Analysis Variation products', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Analysis Variation products', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Analysis Simple products', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_order_variation_analysis',
                 array($this, 'wcx_plugin_menu_order_variation_analysis'));
@@ -2537,16 +2537,16 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //VARIATION
 
             //STOCK VARIATION
-            add_submenu_page(null, esc_html__('Project vs Actual Sale', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Project vs Actual Sale', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Project vs Actual Sale', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_projected_actual_sale', array($this, 'wcx_plugin_menu_projected_actual_sale'));
-            add_submenu_page(null, esc_html__('Tax Reports', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Tax Reports', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Tax Reports', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_tax_reports', array($this, 'wcx_plugin_menu_tax_reports'));
 
 
             //CUSTOM WORK - 12412
-            add_submenu_page(null, esc_html__('Product Qty.', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Product Qty.', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Product Qty.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_product_variation_qty', array($this, 'wcx_plugin_menu_product_variation_qty'));
 
@@ -2556,10 +2556,10 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             //////////////////////////////////////////////
             //ABANDONED CART
             /////ADDED IN VER4.9
-            add_submenu_page(null, esc_html__('Abandoned Products', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Abandoned Products', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Products', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_abandoned_products', array($this, 'wcx_plugin_menu_abandoned_products'));
-            add_submenu_page(null, esc_html__('Abandoned Carts', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Abandoned Carts', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Abandoned Carts Data', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_abandoned_cart', array($this, 'wcx_plugin_menu_abandoned_cart'));
 
@@ -2567,19 +2567,19 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
             /////////////////////////////
             //SETTINGS
             /////////////////////////////////
-            add_submenu_page(null, esc_html__('Settings', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Settings', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Report Settings', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_setting_report', array($this, 'wcx_plugin_menu_setting_report'));
 
-            add_submenu_page(null, esc_html__('Add-ons', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Add-ons', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Report Add-ons', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_addons_report', array($this, 'wcx_plugin_menu_addons_report'));
 
-            add_submenu_page(null, esc_html__('Proword', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Proword', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Other Useful Plugins', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_proword_report', array($this, 'wcx_plugin_menu_proword_report'));
 
-            add_submenu_page(null, esc_html__('Activate Plugin', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
+            add_submenu_page('', esc_html__('Activate Plugin', __PW_REPORT_WCREPORT_TEXTDOMAIN__),
                 esc_html__('Active Plugin', __PW_REPORT_WCREPORT_TEXTDOMAIN__), $role_capability,
                 'wcx_wcreport_plugin_active_report', array($this, 'wcx_plugin_menu_active_report'));
 
