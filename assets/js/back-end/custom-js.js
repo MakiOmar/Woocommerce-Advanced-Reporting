@@ -544,13 +544,25 @@ jQuery( document ).ready(function( $ ) {
 
         // Initialize DataTable with error handling
         var table;
+        
+        // Check if DataTable is already initialized
+        if ($.fn.DataTable.isDataTable('.datatable')) {
+            // Destroy existing instance before reinitializing
+            $('.datatable').DataTable().destroy();
+        }
+        
         try {
             table = $('.datatable').DataTable(datatable_args);
         } catch(e) {
             console.error('DataTable initialization error:', e);
             // Retry without columnDefs if there's an error
             delete datatable_args.columnDefs;
-            table = $('.datatable').DataTable(datatable_args);
+            try {
+                table = $('.datatable').DataTable(datatable_args);
+            } catch(e2) {
+                console.error('DataTable retry failed:', e2);
+                return; // Exit if initialization completely fails
+            }
         }
 
         var fType;
