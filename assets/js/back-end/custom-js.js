@@ -546,14 +546,16 @@ jQuery( document ).ready(function( $ ) {
         // Initialize DataTable with error handling
         var table;
         
-        // Check if DataTable is already initialized - if so, destroy it first
+        // Check if DataTable is already initialized - if so, just return
         if ($.fn.DataTable.isDataTable('.datatable')) {
-            try {
-                $('.datatable').DataTable().clear().destroy();
-                $('.datatable').empty(); // Clear table HTML
-            } catch(destroyError) {
-                console.warn('Error destroying existing DataTable:', destroyError);
-            }
+            console.log('DataTable already initialized, skipping re-initialization');
+            return $('.datatable').DataTable(); // Return existing instance
+        }
+        
+        // Ensure table has proper structure before initialization
+        if ($('.datatable thead').length === 0 || $('.datatable thead th').length === 0) {
+            console.error('DataTable structure is invalid - no thead or columns found');
+            return;
         }
         
         try {
