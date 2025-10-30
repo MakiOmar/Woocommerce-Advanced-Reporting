@@ -536,9 +536,22 @@ jQuery( document ).ready(function( $ ) {
                 }
                 return true;
             });
+            // If all targets were filtered out, clear columnDefs
+            if(datatable_args.columnDefs.length === 0) {
+                datatable_args.columnDefs = [];
+            }
         }
 
-        var table = $('.datatable').DataTable(datatable_args);
+        // Initialize DataTable with error handling
+        var table;
+        try {
+            table = $('.datatable').DataTable(datatable_args);
+        } catch(e) {
+            console.error('DataTable initialization error:', e);
+            // Retry without columnDefs if there's an error
+            delete datatable_args.columnDefs;
+            table = $('.datatable').DataTable(datatable_args);
+        }
 
         var fType;
         fType = getUrlVars()["smenu"];
