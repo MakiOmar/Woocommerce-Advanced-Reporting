@@ -921,6 +921,11 @@ if ($file_used == "sql_table") {
 
 } elseif ($file_used == "data_table") {
 
+    // Initialize table_cols to prevent empty thead when no data
+    if (!isset($this->table_cols) || empty($this->table_cols)) {
+        $this->table_cols = $this->table_columns('details');
+    }
+
     //CUSTOM WORK - 12679
     $pw_clinic_type = '';
     if (is_array(__CUSTOMWORK_ID__) && in_array('12679', __CUSTOMWORK_ID__)) {
