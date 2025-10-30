@@ -373,16 +373,8 @@ jQuery( document ).ready(function( $ ) {
     };
 
 
-    // Flag to prevent multiple DataTable initializations
-    var datatableInitialized = false;
-
     function datatable_init(){
         //return true;
-        
-        // Prevent multiple calls
-        if (datatableInitialized) {
-            return;
-        }
         
         jQuery.extend( jQuery.fn.dataTableExt.oSort, {
             "currency-pre": function ( a ) {
@@ -554,23 +546,24 @@ jQuery( document ).ready(function( $ ) {
         // Initialize DataTable with error handling
         var table;
         
-        // Check if DataTable is already initialized
+        // Check if DataTable is already initialized - if so, destroy it first
         if ($.fn.DataTable.isDataTable('.datatable')) {
-            // Already initialized, just return the existing instance
-            datatableInitialized = true;
-            return;
+            try {
+                $('.datatable').DataTable().clear().destroy();
+                $('.datatable').empty(); // Clear table HTML
+            } catch(destroyError) {
+                console.warn('Error destroying existing DataTable:', destroyError);
+            }
         }
         
         try {
             table = $('.datatable').DataTable(datatable_args);
-            datatableInitialized = true; // Mark as initialized
         } catch(e) {
             console.error('DataTable initialization error:', e);
             // Retry without columnDefs if there's an error
             delete datatable_args.columnDefs;
             try {
                 table = $('.datatable').DataTable(datatable_args);
-                datatableInitialized = true; // Mark as initialized
             } catch(e2) {
                 console.error('DataTable retry failed:', e2);
                 return; // Exit if initialization completely fails
