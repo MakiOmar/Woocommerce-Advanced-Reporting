@@ -200,7 +200,7 @@ if ( ! class_exists('pw_report_wcreport_class')) {
 
 
             add_action('admin_head', array($this, 'pw_report_backend_enqueue'));
-            add_action('admin_head', array($this, 'pw_report_fix_admin_title_global'), 1);
+            add_action('current_screen', array($this, 'pw_report_fix_admin_title_global'), 1);
             add_action('plugins_loaded', array($this, 'loadTextDomain'));
             add_action('admin_menu', array($this, 'pw_report_setup_menus'));
 
