@@ -704,7 +704,8 @@ if($this->get_dashboard_capability('map') && $disbale_map=='off'){
         });
     </script>
 	<?php
-}
+	} // Close if from line 518
+	} // Close if ($this->dashboard($this->pw_plugin_status)) from line 98
 ?>
 
 <script>
