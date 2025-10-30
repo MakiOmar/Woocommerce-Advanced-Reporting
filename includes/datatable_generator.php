@@ -3669,7 +3669,7 @@
 				return $pw_table_value;
 			}
 
-			function pw_get_oiv_custom_fields($order_item_id = 0,$field){
+			function pw_get_oiv_custom_fields($order_item_id = 0,$field=''){
 				global $wpdb;
 				$sql = "
 				SELECT
@@ -3686,7 +3686,7 @@
 				return $orderitems = $wpdb->get_var($sql);
 			}
 
-			function pw_get_op_custom_fields($pw_product_id = 0,$field){
+			function pw_get_op_custom_fields($pw_product_id = 0,$field=''){
 				global $wpdb;
 				$sql = "SELECT pw_postmeta_sku.meta_value as pw_product_sku
 				FROM {$wpdb->prefix}postmeta as pw_postmeta_sku
@@ -3718,7 +3718,7 @@
 				return $pw_table_value;
 			}
 
-			function pw_get_oiv_custom_fields_2($order_item_id = 0,$field){
+			function pw_get_oiv_custom_fields_2($order_item_id = 0,$field=''){
 				global $wpdb;
 				$sql = "
 				SELECT
@@ -3735,7 +3735,7 @@
 				return $orderitems = $wpdb->get_var($sql);
 			}
 
-			function pw_get_op_custom_fields_2($pw_product_id = 0,$field){
+			function pw_get_op_custom_fields_2($pw_product_id = 0,$field=''){
 				global $wpdb;
 				$sql = "SELECT pw_postmeta_sku.meta_value as pw_product_sku
 				FROM {$wpdb->prefix}postmeta as pw_postmeta_sku
@@ -4182,7 +4182,7 @@
 				return $string;
 			}
 
-			function pw_fetch_refund_tax($type = 'limit_row',$args){
+			function pw_fetch_refund_tax($type = 'limit_row',$args=array()){
 				global $wpdb;
 
 				$order_status	= $args['order_status'];
@@ -4519,7 +4519,7 @@
 				return $total_row;
 			}
 
-			function pw_tax_bystate($order_items, $tax_group_by_key = 'billing_state',$tax_group_by){
+			function pw_tax_bystate($order_items, $tax_group_by_key = 'billing_state',$tax_group_by=''){
 				$last_state 	= "";
 				$row_count 		= 0;
 				$output 		= '';
@@ -4982,7 +4982,7 @@
 				return $output;
 			}
 
-			function pw_tax_bysummary_state($order_items, $tax_group_by_key = 'billing_state',$tax_group_by){
+			function pw_tax_bysummary_state($order_items, $tax_group_by_key = 'billing_state',$tax_group_by=''){
 				$last_state 	= "";
 				$row_count 		= 0;
 				$output 		= '';
@@ -6016,7 +6016,7 @@
 
 			////ADDED IN VER4.5
 			/// CUSTOM WORK - PRODUCT PER USERS
-			function pw_get_product_purchase_per_user($type = 'limit_row', $items_only = true, $id = '-1',$params) {
+			function pw_get_product_purchase_per_user($type = 'limit_row', $items_only = true, $id = '-1',$params=array()) {
 				global $wpdb;
 
 				$pw_from_date=isset($params['pw_from_date']) ? $params['pw_from_date'] :'';
@@ -6081,7 +6081,7 @@
 
 			////ADDED IN VER4.0
             /// ROLE/GROUP ADDON
-			function pw_get_woo_role_top_products($type = 'limit_row', $items_only = true, $id = '-1',$params){
+			function pw_get_woo_role_top_products($type = 'limit_row', $items_only = true, $id = '-1',$params=array()){
 				global $wpdb;
 
 				$pw_from_date=isset($params['pw_from_date']) ? $params['pw_from_date'] :'';
@@ -6137,7 +6137,7 @@
 				return $wpdb->get_results($sql);
 			}
 
-			function pw_get_woo_role_amount($type = 'limit_row', $items_only = true, $id = '-1',$params){
+			function pw_get_woo_role_amount($type = 'limit_row', $items_only = true, $id = '-1',$params=array()){
 				global $wpdb;
 
 				$pw_from_date=isset($params['pw_from_date']) ? $params['pw_from_date'] :'';
@@ -6219,7 +6219,7 @@
 
 			//CROSS TAB
 			var $products_list_in_category = NULL;
-			public function pw_get_woo_products_items($type = 'limit_row', $items_only = true, $id = '-1',$params){
+			public function pw_get_woo_products_items($type = 'limit_row', $items_only = true, $id = '-1',$params=array()){
 
 				global $wpdb;
 
@@ -6284,7 +6284,7 @@
 
 
 			//CROSS TAB VARIATION
-			public function pw_get_product_var_items($type = 'limit_row', $items_only = true, $id = '-1',$params){
+			public function pw_get_product_var_items($type = 'limit_row', $items_only = true, $id = '-1',$params=array()){
 				global $wpdb;
 
 				$pw_from_date=isset($params['pw_from_date']) ? $params['pw_from_date'] :'';
@@ -6406,7 +6406,7 @@
 
 
 			//CROSS TAB COUNTRY
-			public function pw_get_woo_countries_items($type = 'limit_row', $items_only = true, $id = '-1',$params){
+			public function pw_get_woo_countries_items($type = 'limit_row', $items_only = true, $id = '-1',$params=array()){
 				global $wpdb;
 
 
@@ -6549,7 +6549,7 @@
 
 
 			//CROSS TAB PAYMENT
-			public function pw_get_woo_pg_items($type = 'limit_row', $items_only = true, $id = '-1',$params)
+			public function pw_get_woo_pg_items($type = 'limit_row', $items_only = true, $id = '-1',$params=array())
 			{
 				global $wpdb;
 
@@ -6607,7 +6607,7 @@
 
 
 			//CROSS TAB STATUS
-			public function pw_get_woo_items_status($type = 'limit_row', $items_only = true, $id = '-1',$params){
+			public function pw_get_woo_items_status($type = 'limit_row', $items_only = true, $id = '-1',$params=array()){
 				global $wpdb;
 
 				$pw_from_date=isset($params['pw_from_date']) ? $params['pw_from_date'] :'';
@@ -8180,7 +8180,7 @@
 
 
 			//DASHBOARD
-			function dashboard_pw_get_por_amount($type = "today",$pw_shop_order_status,$pw_hide_os,$pw_from_date,$pw_to_date){
+			function dashboard_pw_get_por_amount($type = "today",$pw_shop_order_status='',$pw_hide_os='',$pw_from_date='',$pw_to_date=''){
 				global $wpdb;
 
 				$today_date 			= date("Y-m-d");
@@ -8236,7 +8236,7 @@
 
 			}
 
-			function pw_get_dashboard_totals_coupons($type = "today",$pw_shop_order_status,$pw_hide_os,$pw_from_date,$pw_to_date){
+			function pw_get_dashboard_totals_coupons($type = "today",$pw_shop_order_status='',$pw_hide_os='',$pw_from_date='',$pw_to_date=''){
 				global $wpdb,$options;
 				$date_format = $this->pw_date_format($pw_from_date);
 				$today_date 			= date("Y-m-d");
@@ -8299,7 +8299,7 @@
 				return $return;
 			}
 
-			function pw_get_dashborad_totals_orders($type = "today", $meta_key="_order_tax",$order_item_type="tax",$pw_shop_order_status,$pw_hide_os,$pw_from_date,$pw_to_date){
+			function pw_get_dashborad_totals_orders($type = "today", $meta_key="_order_tax",$order_item_type="tax",$pw_shop_order_status='',$pw_hide_os='',$pw_from_date='',$pw_to_date=''){
 				global $wpdb;
 				$today_date 			= date("Y-m-d");
 				$yesterday_date 		= date("Y-m-d",strtotime("-1 day",strtotime($today_date)));
@@ -8340,7 +8340,7 @@
 			}
 
 
-			function get_total_of_order($type = "today", $meta_key="_order_tax",$order_item_type="tax",$shop_order_status,$hide_order_status,$start_date,$end_date){
+			function get_total_of_order($type = "today", $meta_key="_order_tax",$order_item_type="tax",$shop_order_status='',$hide_order_status='',$start_date='',$end_date=''){
 				global $wpdb;
 				$today_date 			= $this->today;
 				$yesterday_date 		= $this->yesterday;
@@ -8417,7 +8417,7 @@
 
 			////ADDED IN VER4.0
             /// COST OF GOOD
-			function pw_get_dashboard_totals_cogs($type = 'cog',$pw_shop_order_status,$pw_hide_os,$pw_from_date,$pw_to_date){
+			function pw_get_dashboard_totals_cogs($type = 'cog',$pw_shop_order_status='',$pw_hide_os='',$pw_from_date='',$pw_to_date=''){
 				global $wpdb;
 
 				$today_date 			= date("Y-m-d");
@@ -8470,7 +8470,7 @@
 				return $items;
 			}
 
-			function pw_get_dashboard_totals_orders($type = 'total',$pw_shop_order_status,$pw_hide_os,$pw_from_date,$pw_to_date){
+			function pw_get_dashboard_totals_orders($type = 'total',$pw_shop_order_status='',$pw_hide_os='',$pw_from_date='',$pw_to_date=''){
 				global $wpdb;
 
 				$today_date 			= date("Y-m-d");
@@ -8524,7 +8524,7 @@
 				return $items;
 			}
 
-			function pw_get_dashboard_toss($type = 'total',$pw_shop_order_status,$pw_hide_os,$pw_from_date,$pw_to_date){
+			function pw_get_dashboard_toss($type = 'total',$pw_shop_order_status='',$pw_hide_os='',$pw_from_date='',$pw_to_date=''){
 				global $wpdb;
 				$today_date 			= date("Y-m-d");
 				$yesterday_date 		= date("Y-m-d",strtotime("-1 day",strtotime($today_date)));
@@ -8565,7 +8565,7 @@
 			}
 
 
-			function pw_get_dashboard_tbs($type = 'today',$status = 'refunded',$pw_hide_os,$pw_from_date,$pw_to_date)	{
+			function pw_get_dashboard_tbs($type = 'today',$status = 'refunded',$pw_hide_os='',$pw_from_date='',$pw_to_date='')	{
 				global $wpdb;
 				$today_date 			= date("Y-m-d");
 				$yesterday_date 		= date("Y-m-d",strtotime("-1 day",strtotime($today_date)));

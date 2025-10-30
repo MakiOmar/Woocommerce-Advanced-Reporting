@@ -3195,7 +3195,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 
         ////ADDED IN VER4.0
         /// MENU GENERATOR
-        function pw_menu_generator($our_menu, $menu_type = '', $selected_menu)
+        function pw_menu_generator($our_menu, $menu_type = '', $selected_menu='')
         {
             $menu_html           = '';
             $menu_html_mini      = '';
@@ -4004,7 +4004,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
 	        </tr>';
         }
 
-        function pw_fetch_general_email_data($start_date, $end_date, $title = "Daily", $post_status, $shop_order_status)
+        function pw_fetch_general_email_data($start_date, $end_date, $title = "Daily", $post_status='', $shop_order_status='')
         {
             $body = '';
             include("includes/fetch_data_dailymail_status.php");
