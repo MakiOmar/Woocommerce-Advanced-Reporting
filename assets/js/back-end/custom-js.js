@@ -403,6 +403,7 @@ jQuery( document ).ready(function( $ ) {
         var target_th=[];
         var i=0;
         var j=0;
+        var columnCount = 0;
         $('.datatable').find("thead").find("th").each(function(){
             //confirm($(this).attr("data-class"));
             if($(this).attr("data-class")==="currency")
@@ -412,6 +413,7 @@ jQuery( document ).ready(function( $ ) {
                 j++;
             }
             i++;
+            columnCount++;
         });
 
 
@@ -502,9 +504,9 @@ jQuery( document ).ready(function( $ ) {
             ],
 
 
-            columnDefs: [
-                { type: 'currency', targets: target_th }
-            ]
+        columnDefs: target_th.length > 0 ? [
+            { type: 'currency', targets: target_th }
+        ] : []
         };
 
         ////ADDED IN VER4.0
@@ -523,12 +525,12 @@ jQuery( document ).ready(function( $ ) {
         }
 
         // PHP 8+ Fix: Validate columnDefs targets against actual columns
-        if(datatable_args.columnDefs && datatable_args.columnDefs.length > 0) {
-            var columnCount = $('.datatable thead th').length;
+        if(datatable_args.columnDefs && datatable_args.columnDefs.length > 0 && columnCount > 0) {
             datatable_args.columnDefs = datatable_args.columnDefs.filter(function(def) {
                 if(def.targets && Array.isArray(def.targets)) {
+                    // Filter out invalid column indices
                     def.targets = def.targets.filter(function(target) {
-                        return typeof target === 'number' && target < columnCount;
+                        return typeof target === 'number' && target >= 0 && target < columnCount;
                     });
                     return def.targets.length > 0;
                 }
