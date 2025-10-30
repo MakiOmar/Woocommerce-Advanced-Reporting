@@ -2090,7 +2090,10 @@ jQuery( document ).ready(function( $ ) {
 
                 if(form_id!="dashboard_form" && form_id!='intelligence_customer_datatable')
                 {
-                    datatable_init();
+                    // Small delay to ensure DOM is fully rendered after HTML insertion
+                    setTimeout(function() {
+                        datatable_init();
+                    }, 100);
                 }
 
                 if(form_id=="dashboard_form")
