@@ -2429,7 +2429,7 @@
 	            $str=str_replace("-","_",$str);
 	            return $str;
             }
-			public function table_html_pdf($table_name,$search_fields=NULL,$selected_columns){
+			public function table_html_pdf($table_name,$search_fields=NULL,$selected_columns=array()){
 				$table_name_total='';
 
 				$page_titles=array(
