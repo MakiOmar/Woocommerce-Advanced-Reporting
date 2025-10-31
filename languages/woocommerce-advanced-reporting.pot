@@ -1,17 +1,25 @@
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Advanced Reporting\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: WooCommerce Advanced Reporting by Makiomar\n"
 "POT-Creation-Date: 2025-10-31 16:58+0200\n"
 "PO-Revision-Date: 2025-10-31 16:58+0200\n"
 "Last-Translator: \n"
-"Language-Team: Arabic\n"
-"Language: ar\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2\n"
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: main.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: class/abandoned_cart.php:13 class/abandoned_product.php:13
 #: class/ajax_dashboard.php:20 class/billingcity.php:13
@@ -111,10 +119,8 @@ msgstr ""
 #: class/dashboard_report.php:118
 #: includes/Intelligence/fetch_data_int_reports_home.php:914
 #: includes/Intelligence/fetch_data_int_reports_products.php:963
-#, fuzzy
-#| msgid "Products"
 msgid "Top Products"
-msgstr "المنتجات"
+msgstr ""
 
 #: class/dashboard_report.php:134
 msgid "Click to change theme"
@@ -129,10 +135,8 @@ msgid "Select a year"
 msgstr ""
 
 #: class/dashboard_report.php:613
-#, fuzzy
-#| msgid "Order Count"
 msgid "Country Orders Amount"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: class/dashboard_report.php:621 class/dashboard_report.php:660
 msgid "Less than"
@@ -147,10 +151,8 @@ msgid "More than"
 msgstr ""
 
 #: class/dashboard_report.php:646
-#, fuzzy
-#| msgid "Order Count"
 msgid "State Orders Amount"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: class/dashboard_report.php:719
 msgid "Hide Oldest News !"
@@ -257,10 +259,8 @@ msgid "You have no permisson !! Please Contact site Administrator"
 msgstr ""
 
 #: class/plugin_active.php:6
-#, fuzzy
-#| msgid "Last Purchase"
 msgid "Purchase Code"
-msgstr "آخر شراء"
+msgstr ""
 
 #: class/plugin_active.php:7
 msgid "Enter Your Purchase Code"
@@ -299,7 +299,7 @@ msgstr ""
 #: includes/fetch_data_details_tickera.php:3121
 #: includes/fetch_data_details_user_id.php:4246
 msgid "Email"
-msgstr "البريد الإلكتروني"
+msgstr ""
 
 #: class/plugin_active.php:16
 msgid "Enter Your Valid Email."
@@ -376,10 +376,8 @@ msgid "Send"
 msgstr ""
 
 #: class/report_news.php:7
-#, fuzzy
-#| msgid "Classification"
 msgid "All Notifications"
-msgstr "التصنيف"
+msgstr ""
 
 #: class/report_news.php:8
 msgid "Notification Center"
@@ -471,20 +469,16 @@ msgid "Yes, Please"
 msgstr ""
 
 #: class/setting_report.php:106
-#, fuzzy
-#| msgid "Invoice Number"
 msgid "Invoice Logo"
-msgstr "رقم الفاتورة"
+msgstr ""
 
 #: class/setting_report.php:107
 msgid "Upload an image as Invoice Pdf logo"
 msgstr ""
 
 #: class/setting_report.php:113
-#, fuzzy
-#| msgid "Invoice Number"
 msgid "Invoice Footer Text"
-msgstr "رقم الفاتورة"
+msgstr ""
 
 #: class/setting_report.php:114
 msgid "Set footer text for invoice pdf"
@@ -571,10 +565,8 @@ msgstr ""
 #: includes/fetch_data_tax_reports1.php:475
 #: includes/fetch_data_taxreport.php:315 includes/fetch_data_variation.php:825
 #: includes/fetch_data_variation_per_month.php:480
-#, fuzzy
-#| msgid "Order Date"
 msgid "From Date"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: class/setting_report.php:177
 msgid "Set from date for dashboard search"
@@ -616,10 +608,8 @@ msgstr ""
 #: includes/fetch_data_tax_reports1.php:483
 #: includes/fetch_data_taxreport.php:323 includes/fetch_data_variation.php:833
 #: includes/fetch_data_variation_per_month.php:487
-#, fuzzy
-#| msgid "Modified Date"
 msgid "To Date"
-msgstr "تاريخ التعديل"
+msgstr ""
 
 #: class/setting_report.php:190
 msgid "Set to date for dashboard search"
@@ -648,30 +638,24 @@ msgid "Set Minimum page number for Recent Order table"
 msgstr ""
 
 #: class/setting_report.php:242
-#, fuzzy
-#| msgid "Products"
 msgid "Top Product"
-msgstr "المنتجات"
+msgstr ""
 
 #: class/setting_report.php:243
 msgid "Set Minimum page number for Top Product table"
 msgstr ""
 
 #: class/setting_report.php:253
-#, fuzzy
-#| msgid "Categories"
 msgid "Top Category"
-msgstr "التصنيفات"
+msgstr ""
 
 #: class/setting_report.php:254
 msgid "Set Minimum page number for Top Category table"
 msgstr ""
 
 #: class/setting_report.php:264
-#, fuzzy
-#| msgid "Customer ID"
 msgid "Top Customer"
-msgstr "معرف العميل"
+msgstr ""
 
 #: class/setting_report.php:265
 msgid "Set Minimum page number for Top Customer table"
@@ -702,10 +686,8 @@ msgid "Set Minimum page number for Top Payment Gateway table"
 msgstr ""
 
 #: class/setting_report.php:308
-#, fuzzy
-#| msgid "Coupon"
 msgid "Top Coupon"
-msgstr "القسيمة"
+msgstr ""
 
 #: class/setting_report.php:309
 msgid "Set Minimum page number for Top Coupon table"
@@ -781,20 +763,16 @@ msgid "Set Receiver Email"
 msgstr ""
 
 #: class/setting_report.php:482
-#, fuzzy
-#| msgid "Customer Name"
 msgid "From Name"
-msgstr "اسم العميل"
+msgstr ""
 
 #: class/setting_report.php:483
 msgid "Set Sender Name"
 msgstr ""
 
 #: class/setting_report.php:493
-#, fuzzy
-#| msgid "Email"
 msgid "From Email"
-msgstr "البريد الإلكتروني"
+msgstr ""
 
 #: class/setting_report.php:494
 msgid "Set Sender Email"
@@ -940,20 +918,16 @@ msgid ""
 msgstr ""
 
 #: class/setting_report.php:662
-#, fuzzy
-#| msgid "Grand Total"
 msgid "Brand Label"
-msgstr "الإجمالي"
+msgstr ""
 
 #: class/setting_report.php:663
 msgid "Set brand label."
 msgstr ""
 
 #: class/setting_report.php:674
-#, fuzzy
-#| msgid "Grand Total"
 msgid "Brand Thumnail"
-msgstr "الإجمالي"
+msgstr ""
 
 #: class/setting_report.php:675
 msgid "Show brands as thumbnail in grid column."
@@ -993,17 +967,13 @@ msgid ""
 msgstr ""
 
 #: class/setting_report.php:740
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Custom Taxonmy"
-msgstr "اسم العميل"
+msgstr ""
 
 #: class/setting_report.php:747 includes/fetch_data_details_brands.php:2814
 #: includes/fetch_data_details_tax_field.php:4063
-#, fuzzy
-#| msgid "Customer Notes"
 msgid "Custom Fields"
-msgstr "ملاحظات العميل"
+msgstr ""
 
 #: class/setting_report.php:748
 msgid ""
@@ -1090,10 +1060,8 @@ msgid "WooCommerce Profit of Sales Report by IndoWebKreasi"
 msgstr ""
 
 #: class/setting_report.php:901
-#, fuzzy
-#| msgid "Customer ID"
 msgid "Custom field 1"
-msgstr "معرف العميل"
+msgstr ""
 
 #: class/setting_report.php:902
 msgid ""
@@ -1103,10 +1071,8 @@ msgid ""
 msgstr ""
 
 #: class/setting_report.php:914
-#, fuzzy
-#| msgid "Customer ID"
 msgid "Custom field 2"
-msgstr "معرف العميل"
+msgstr ""
 
 #: class/setting_report.php:915
 msgid ""
@@ -1413,10 +1379,8 @@ msgstr ""
 #: main.php:577 main.php:601 main.php:610 main.php:625 main.php:632
 #: main.php:673 main.php:684 main.php:695 main.php:706 main.php:745
 #: main.php:776 main.php:791 main.php:2273 main.php:2274 main.php:2778
-#, fuzzy
-#| msgid "Products"
 msgid "Product"
-msgstr "المنتجات"
+msgstr ""
 
 #: class/setting_report.php:1432
 msgid "Variation Stock"
@@ -1569,22 +1533,16 @@ msgstr ""
 #: includes/fetch_data_abandoned_cart.php:338
 #: includes/fetch_data_abandoned_cart.php:868
 #: includes/fetch_data_abandoned_product.php:540
-#, fuzzy
-#| msgid "Status"
 msgid "Cart Status"
-msgstr "الحالة"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:109
-#, fuzzy
-#| msgid "Customer Notes"
 msgid "Customer Actions"
-msgstr "ملاحظات العميل"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:116
-#, fuzzy
-#| msgid "Customer ID"
 msgid "Cart Customer"
-msgstr "معرف العميل"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:125
 msgid "Cart Items"
@@ -1613,7 +1571,7 @@ msgstr ""
 #: includes/fetch_data_customer.php:125
 #: includes/fetch_data_customer_guest.php:125 main.php:4105
 msgid "Guest"
-msgstr "زائر"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:169
 msgid "<span style=\"color:gray\";>Name Not Available</span>"
@@ -1668,10 +1626,8 @@ msgid ""
 msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:235
-#, fuzzy
-#| msgid "Customer ID"
 msgid "Customer IP Address"
-msgstr "معرف العميل"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:264
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:316
@@ -1722,10 +1678,8 @@ msgstr ""
 #: includes/fetch_data_details_tax_field.php:1443
 #: includes/fetch_data_details_tickera.php:756
 #: includes/fetch_data_details_tickera.php:828
-#, fuzzy
-#| msgid "Size Name"
 msgid "Name"
-msgstr "مسمى الحجم"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:414
 #: includes/datatable_generator.php:1131 includes/datatable_generator.php:1143
@@ -1733,7 +1687,7 @@ msgstr "مسمى الحجم"
 #: includes/fetch_data_details.php:955 includes/fetch_data_details_full.php:781
 #: includes/fetch_data_details_user_id.php:782
 msgid "Price"
-msgstr "السعر"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:417
 #: includes/datatable_generator.php:472 includes/datatable_generator.php:480
@@ -1743,20 +1697,16 @@ msgid "Qty"
 msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:442
-#, fuzzy
-#| msgid "Products"
 msgid "Product ID:"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:443
 msgid "Variation ID:"
 msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:444
-#, fuzzy
-#| msgid "Product SKU"
 msgid "Product SKU:"
-msgstr "رمز المنتج (SKU)"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_edit_interface.php:509
 msgid ""
@@ -1781,10 +1731,8 @@ msgstr ""
 #: includes/Abandoned/admin/pw_cart_index_interface.php:204
 #: includes/fetch_data_abandoned_cart.php:316
 #: includes/fetch_data_abandoned_cart.php:339
-#, fuzzy
-#| msgid "Last Login"
 msgid "Last Online"
-msgstr "آخر دخول"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_index_interface.php:194
 #: includes/Abandoned/admin/pw_cart_index_interface.php:200
@@ -1815,7 +1763,7 @@ msgstr ""
 #: includes/fetch_data_details_user_id.php:777
 #: includes/fetch_data_details_user_id.php:905 main.php:2463
 msgid "Products"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_index_interface.php:312
 msgid "</a>"
@@ -1826,10 +1774,8 @@ msgid "<div class=\"index_status\">ERR<mark class=\""
 msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_index_interface.php:378
-#, fuzzy
-#| msgid "Products"
 msgid "No Products"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/Abandoned/admin/pw_cart_index_interface.php:426
 msgid "From:"
@@ -1932,10 +1878,8 @@ msgid "Timeout occured, please try again."
 msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1019
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Customer Value(CV)"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1020
 msgid "Customer Value = AOV / PF"
@@ -1953,10 +1897,8 @@ msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1043
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1044
-#, fuzzy
-#| msgid "Total Orders"
 msgid "Avg Orders"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1053
 msgid "Purchase Frequency(PF)"
@@ -1984,10 +1926,8 @@ msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1076
 #: includes/Intelligence/fetch_data_int_reports_orders_details.php:287
-#, fuzzy
-#| msgid "Total Refund"
 msgid "Refunded"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1088
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1093
@@ -2063,10 +2003,8 @@ msgid "NEW CUSTOMERS"
 msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1208
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Customer Cards"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers.php:1260
 #: includes/Intelligence/fetch_data_int_reports_home.php:991
@@ -2193,10 +2131,8 @@ msgid "Today"
 msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers_single.php:241
-#, fuzzy
-#| msgid "Last Purchase"
 msgid "Purchase"
-msgstr "آخر شراء"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers_single.php:283
 #: includes/Intelligence/fetch_data_int_reports_orders_details.php:343
@@ -2213,7 +2149,7 @@ msgstr "آخر شراء"
 #: includes/fetch_data_prod_per_state.php:397
 #: includes/fetch_data_variation_per_month.php:339
 msgid "Total"
-msgstr "المجموع"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_customers_single.php:342
 #: includes/Intelligence/fetch_data_int_reports_customers_single.php:344
@@ -2289,7 +2225,7 @@ msgstr ""
 #: includes/fetch_data_details_full.php:784
 #: includes/fetch_data_details_user_id.php:785
 msgid "Shipping"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_orders_details.php:282
 msgid "Pending payment"
@@ -2393,23 +2329,17 @@ msgstr ""
 #: includes/fetch_data_details_user_id.php:3903
 #: includes/fetch_data_variation.php:1045 main.php:2303 main.php:2304
 #: main.php:2875 main.php:2882
-#, fuzzy
-#| msgid "Customer ID"
 msgid "Customer"
-msgstr "معرف العميل"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products.php:860
-#, fuzzy
-#| msgid "Quantity"
 msgid "Quantities Sold"
-msgstr "الكمية"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products.php:979
 #: includes/Intelligence/fetch_data_int_reports_products.php:984
-#, fuzzy
-#| msgid "Last Purchase"
 msgid "Best First Purchases"
-msgstr "آخر شراء"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products.php:985
 msgid ""
@@ -2469,10 +2399,8 @@ msgid "FALLING DOWN"
 msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products.php:1095
-#, fuzzy
-#| msgid "Products"
 msgid "Product Cards"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:392
 msgid "FREQUENTLY BOUGHT TOGETHER"
@@ -2517,10 +2445,8 @@ msgid "REFUND"
 msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:869
-#, fuzzy
-#| msgid "Total Refund"
 msgid "No Refunds"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:927
 msgid "Back to all products"
@@ -2566,10 +2492,8 @@ msgid "PEOPLE WHO BOUGHT THIS"
 msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:1067
-#, fuzzy
-#| msgid "Customer ID"
 msgid "Customers"
-msgstr "معرف العميل"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:1068
 msgid "Location"
@@ -2580,10 +2504,8 @@ msgid "RFM Segment"
 msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:1070
-#, fuzzy
-#| msgid "Last Purchase"
 msgid "Purchased"
-msgstr "آخر شراء"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:1084
 msgid "SALES HISTORY"
@@ -2619,10 +2541,8 @@ msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:1096
 #: includes/datatable_generator.php:683
-#, fuzzy
-#| msgid "Total Refund"
 msgid "Refunds"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_products_single.php:1097
 #: includes/Intelligence/fetch_data_int_reports_sales.php:920
@@ -2644,10 +2564,8 @@ msgstr "إجمالي الاسترجاع"
 #: includes/fetch_data_dailymail.php:245 includes/fetch_data_dailymail.php:300
 #: includes/fetch_data_dailymail_purchase_by_customer.php:71
 #: includes/fetch_data_dailymail_status.php:226
-#, fuzzy
-#| msgid "Country"
 msgid "Amount"
-msgstr "الدولة"
+msgstr ""
 
 #: includes/Intelligence/fetch_data_int_reports_sales.php:625
 #: includes/Intelligence/fetch_data_int_reports_sales.php:638
@@ -2732,32 +2650,24 @@ msgid "Error in sending Email!"
 msgstr ""
 
 #: includes/actions.php:1760
-#, fuzzy
-#| msgid "Invoice Number"
 msgid "Invoice No"
-msgstr "رقم الفاتورة"
+msgstr ""
 
 #: includes/actions.php:1761
-#, fuzzy
-#| msgid "Invoice Number"
 msgid "Invoice Date"
-msgstr "رقم الفاتورة"
+msgstr ""
 
 #: includes/actions.php:1762
 msgid "BILLING DETALS"
 msgstr ""
 
 #: includes/actions.php:1763
-#, fuzzy
-#| msgid "Total"
 msgid "Sub Total"
-msgstr "المجموع"
+msgstr ""
 
 #: includes/actions.php:1764 main.php:2983
-#, fuzzy
-#| msgid "Tax ID"
 msgid "Tax"
-msgstr "الرقم الضريبي"
+msgstr ""
 
 #: includes/actions.php:1765
 msgid "To"
@@ -2784,10 +2694,8 @@ msgid "QTY."
 msgstr ""
 
 #: includes/actions.php:1772
-#, fuzzy
-#| msgid "Total Orders"
 msgid "Total Charges"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:438 includes/datatable_generator.php:958
 #: includes/datatable_generator.php:1014 includes/datatable_generator.php:1236
@@ -2834,16 +2742,12 @@ msgstr ""
 #: includes/fetch_data_details_tax_field.php:1456
 #: includes/fetch_data_details_tickera.php:856
 #: includes/fetch_data_details_user_id.php:909
-#, fuzzy
-#| msgid "Wallet / Discount"
 msgid "Total Discount Amt."
-msgstr "المحفظة / خصم"
+msgstr ""
 
 #: includes/datatable_generator.php:455
-#, fuzzy
-#| msgid "Total Orders"
 msgid "Sales Order"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:456 includes/datatable_generator.php:464
 #: includes/datatable_generator.php:488 includes/datatable_generator.php:496
@@ -2889,7 +2793,7 @@ msgstr "إجمالي الطلبات"
 #: includes/fetch_data_tax_reports1.php:314
 #: includes/fetch_data_tax_reports1.php:324
 msgid "Order Count"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:463 includes/datatable_generator.php:860
 #: includes/datatable_generator.php:934 includes/datatable_generator.php:980
@@ -2897,32 +2801,24 @@ msgstr "عدد الطلبات"
 #: includes/datatable_generator.php:2631
 #: includes/fetch_data_dailymail_status.php:343 main.php:2319 main.php:2320
 #: main.php:2710
-#, fuzzy
-#| msgid "Order Date"
 msgid "Order Status"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/datatable_generator.php:471
-#, fuzzy
-#| msgid "Size Name"
 msgid "Item Name"
-msgstr "مسمى الحجم"
+msgstr ""
 
 #: includes/datatable_generator.php:479 includes/datatable_generator.php:662
 #: includes/datatable_generator.php:747
-#, fuzzy
-#| msgid "Categories"
 msgid "Category Name"
-msgstr "التصنيفات"
+msgstr ""
 
 #: includes/datatable_generator.php:487 includes/datatable_generator.php:826
 #: includes/datatable_generator.php:834 includes/datatable_generator.php:845
 #: includes/datatable_generator.php:1879 includes/datatable_generator.php:2627
 #: main.php:2306 main.php:2307 main.php:2935
-#, fuzzy
-#| msgid "Country"
 msgid "Billing Country"
-msgstr "الدولة"
+msgstr ""
 
 #: includes/datatable_generator.php:495 includes/datatable_generator.php:833
 #: includes/datatable_generator.php:844 includes/datatable_generator.php:1880
@@ -2962,16 +2858,12 @@ msgstr ""
 #: includes/fetch_data_details_tax_field.php:1451
 #: includes/fetch_data_details_tickera.php:777
 #: includes/fetch_data_details_tickera.php:851
-#, fuzzy
-#| msgid "Coupon"
 msgid "Coupon Code"
-msgstr "القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:513
-#, fuzzy
-#| msgid "Coupon Discount"
 msgid "Coupon Used Count"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:520 includes/datatable_generator.php:534
 #: includes/datatable_generator.php:853 includes/datatable_generator.php:874
@@ -2992,7 +2884,7 @@ msgstr "خصم القسيمة"
 #: includes/fetch_data_details_user_id.php:771
 #: includes/fetch_data_details_user_id.php:897
 msgid "Payment Method"
-msgstr "وسيلة الدفع"
+msgstr ""
 
 #: includes/datatable_generator.php:528 includes/datatable_generator.php:585
 #: includes/datatable_generator.php:624 includes/datatable_generator.php:735
@@ -3034,7 +2926,7 @@ msgstr "وسيلة الدفع"
 #: includes/fetch_data_details_user_id.php:3680
 #: includes/fetch_data_profit.php:658
 msgid "Order ID"
-msgstr "رقم الطلب"
+msgstr ""
 
 #: includes/datatable_generator.php:532 includes/datatable_generator.php:736
 #: includes/datatable_generator.php:872 includes/datatable_generator.php:1963
@@ -3092,7 +2984,7 @@ msgstr "رقم الطلب"
 #: main.php:683 main.php:694 main.php:705 main.php:717 main.php:725
 #: main.php:733 main.php:748 main.php:779 main.php:794
 msgid "Status"
-msgstr "الحالة"
+msgstr ""
 
 #: includes/datatable_generator.php:533 includes/datatable_generator.php:873
 #: includes/fetch_data_custom_taxonomy.php:366
@@ -3114,10 +3006,8 @@ msgstr ""
 #: includes/fetch_data_details_tax_field.php:1448
 #: includes/fetch_data_details_tickera.php:844
 #: includes/fetch_data_details_user_id.php:896
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Method"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:536 includes/datatable_generator.php:876
 #: includes/datatable_generator.php:2003 includes/fetch_data_details.php:856
@@ -3129,10 +3019,8 @@ msgstr "الشحن"
 #: includes/fetch_data_details_tax_field.php:1450
 #: includes/fetch_data_details_tickera.php:850
 #: includes/fetch_data_details_user_id.php:903
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order Currency"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:537 includes/datatable_generator.php:877
 #: includes/datatable_generator.php:1282 includes/datatable_generator.php:1360
@@ -3179,10 +3067,8 @@ msgstr ""
 #: includes/fetch_data_details_tax_field.php:1454
 #: includes/fetch_data_details_tickera.php:854
 #: includes/fetch_data_details_user_id.php:907
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order Discount Amt."
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:539 includes/datatable_generator.php:879
 #: includes/datatable_generator.php:2008 includes/fetch_data_details.php:861
@@ -3195,16 +3081,12 @@ msgstr "عدد الطلبات"
 #: includes/fetch_data_details_tax_field.php:1455
 #: includes/fetch_data_details_tickera.php:855
 #: includes/fetch_data_details_user_id.php:908
-#, fuzzy
-#| msgid "Wallet / Discount"
 msgid "Cart Discount Amt."
-msgstr "المحفظة / خصم"
+msgstr ""
 
 #: includes/datatable_generator.php:541 includes/datatable_generator.php:881
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Amt.."
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:542 includes/datatable_generator.php:882
 #: includes/datatable_generator.php:1285 includes/datatable_generator.php:1363
@@ -3221,10 +3103,8 @@ msgstr "الشحن"
 #: includes/fetch_data_details_tax_field.php:1458
 #: includes/fetch_data_details_tickera.php:858
 #: includes/fetch_data_details_user_id.php:911
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Tax Amt."
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:543 includes/datatable_generator.php:883
 #: includes/datatable_generator.php:1286 includes/datatable_generator.php:1364
@@ -3241,10 +3121,8 @@ msgstr "الشحن"
 #: includes/fetch_data_details_tax_field.php:1459
 #: includes/fetch_data_details_tickera.php:859
 #: includes/fetch_data_details_user_id.php:912
-#, fuzzy
-#| msgid "Order Date"
 msgid "Order Tax Amt."
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/datatable_generator.php:544 includes/datatable_generator.php:884
 #: includes/datatable_generator.php:1287 includes/datatable_generator.php:1365
@@ -3328,10 +3206,8 @@ msgid "Net Amt."
 msgstr ""
 
 #: includes/datatable_generator.php:573
-#, fuzzy
-#| msgid "Classification"
 msgid "Clinic Abbreviation"
-msgstr "التصنيف"
+msgstr ""
 
 #: includes/datatable_generator.php:574 includes/datatable_generator.php:1376
 msgid "Number of Sales"
@@ -3346,20 +3222,16 @@ msgstr ""
 #: includes/datatable_generator.php:1683 includes/datatable_generator.php:1692
 #: includes/datatable_generator.php:1741 includes/datatable_generator.php:1748
 #: includes/fetch_data_abandoned_product.php:293
-#, fuzzy
-#| msgid "Total Refund"
 msgid "Total Amount"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/datatable_generator.php:588 includes/datatable_generator.php:627
 msgid "Change Status Date"
 msgstr ""
 
 #: includes/datatable_generator.php:589 includes/datatable_generator.php:628
-#, fuzzy
-#| msgid "Status"
 msgid "Status."
-msgstr "الحالة"
+msgstr ""
 
 #: includes/datatable_generator.php:654
 msgid "Brand Name"
@@ -3376,7 +3248,7 @@ msgstr ""
 #: includes/fetch_data_order_product_analysis.php:329
 #: includes/fetch_data_order_variation_analysis.php:351
 msgid "Quantity"
-msgstr "الكمية"
+msgstr ""
 
 #: includes/datatable_generator.php:678 includes/datatable_generator.php:776
 #: includes/datatable_generator.php:1960 includes/datatable_generator.php:1995
@@ -3412,7 +3284,7 @@ msgstr "الكمية"
 #: main.php:658 main.php:696 main.php:707 main.php:716 main.php:746
 #: main.php:777 main.php:792
 msgid "Country"
-msgstr "الدولة"
+msgstr ""
 
 #: includes/datatable_generator.php:679 includes/datatable_generator.php:692
 #: includes/datatable_generator.php:1497 includes/datatable_generator.php:1509
@@ -3434,7 +3306,7 @@ msgstr ""
 #: includes/fetch_data_details_user_id.php:904 main.php:2358 main.php:2359
 #: main.php:2961
 msgid "Coupon"
-msgstr "القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:684 includes/datatable_generator.php:1502
 msgid "Finaly Sale Amt."
@@ -3442,10 +3314,8 @@ msgstr ""
 
 #: includes/datatable_generator.php:691
 #: includes/fetch_data_order_per_custom_shipping.php:627
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Address"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:705 includes/datatable_generator.php:721
 #: includes/datatable_generator.php:907 includes/datatable_generator.php:1089
@@ -3464,7 +3334,7 @@ msgstr "الشحن"
 #: includes/fetch_data_variation.php:1274
 #: includes/fetch_data_variation_stock.php:1230
 msgid "Product SKU"
-msgstr "رمز المنتج (SKU)"
+msgstr ""
 
 #: includes/datatable_generator.php:706 includes/datatable_generator.php:722
 #: includes/datatable_generator.php:811 includes/datatable_generator.php:818
@@ -3487,17 +3357,15 @@ msgstr "رمز المنتج (SKU)"
 #: includes/fetch_data_stock_summary_avg.php:132
 #: includes/fetch_data_stock_summary_avg.php:328
 #: includes/fetch_data_variation_stock.php:972
-#, fuzzy
-#| msgid "Products"
 msgid "Product Name"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/datatable_generator.php:707 includes/datatable_generator.php:723
 #: includes/datatable_generator.php:1970 includes/fetch_data_details.php:737
 #: includes/fetch_data_details.php:951 includes/fetch_data_details_full.php:778
 #: includes/fetch_data_details_user_id.php:779
 msgid "Categories"
-msgstr "التصنيفات"
+msgstr ""
 
 #: includes/datatable_generator.php:708 includes/datatable_generator.php:1871
 #: includes/datatable_generator.php:2620 includes/fetch_data_product.php:789
@@ -3569,7 +3437,7 @@ msgstr ""
 #: includes/fetch_data_details_user_id.php:761
 #: includes/fetch_data_details_user_id.php:884
 msgid "Customer ID"
-msgstr "معرف العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:769 includes/datatable_generator.php:908
 #: includes/datatable_generator.php:923 includes/datatable_generator.php:1956
@@ -3586,23 +3454,23 @@ msgstr "معرف العميل"
 #: includes/fetch_data_details_user_id.php:762
 #: includes/fetch_data_details_user_id.php:885
 msgid "Customer Name"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:770 includes/datatable_generator.php:1965
 #: includes/fetch_data_details.php:732 includes/fetch_data_details.php:946
 msgid "Tax ID"
-msgstr "الرقم الضريبي"
+msgstr ""
 
 #: includes/datatable_generator.php:773
 msgid "Mobile"
-msgstr "الجوال"
+msgstr ""
 
 #: includes/datatable_generator.php:774 includes/datatable_generator.php:1961
 #: includes/datatable_generator.php:1996 includes/fetch_data_details.php:728
 #: includes/fetch_data_details.php:847 includes/fetch_data_details.php:942
 #: includes/fetch_data_details.php:977
 msgid "Address"
-msgstr "العنوان"
+msgstr ""
 
 #: includes/datatable_generator.php:775 includes/datatable_generator.php:1962
 #: includes/datatable_generator.php:1997 includes/fetch_data_details.php:729
@@ -3613,85 +3481,71 @@ msgstr "العنوان"
 #: includes/fetch_data_details_user_id.php:893
 #: includes/fetch_data_tax_reports.php:1377
 msgid "City"
-msgstr "المدينة"
+msgstr ""
 
 #: includes/datatable_generator.php:778 includes/datatable_generator.php:1979
 #: includes/fetch_data_details.php:746 includes/fetch_data_details.php:960
 #: includes/fetch_data_details_full.php:785
 #: includes/fetch_data_details_user_id.php:786
 msgid "Grand Total"
-msgstr "الإجمالي"
+msgstr ""
 
 #: includes/datatable_generator.php:779
 msgid "Last Purchase"
-msgstr "آخر شراء"
+msgstr ""
 
 #: includes/datatable_generator.php:780
 msgid "Last Login"
-msgstr "آخر دخول"
+msgstr ""
 
 #: includes/datatable_generator.php:781
 msgid "Member Since"
-msgstr "عضو منذ"
+msgstr ""
 
 #: includes/datatable_generator.php:782 includes/fetch_data_dailymail.php:217
 #: includes/fetch_data_dashboard_report.php:240
 msgid "Total Refund"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/datatable_generator.php:783
 msgid "Net"
-msgstr "الصافي"
+msgstr ""
 
 #: includes/datatable_generator.php:784
 msgid "Classification"
-msgstr "التصنيف"
+msgstr ""
 
 #: includes/datatable_generator.php:792 includes/datatable_generator.php:803
-#, fuzzy
-#| msgid "Size Name"
 msgid "Role Name"
-msgstr "مسمى الحجم"
+msgstr ""
 
 #: includes/datatable_generator.php:801
-#, fuzzy
-#| msgid "Customer Name"
 msgid "User Name"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:802
-#, fuzzy
-#| msgid "Email"
 msgid "User Email"
-msgstr "البريد الإلكتروني"
+msgstr ""
 
 #: includes/datatable_generator.php:804
-#, fuzzy
-#| msgid "Total Orders"
 msgid "First Order"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:805
-#, fuzzy
-#| msgid "Order Date"
 msgid "First Order Date"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/datatable_generator.php:806
-#, fuzzy
-#| msgid "Order Count"
 msgid "First Order Amount"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:812 includes/datatable_generator.php:819
 msgid "Total Sales Qty"
 msgstr ""
 
 #: includes/datatable_generator.php:813 includes/datatable_generator.php:820
-#, fuzzy
-#| msgid "Total"
 msgid "Total Amt."
-msgstr "المجموع"
+msgstr ""
 
 #: includes/datatable_generator.php:843 includes/datatable_generator.php:1881
 #: includes/datatable_generator.php:2629
@@ -3785,10 +3639,8 @@ msgstr ""
 #: includes/fetch_data_tax_reports1.php:262
 #: includes/fetch_data_tax_reports1.php:276
 #: includes/fetch_data_tax_reports1.php:290
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Amt."
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:898 includes/datatable_generator.php:1674
 #: includes/datatable_generator.php:4472 includes/datatable_generator.php:4489
@@ -3815,10 +3667,8 @@ msgstr "الشحن"
 #: includes/fetch_data_tax_reports1.php:315
 #: includes/fetch_data_tax_reports1.php:325
 #: includes/fetch_data_tax_reports1.php:334
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Tax"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:899 includes/datatable_generator.php:1675
 #: includes/datatable_generator.php:4473 includes/datatable_generator.php:4490
@@ -3849,10 +3699,8 @@ msgstr "الشحن"
 #: includes/fetch_data_tax_reports1.php:316
 #: includes/fetch_data_tax_reports1.php:326
 #: includes/fetch_data_tax_reports1.php:335
-#, fuzzy
-#| msgid "Order Date"
 msgid "Order Tax"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/datatable_generator.php:900 includes/datatable_generator.php:1676
 #: includes/datatable_generator.php:4474 includes/datatable_generator.php:4491
@@ -3881,23 +3729,17 @@ msgstr "تاريخ الطلب"
 #: includes/fetch_data_tax_reports1.php:317
 #: includes/fetch_data_tax_reports1.php:327
 #: includes/fetch_data_tax_reports1.php:336
-#, fuzzy
-#| msgid "Total"
 msgid "Total Tax"
-msgstr "المجموع"
+msgstr ""
 
 #: includes/datatable_generator.php:909 includes/datatable_generator.php:922
 #: includes/fetch_data_dailymail_purchase_by_customer.php:59
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Customer Email"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:911
-#, fuzzy
-#| msgid "Customer Notes"
 msgid "Customer Phone"
-msgstr "ملاحظات العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:924
 msgid "Product Category"
@@ -3912,16 +3754,14 @@ msgstr ""
 #: includes/fetch_data_details_user_id.php:766
 #: includes/fetch_data_details_user_id.php:889
 msgid "Order Date"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/datatable_generator.php:935 includes/datatable_generator.php:943
 #: includes/datatable_generator.php:951 includes/datatable_generator.php:959
 #: includes/datatable_generator.php:967 includes/datatable_generator.php:1007
 #: includes/datatable_generator.php:1699
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order Counts"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:936 includes/datatable_generator.php:944
 #: includes/datatable_generator.php:952 includes/datatable_generator.php:960
@@ -3950,10 +3790,8 @@ msgid "Refund ID"
 msgstr ""
 
 #: includes/datatable_generator.php:976
-#, fuzzy
-#| msgid "Status"
 msgid "Refund Status"
-msgstr "الحالة"
+msgstr ""
 
 #: includes/datatable_generator.php:977
 msgid "Refund By"
@@ -3969,16 +3807,12 @@ msgid "Refund Counts"
 msgstr ""
 
 #: includes/datatable_generator.php:1031 includes/datatable_generator.php:1707
-#, fuzzy
-#| msgid "Coupon Discount"
 msgid "Coupon Count"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:1032 includes/datatable_generator.php:1708
-#, fuzzy
-#| msgid "Coupon Discount"
 msgid "Coupon Amount"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:1042 includes/fetch_data_coupon.php:253
 #: includes/fetch_data_coupon_discount.php:249
@@ -4005,28 +3839,20 @@ msgid "Total Sales Amt."
 msgstr ""
 
 #: includes/datatable_generator.php:1051 includes/datatable_generator.php:1725
-#, fuzzy
-#| msgid "Order Count"
 msgid "Total Order Count"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:1052 includes/datatable_generator.php:1726
-#, fuzzy
-#| msgid "Customer Count"
 msgid "New Customer Count"
-msgstr "عدد العملاء"
+msgstr ""
 
 #: includes/datatable_generator.php:1053 includes/datatable_generator.php:1727
-#, fuzzy
-#| msgid "Customer Count"
 msgid "Repeat Customer Count"
-msgstr "عدد العملاء"
+msgstr ""
 
 #: includes/datatable_generator.php:1054 includes/datatable_generator.php:1728
-#, fuzzy
-#| msgid "Customer Name"
 msgid "New Customer Sales Amt."
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:1055 includes/datatable_generator.php:1729
 msgid "Repeat Customer Sales Amt."
@@ -4046,24 +3872,18 @@ msgstr ""
 
 #: includes/datatable_generator.php:1068
 #: includes/fetch_data_customer_min_max.php:215
-#, fuzzy
-#| msgid "Price"
 msgid "Min Price"
-msgstr "السعر"
+msgstr ""
 
 #: includes/datatable_generator.php:1069
 #: includes/fetch_data_customer_min_max.php:223
-#, fuzzy
-#| msgid "Price"
 msgid "Max Price"
-msgstr "السعر"
+msgstr ""
 
 #: includes/datatable_generator.php:1080 includes/fetch_data_dailymail.php:279
 #: includes/fetch_data_dashboard_report.php:292
-#, fuzzy
-#| msgid "Order Date"
 msgid "Last Order Date"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/datatable_generator.php:1091 includes/datatable_generator.php:1101
 #: includes/datatable_generator.php:1111
@@ -4117,10 +3937,8 @@ msgstr ""
 #: main.php:656 main.php:670 main.php:681 main.php:692 main.php:703
 #: main.php:744 main.php:774 main.php:789 main.php:2296 main.php:2297
 #: main.php:2807
-#, fuzzy
-#| msgid "Categories"
 msgid "Category"
-msgstr "التصنيفات"
+msgstr ""
 
 #: includes/datatable_generator.php:1129 includes/datatable_generator.php:1141
 msgid "Number of Order."
@@ -4156,30 +3974,22 @@ msgstr ""
 #: includes/fetch_data_details_product_options.php:755
 #: includes/fetch_data_details_tax_field.php:1398
 #: includes/fetch_data_details_tickera.php:781
-#, fuzzy
-#| msgid "Classification"
 msgid "Variation"
-msgstr "التصنيف"
+msgstr ""
 
 #: includes/datatable_generator.php:1186
-#, fuzzy
-#| msgid "Country"
 msgid "Country Name"
-msgstr "الدولة"
+msgstr ""
 
 #: includes/datatable_generator.php:1191 includes/datatable_generator.php:1882
 #: includes/datatable_generator.php:2630 main.php:2316 main.php:2317
 #: main.php:2954
-#, fuzzy
-#| msgid "Payment Method"
 msgid "Payment Gateway"
-msgstr "وسيلة الدفع"
+msgstr ""
 
 #: includes/datatable_generator.php:1197
-#, fuzzy
-#| msgid "Status"
 msgid "Status Name"
-msgstr "الحالة"
+msgstr ""
 
 #: includes/datatable_generator.php:1203
 #: includes/fetch_data_summary_per_month.php:254
@@ -4187,10 +3997,8 @@ msgid "Reports"
 msgstr ""
 
 #: includes/datatable_generator.php:1210
-#, fuzzy
-#| msgid "Products"
 msgid "Product ID"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/datatable_generator.php:1214 includes/fetch_data_variation.php:911
 #: main.php:2300 main.php:2301 main.php:2815
@@ -4198,10 +4006,8 @@ msgid "Tag"
 msgstr ""
 
 #: includes/datatable_generator.php:1255
-#, fuzzy
-#| msgid "Products"
 msgid "Simple Product"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/datatable_generator.php:1257
 msgid "*"
@@ -4247,10 +4053,8 @@ msgstr ""
 #: includes/datatable_generator.php:1566 includes/datatable_generator.php:1756
 #: includes/datatable_generator.php:1763 includes/datatable_generator.php:1770
 #: includes/datatable_generator.php:1777
-#, fuzzy
-#| msgid "Product SKU"
 msgid "Product Count"
-msgstr "رمز المنتج (SKU)"
+msgstr ""
 
 #: includes/datatable_generator.php:1300 includes/datatable_generator.php:1314
 #: includes/datatable_generator.php:1329 includes/datatable_generator.php:1347
@@ -4297,35 +4101,25 @@ msgstr ""
 #: includes/fetch_data_details_product_options.php:759
 #: includes/fetch_data_details_tax_field.php:1402
 #: includes/fetch_data_details_tickera.php:785
-#, fuzzy
-#| msgid "Coupon Discount"
 msgid "Prod. Discount"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:1452
-#, fuzzy
-#| msgid "Order Count"
 msgid "Brand Count"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:1460 includes/datatable_generator.php:1585
 #: includes/datatable_generator.php:1596
-#, fuzzy
-#| msgid "Customer Count"
 msgid "Category Count"
-msgstr "عدد العملاء"
+msgstr ""
 
 #: includes/datatable_generator.php:1496 includes/datatable_generator.php:1615
-#, fuzzy
-#| msgid "Customer Count"
 msgid "Country Count"
-msgstr "عدد العملاء"
+msgstr ""
 
 #: includes/datatable_generator.php:1499
-#, fuzzy
-#| msgid "Coupon"
 msgid "Coupon Amt."
-msgstr "القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:1501
 msgid "Refunds Amt."
@@ -4342,15 +4136,15 @@ msgstr ""
 #: includes/datatable_generator.php:1606 includes/datatable_generator.php:1739
 #: includes/datatable_generator.php:1746
 msgid "Customer Count"
-msgstr "عدد العملاء"
+msgstr ""
 
 #: includes/datatable_generator.php:1608
 msgid "Total Orders"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:1609
 msgid "Average Invoice"
-msgstr "متوسط الفاتورة"
+msgstr ""
 
 #: includes/datatable_generator.php:1622
 msgid "Billing State Count"
@@ -4361,36 +4155,26 @@ msgid "Billing City Count"
 msgstr ""
 
 #: includes/datatable_generator.php:1639
-#, fuzzy
-#| msgid "Payment Method"
 msgid "Payment Method Count"
-msgstr "وسيلة الدفع"
+msgstr ""
 
 #: includes/datatable_generator.php:1647
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order Status Count"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:1669
-#, fuzzy
-#| msgid "Country"
 msgid "Tax Count"
-msgstr "الدولة"
+msgstr ""
 
 #: includes/datatable_generator.php:1698 includes/datatable_generator.php:1706
 #: includes/datatable_generator.php:1716
-#, fuzzy
-#| msgid "Customer Count"
 msgid "Result Count"
-msgstr "عدد العملاء"
+msgstr ""
 
 #: includes/datatable_generator.php:1717 includes/datatable_generator.php:1913
 #: includes/datatable_generator.php:2661
-#, fuzzy
-#| msgid "Products"
 msgid "Product Qty"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/datatable_generator.php:1723
 msgid "Months Count"
@@ -4398,10 +4182,8 @@ msgstr ""
 
 #: includes/datatable_generator.php:1757 includes/datatable_generator.php:1764
 #: includes/datatable_generator.php:1771
-#, fuzzy
-#| msgid "Total"
 msgid "Total Stock"
-msgstr "المجموع"
+msgstr ""
 
 #: includes/datatable_generator.php:1778
 #: includes/fetch_data_stock_summary_avg.php:118
@@ -4424,22 +4206,17 @@ msgid "Monthly Summary"
 msgstr ""
 
 #: includes/datatable_generator.php:1817 includes/datatable_generator.php:2568
-#, fuzzy
-#| msgid "Order Date"
 msgid "Order Summary"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/datatable_generator.php:1818 includes/datatable_generator.php:2569
-#, fuzzy
-#| msgid "Total Orders"
 msgid "Sales Order Status"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:1819 includes/datatable_generator.php:2570
-#, fuzzy, php-format
-#| msgid "Products"
+#, php-format
 msgid "Top %s Products"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/datatable_generator.php:1820 includes/datatable_generator.php:2571
 #, php-format
@@ -4457,16 +4234,14 @@ msgid "Top %s Billing State"
 msgstr ""
 
 #: includes/datatable_generator.php:1823 includes/datatable_generator.php:2574
-#, fuzzy, php-format
-#| msgid "Customer Notes"
+#, php-format
 msgid "Top %s Customers"
-msgstr "ملاحظات العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:1824 includes/datatable_generator.php:2575
-#, fuzzy, php-format
-#| msgid "Coupon"
+#, php-format
 msgid "Top %s Coupon"
-msgstr "القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:1825 includes/datatable_generator.php:2576
 #, php-format
@@ -4480,18 +4255,16 @@ msgstr ""
 
 #: includes/datatable_generator.php:1827 includes/datatable_generator.php:2578
 #: main.php:2671
-#, fuzzy
-#| msgid "Total Orders"
 msgid "All Orders"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:1828 includes/datatable_generator.php:2579
 msgid "Warehouse Sales Report"
-msgstr "تقرير المبيعات للمستودع"
+msgstr ""
 
 #: includes/datatable_generator.php:1829 includes/datatable_generator.php:2580
 msgid "Customer Service Report"
-msgstr "تقرير خدمة العملاء"
+msgstr ""
 
 #: includes/datatable_generator.php:1832 main.php:2242 main.php:2243
 #: main.php:3057
@@ -4527,36 +4300,26 @@ msgstr ""
 
 #: includes/datatable_generator.php:1852 includes/datatable_generator.php:2597
 #: main.php:2462
-#, fuzzy
-#| msgid "Products"
 msgid "Abandoned Products"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/datatable_generator.php:1855 includes/datatable_generator.php:2600
 #: main.php:2252 main.php:2253 main.php:2718
-#, fuzzy
-#| msgid "Status"
 msgid "Status Change"
-msgstr "الحالة"
+msgstr ""
 
 #: includes/datatable_generator.php:1859 includes/datatable_generator.php:2604
-#, fuzzy
-#| msgid "Order Count"
 msgid "All Orders per Country"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:1860 includes/datatable_generator.php:2605
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order / Country"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:1863 includes/datatable_generator.php:2608
 #: main.php:3085
-#, fuzzy
-#| msgid "Shipping"
 msgid "Order / Shipping"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:1872 includes/datatable_generator.php:2621
 #: main.php:2395 main.php:2396 main.php:2848
@@ -4579,7 +4342,7 @@ msgstr ""
 
 #: includes/datatable_generator.php:1878 includes/datatable_generator.php:2581
 msgid "Unregistered Customers"
-msgstr "العملاء غير المسجلين"
+msgstr ""
 
 #: includes/datatable_generator.php:1885 includes/datatable_generator.php:2633
 #: main.php:2325 main.php:2326 main.php:2989
@@ -4587,16 +4350,12 @@ msgid "Tax Report"
 msgstr ""
 
 #: includes/datatable_generator.php:1886 includes/datatable_generator.php:2634
-#, fuzzy
-#| msgid "Customer Notes"
 msgid "Custom Member Buy Products"
-msgstr "ملاحظات العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:1889 includes/datatable_generator.php:2637
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Customer Buy Category"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:1892 includes/datatable_generator.php:2639
 #: main.php:2355 main.php:2356
@@ -4604,10 +4363,8 @@ msgid "Refund Details"
 msgstr ""
 
 #: includes/datatable_generator.php:1896
-#, fuzzy
-#| msgid "Coupon Discount"
 msgid "Coupon Discount Type Reporting"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:1897 includes/datatable_generator.php:2644
 msgid "New Customer/Repeat Customer Analysis"
@@ -4619,10 +4376,8 @@ msgstr ""
 
 #: includes/datatable_generator.php:1899 includes/datatable_generator.php:2646
 #: main.php:2903
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Customer Min-Max"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:1900 includes/datatable_generator.php:2647
 msgid "Customer Who Has Not Purchased"
@@ -4663,7 +4418,7 @@ msgstr ""
 #: includes/fetch_data_details_user_id.php:760
 #: includes/fetch_data_details_user_id.php:883
 msgid "Invoice Number"
-msgstr "رقم الفاتورة"
+msgstr ""
 
 #: includes/datatable_generator.php:1957 includes/datatable_generator.php:1992
 #: includes/fetch_data_details.php:724 includes/fetch_data_details.php:841
@@ -4673,7 +4428,7 @@ msgstr "رقم الفاتورة"
 #: includes/fetch_data_details_user_id.php:763
 #: includes/fetch_data_details_user_id.php:886
 msgid "Phone Number"
-msgstr "رقم الهاتف"
+msgstr ""
 
 #: includes/datatable_generator.php:1958 includes/datatable_generator.php:1993
 #: includes/fetch_data_details.php:725 includes/fetch_data_details.php:842
@@ -4685,7 +4440,7 @@ msgstr "رقم الهاتف"
 #: includes/fetch_data_stock_list.php:435
 #: includes/fetch_data_stock_list_sales.php:439
 msgid "Modified Date"
-msgstr "تاريخ التعديل"
+msgstr ""
 
 #: includes/datatable_generator.php:1966 includes/datatable_generator.php:2002
 #: includes/fetch_data_details.php:733 includes/fetch_data_details.php:853
@@ -4695,30 +4450,30 @@ msgstr "تاريخ التعديل"
 #: includes/fetch_data_details_user_id.php:772
 #: includes/fetch_data_details_user_id.php:898
 msgid "Wallet / Discount"
-msgstr "المحفظة / خصم"
+msgstr ""
 
 #: includes/datatable_generator.php:1971 includes/fetch_data_details.php:738
 #: includes/fetch_data_details.php:952
 msgid "Size Name"
-msgstr "مسمى الحجم"
+msgstr ""
 
 #: includes/datatable_generator.php:1972 includes/fetch_data_details.php:739
 #: includes/fetch_data_details.php:953 includes/fetch_data_details_full.php:779
 #: includes/fetch_data_details_user_id.php:780
 msgid "Sizes"
-msgstr "الأحجام"
+msgstr ""
 
 #: includes/datatable_generator.php:1976 includes/fetch_data_details.php:743
 #: includes/fetch_data_details.php:957 includes/fetch_data_details_full.php:783
 #: includes/fetch_data_details_user_id.php:784 main.php:2375 main.php:2376
 #: main.php:2967
 msgid "Coupon Discount"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:1978 includes/fetch_data_details.php:745
 #: includes/fetch_data_details.php:959
 msgid "VAT"
-msgstr "القيمة المضافة"
+msgstr ""
 
 #: includes/datatable_generator.php:1980 includes/datatable_generator.php:2021
 #: includes/fetch_data_details.php:747 includes/fetch_data_details.php:873
@@ -4744,30 +4499,24 @@ msgstr ""
 #: includes/datatable_generator.php:1986 includes/fetch_data_details.php:750
 #: includes/fetch_data_details.php:967
 msgid "Customer Notes"
-msgstr "ملاحظات العميل"
+msgstr ""
 
 #: includes/datatable_generator.php:2615 main.php:2288 main.php:2289
 #: main.php:2800
-#, fuzzy
-#| msgid "Products"
 msgid "Product/Users"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/datatable_generator.php:2643
-#, fuzzy
-#| msgid "Coupon Discount"
 msgid "Coupon Discount Type Wise Reporting"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/datatable_generator.php:3185
 msgid "Home"
 msgstr ""
 
 #: includes/datatable_generator.php:3186
-#, fuzzy
-#| msgid "Warehouse Sales Report"
 msgid "Intelligence Sales Report"
-msgstr "تقرير المبيعات للمستودع"
+msgstr ""
 
 #: includes/datatable_generator.php:3187
 msgid "Intelligence Products Report"
@@ -4798,10 +4547,8 @@ msgstr ""
 #: includes/fetch_data_tax_reports1.php:301
 #: includes/fetch_data_tax_reports1.php:312
 #: includes/fetch_data_tax_reports1.php:323
-#, fuzzy
-#| msgid "Country"
 msgid "Tax Country"
-msgstr "الدولة"
+msgstr ""
 
 #: includes/datatable_generator.php:4461 includes/datatable_generator.php:4479
 #: includes/datatable_generator.php:4561 includes/datatable_generator.php:4576
@@ -4821,10 +4568,8 @@ msgstr ""
 #: includes/fetch_data_tax_reports.php:888
 #: includes/fetch_data_tax_reports1.php:226
 #: includes/fetch_data_tax_reports1.php:303
-#, fuzzy
-#| msgid "City"
 msgid "Tax City"
-msgstr "المدينة"
+msgstr ""
 
 #: includes/datatable_generator.php:4464 includes/datatable_generator.php:4481
 #: includes/datatable_generator.php:4499 includes/datatable_generator.php:4516
@@ -4855,10 +4600,8 @@ msgstr ""
 #: includes/fetch_data_tax_reports.php:911
 #: includes/fetch_data_tax_reports.php:971
 #: includes/fetch_data_tax_reports.php:1026
-#, fuzzy
-#| msgid "Total Refund"
 msgid "Part Refund."
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/datatable_generator.php:4471 includes/datatable_generator.php:4488
 #: includes/datatable_generator.php:4506 includes/datatable_generator.php:4523
@@ -4879,10 +4622,8 @@ msgstr ""
 
 #: includes/datatable_generator.php:4514
 #: includes/fetch_data_tax_reports.php:683
-#, fuzzy
-#| msgid "Tax ID"
 msgid "Tax Zip"
-msgstr "الرقم الضريبي"
+msgstr ""
 
 #: includes/datatable_generator.php:4609
 #: includes/fetch_data_tax_reports.php:1081
@@ -4896,10 +4637,8 @@ msgstr ""
 
 #: includes/datatable_generator.php:4611
 #: includes/fetch_data_tax_reports.php:1091
-#, fuzzy
-#| msgid "Total Refund"
 msgid "Total Tax Refund"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/datatable_generator.php:4613
 #: includes/fetch_data_tax_reports.php:1096
@@ -4909,51 +4648,39 @@ msgstr ""
 #: includes/datatable_generator.php:6809
 #: includes/fetch_data_summary_per_month.php:100
 #: includes/fetch_data_summary_per_month.php:259
-#, fuzzy
-#| msgid "Grand Total"
 msgid "Order Total"
-msgstr "الإجمالي"
+msgstr ""
 
 #: includes/datatable_generator.php:6811
 #: includes/fetch_data_summary_per_month.php:102
 #: includes/fetch_data_summary_per_month.php:261
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order Discount"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/datatable_generator.php:6812
 #: includes/fetch_data_summary_per_month.php:103
 #: includes/fetch_data_summary_per_month.php:262
-#, fuzzy
-#| msgid "Wallet / Discount"
 msgid "Cart Discount"
-msgstr "المحفظة / خصم"
+msgstr ""
 
 #: includes/datatable_generator.php:6813
 #: includes/fetch_data_summary_per_month.php:104
 #: includes/fetch_data_summary_per_month.php:263
-#, fuzzy
-#| msgid "Shipping"
 msgid "Order Shipping"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:6814 includes/fetch_data_dailymail.php:267
 #: includes/fetch_data_dashboard_report.php:282
 #: includes/fetch_data_summary_per_month.php:105
 #: includes/fetch_data_summary_per_month.php:264
-#, fuzzy
-#| msgid "Shipping"
 msgid "Order Shipping Tax"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/datatable_generator.php:6815
 #: includes/fetch_data_summary_per_month.php:106
 #: includes/fetch_data_summary_per_month.php:265
-#, fuzzy
-#| msgid "Products"
 msgid "Product Sales"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/fetch_data_abandoned_cart.php:312
 #: includes/fetch_data_abandoned_cart.php:335
@@ -5165,10 +4892,8 @@ msgstr ""
 #: includes/fetch_data_details_full_shipping_tax.php:1931
 #: includes/fetch_data_details_tickera.php:3183
 #: includes/fetch_data_details_user_id.php:4292
-#, fuzzy
-#| msgid "Coupon"
 msgid "Coupon Codes"
-msgstr "القسيمة"
+msgstr ""
 
 #: includes/fetch_data_coupon.php:258
 #: includes/fetch_data_coupon_discount.php:254
@@ -5180,10 +4905,8 @@ msgstr "القسيمة"
 #: includes/fetch_data_details_tickera.php:3201
 #: includes/fetch_data_details_user_id.php:4310
 #: includes/fetch_data_order_per_custom_shipping.php:632
-#, fuzzy
-#| msgid "Wallet / Discount"
 msgid "Percentage Discount"
-msgstr "المحفظة / خصم"
+msgstr ""
 
 #: includes/fetch_data_coupon.php:259
 #: includes/fetch_data_coupon_discount.php:255
@@ -5195,10 +4918,8 @@ msgstr "المحفظة / خصم"
 #: includes/fetch_data_details_tickera.php:3202
 #: includes/fetch_data_details_user_id.php:4311
 #: includes/fetch_data_order_per_custom_shipping.php:633
-#, fuzzy
-#| msgid "Wallet / Discount"
 msgid "Fixed Cart Discount"
-msgstr "المحفظة / خصم"
+msgstr ""
 
 #: includes/fetch_data_coupon.php:260
 #: includes/fetch_data_coupon_discount.php:256
@@ -5226,16 +4947,12 @@ msgid "Fixed product discount"
 msgstr ""
 
 #: includes/fetch_data_coupon_discount.php:156
-#, fuzzy
-#| msgid "Coupon Discount"
 msgid "Product % Discount"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/fetch_data_custom_taxonomy.php:324 main.php:1018
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Custom Taxonomy"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/fetch_data_customer_no_purchased.php:232
 msgid "Avg. Calc From Date"
@@ -5246,10 +4963,8 @@ msgid "Avg. Calc To Date"
 msgstr ""
 
 #: includes/fetch_data_customer_order_frequently.php:163
-#, fuzzy
-#| msgid "Order Count"
 msgid "Min Order Count"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/fetch_data_customer_role_bottom_products.php:289
 #: includes/fetch_data_customer_role_top_products.php:288
@@ -5273,31 +4988,23 @@ msgstr ""
 
 #: includes/fetch_data_dailymail.php:215
 #: includes/fetch_data_dashboard_report.php:238
-#, fuzzy
-#| msgid "Total Orders"
 msgid "Total Sales"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/fetch_data_dailymail.php:221
 #: includes/fetch_data_dashboard_report.php:244
-#, fuzzy
-#| msgid "Total Refund"
 msgid "Total Coupons"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/fetch_data_dailymail.php:223
 #: includes/fetch_data_dashboard_report.php:246
-#, fuzzy
-#| msgid "Total Refund"
 msgid "Total Registered"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/fetch_data_dailymail.php:225
 #: includes/fetch_data_dashboard_report.php:248
-#, fuzzy
-#| msgid "Unregistered Customers"
 msgid "Total Guest Customers"
-msgstr "العملاء غير المسجلين"
+msgstr ""
 
 #: includes/fetch_data_dailymail.php:234
 msgid "Other Summary -"
@@ -5374,10 +5081,8 @@ msgstr ""
 
 #: includes/fetch_data_dailymail.php:308
 #: includes/fetch_data_dashboard_report.php:307
-#, fuzzy
-#| msgid "Total Refund"
 msgid "Todays Total Refund"
-msgstr "إجمالي الاسترجاع"
+msgstr ""
 
 #: includes/fetch_data_dailymail.php:310
 #: includes/fetch_data_dashboard_report.php:311
@@ -5386,10 +5091,8 @@ msgstr ""
 
 #: includes/fetch_data_dailymail.php:312
 #: includes/fetch_data_dashboard_report.php:314
-#, fuzzy
-#| msgid "Total Orders"
 msgid "Todays Order Tax"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/fetch_data_dailymail.php:314
 #: includes/fetch_data_dashboard_report.php:317
@@ -5403,10 +5106,8 @@ msgstr ""
 
 #: includes/fetch_data_dailymail.php:318
 #: includes/fetch_data_dashboard_report.php:324
-#, fuzzy
-#| msgid "Unregistered Customers"
 msgid "Todays Registered Customers"
-msgstr "العملاء غير المسجلين"
+msgstr ""
 
 #: includes/fetch_data_dailymail.php:320
 #: includes/fetch_data_dashboard_report.php:328
@@ -5423,10 +5124,8 @@ msgid "Sale Qty."
 msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:245
-#, fuzzy
-#| msgid "Total Orders"
 msgid "Total Sales:"
-msgstr "إجمالي الطلبات"
+msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:252
 msgid "Total Sales Amount:"
@@ -5437,10 +5136,8 @@ msgid "Discount Amount:"
 msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:267
-#, fuzzy
-#| msgid "Coupon Discount"
 msgid "Coupon Amount:"
-msgstr "خصم القسيمة"
+msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:274
 msgid "Refund Amount:"
@@ -5451,32 +5148,24 @@ msgid "Shipping Tax Amount:"
 msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:290
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order Tax Amount:"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:300
 msgid "Total Tax Amount:"
 msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:310
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Amount:"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:320
-#, fuzzy
-#| msgid "Average Invoice"
 msgid "Average Sales:"
-msgstr "متوسط الفاتورة"
+msgstr ""
 
 #: includes/fetch_data_dailymail_status.php:331
-#, fuzzy
-#| msgid "Customer ID"
 msgid "New Customer:"
-msgstr "معرف العميل"
+msgstr ""
 
 #: includes/fetch_data_dashboard_monthly_summary.php:341
 #: includes/fetch_data_projected_actual_sale.php:282
@@ -5506,10 +5195,8 @@ msgstr ""
 #: includes/fetch_data_details_tickera.php:838
 #: includes/fetch_data_details_user_id.php:800
 #: includes/fetch_data_details_user_id.php:927
-#, fuzzy
-#| msgid "Order Date"
 msgid "Delivery Date"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/fetch_data_details.php:760 includes/fetch_data_details.php:883
 #: includes/fetch_data_details_full.php:802
@@ -5518,10 +5205,8 @@ msgstr "تاريخ الطلب"
 #: includes/fetch_data_details_tickera.php:839
 #: includes/fetch_data_details_user_id.php:803
 #: includes/fetch_data_details_user_id.php:930
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Date"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/fetch_data_details.php:798 includes/fetch_data_details.php:900
 #: includes/fetch_data_details_full.php:841
@@ -5583,10 +5268,8 @@ msgstr ""
 #: includes/fetch_data_tax_reports.php:1378
 #: includes/fetch_data_tax_reports1.php:522 main.php:553 main.php:566
 #: main.php:659 main.php:708 main.php:747 main.php:778 main.php:793
-#, fuzzy
-#| msgid "Status"
 msgid "State"
-msgstr "الحالة"
+msgstr ""
 
 #: includes/fetch_data_details.php:5268
 #: includes/fetch_data_details_combined.php:2048
@@ -5724,10 +5407,8 @@ msgstr ""
 #: includes/fetch_data_order_variation_analysis.php:344
 #: includes/fetch_data_stock_summary_avg.php:321
 #: includes/fetch_data_variation.php:1356
-#, fuzzy
-#| msgid "Order ID"
 msgid "Order By"
-msgstr "رقم الطلب"
+msgstr ""
 
 #: includes/fetch_data_details.php:5468
 #: includes/fetch_data_details_brands.php:2871
@@ -5757,10 +5438,8 @@ msgstr ""
 #: includes/fetch_data_details_tickera.php:1327
 #: includes/fetch_data_details_tickera.php:2370
 #: includes/fetch_data_details_user_id.php:1607
-#, fuzzy
-#| msgid "Average Invoice"
 msgid "Generate Invoice"
-msgstr "متوسط الفاتورة"
+msgstr ""
 
 #: includes/fetch_data_details_combined.php:681
 msgid "state"
@@ -5769,12 +5448,12 @@ msgstr ""
 #: includes/fetch_data_details_depot.php:718
 #: includes/fetch_data_details_depot.php:727
 msgid "Size / Add-on Product"
-msgstr "الحجم / المنتج الإضافي"
+msgstr ""
 
 #: includes/fetch_data_details_depot.php:719
 #: includes/fetch_data_details_depot.php:728
 msgid "Size"
-msgstr "الحجم"
+msgstr ""
 
 #: includes/fetch_data_details_full_shipping.php:706
 msgid "T-Shirt Size"
@@ -5810,45 +5489,33 @@ msgstr ""
 
 #: includes/fetch_data_details_full_shipping.php:714
 #: includes/fetch_data_details_full_shipping_tax.php:713
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Address 1"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/fetch_data_details_full_shipping.php:715
 #: includes/fetch_data_details_full_shipping_tax.php:714
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Address 2"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/fetch_data_details_full_shipping.php:716
 #: includes/fetch_data_details_full_shipping_tax.php:715
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping Post Code"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/fetch_data_details_full_shipping.php:717
 #: includes/fetch_data_details_full_shipping_tax.php:716
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping City"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/fetch_data_details_full_shipping.php:718
 #: includes/fetch_data_details_full_shipping_tax.php:717
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping State"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/fetch_data_details_full_shipping.php:719
 #: includes/fetch_data_details_full_shipping_tax.php:718
-#, fuzzy
-#| msgid "Shipping"
 msgid "Shipping County"
-msgstr "الشحن"
+msgstr ""
 
 #: includes/fetch_data_details_full_shipping.php:730
 #: includes/fetch_data_details_full_shipping.php:752
@@ -5861,10 +5528,8 @@ msgstr ""
 #: includes/fetch_data_details_full_shipping.php:753
 #: includes/fetch_data_details_full_shipping_tax.php:733
 #: includes/fetch_data_details_full_shipping_tax.php:755
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order total"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: includes/fetch_data_details_product_options.php:1385
 #: includes/fetch_data_details_tax_field.php:2196
@@ -5881,17 +5546,13 @@ msgstr ""
 
 #: includes/fetch_data_details_tickera.php:762
 #: includes/fetch_data_details_tickera.php:833
-#, fuzzy
-#| msgid "Size Name"
 msgid "First Name"
-msgstr "مسمى الحجم"
+msgstr ""
 
 #: includes/fetch_data_details_tickera.php:763
 #: includes/fetch_data_details_tickera.php:834
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Last Name"
-msgstr "اسم العميل"
+msgstr ""
 
 #: includes/fetch_data_details_tickera.php:764
 #: includes/fetch_data_details_tickera.php:835
@@ -5917,23 +5578,17 @@ msgid "Descending"
 msgstr ""
 
 #: includes/fetch_data_payment_per_month.php:305
-#, fuzzy
-#| msgid "Payment Method"
 msgid "Payment Gatway"
-msgstr "وسيلة الدفع"
+msgstr ""
 
 #: includes/fetch_data_product.php:697 includes/fetch_data_stock_list.php:741
 #: includes/fetch_data_stock_list_sales.php:958 main.php:4150
-#, fuzzy
-#| msgid "Customer ID"
 msgid "Custom SKU"
-msgstr "معرف العميل"
+msgstr ""
 
 #: includes/fetch_data_product_variation_qty.php:660
-#, fuzzy
-#| msgid "Order ID"
 msgid "Order ID(s)"
-msgstr "رقم الطلب"
+msgstr ""
 
 #: includes/fetch_data_product_variation_qty.php:663
 msgid "Separate ids with coma(,)"
@@ -5964,17 +5619,13 @@ msgstr ""
 #: includes/fetch_data_stock_list_sales.php:435
 #: includes/fetch_data_stock_list_sales.php:1281
 #: includes/fetch_data_stock_summary_avg.php:345
-#, fuzzy
-#| msgid "Products"
 msgid "Product Type"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/fetch_data_stock_list.php:434
 #: includes/fetch_data_stock_list_sales.php:438
-#, fuzzy
-#| msgid "Order Date"
 msgid "Created Date"
-msgstr "تاريخ الطلب"
+msgstr ""
 
 #: includes/fetch_data_stock_list.php:437
 #: includes/fetch_data_stock_list_sales.php:442
@@ -5983,10 +5634,8 @@ msgstr ""
 
 #: includes/fetch_data_stock_list.php:438
 #: includes/fetch_data_stock_list_sales.php:443
-#, fuzzy
-#| msgid "Price"
 msgid "Sale Price"
-msgstr "السعر"
+msgstr ""
 
 #: includes/fetch_data_stock_list.php:440
 msgid "Downloadable"
@@ -6012,10 +5661,8 @@ msgstr ""
 #: includes/fetch_data_stock_list_sales.php:449
 #: includes/fetch_data_stock_list_sales.php:1035
 #: includes/fetch_data_variation_stock.php:1016
-#, fuzzy
-#| msgid "Status"
 msgid "Stock Status"
-msgstr "الحالة"
+msgstr ""
 
 #: includes/fetch_data_stock_list.php:707
 #: includes/fetch_data_stock_list_sales.php:738
@@ -6050,10 +5697,8 @@ msgstr ""
 #: includes/fetch_data_stock_list.php:776
 #: includes/fetch_data_stock_list_sales.php:1008
 #: includes/fetch_data_variation_stock.php:996 main.php:2832
-#, fuzzy
-#| msgid "Product SKU"
 msgid "Product Stock"
-msgstr "رمز المنتج (SKU)"
+msgstr ""
 
 #: includes/fetch_data_stock_list.php:784
 #: includes/fetch_data_stock_list_sales.php:1020
@@ -6065,10 +5710,8 @@ msgstr ""
 #: includes/fetch_data_stock_list_sales.php:1339
 #: includes/fetch_data_variation.php:1329
 #: includes/fetch_data_variation_stock.php:1259
-#, fuzzy
-#| msgid "Product SKU"
 msgid "Product Custom SKU"
-msgstr "رمز المنتج (SKU)"
+msgstr ""
 
 #: includes/fetch_data_stock_list.php:1061
 #: includes/fetch_data_stock_list_sales.php:1353
@@ -6085,18 +5728,14 @@ msgstr ""
 #: includes/fetch_data_stock_max_level.php:173
 #: includes/fetch_data_stock_min_level.php:157
 #: includes/fetch_data_stock_zero_level.php:177
-#, fuzzy
-#| msgid "Products"
 msgid "Edit Product"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/fetch_data_stock_max_level.php:174
 #: includes/fetch_data_stock_min_level.php:158
 #: includes/fetch_data_stock_zero_level.php:178
-#, fuzzy
-#| msgid "Products"
 msgid "View Product"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/fetch_data_stock_max_level.php:203
 msgid "Stock Greater Than"
@@ -6129,22 +5768,16 @@ msgid "Till Date"
 msgstr ""
 
 #: includes/fetch_data_stock_summary_avg.php:329
-#, fuzzy
-#| msgid "Quantity"
 msgid "Avg. Quantity Sold"
-msgstr "الكمية"
+msgstr ""
 
 #: includes/fetch_data_stock_summary_avg.php:349
-#, fuzzy
-#| msgid "Products"
 msgid "Simple Products"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/fetch_data_stock_summary_avg.php:350
-#, fuzzy
-#| msgid "Products"
 msgid "Variation Products"
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/fetch_data_tax_reports.php:1373
 #: includes/fetch_data_tax_reports1.php:554
@@ -6168,10 +5801,8 @@ msgid "State Summary"
 msgstr ""
 
 #: includes/fetch_data_tax_reports.php:1394
-#, fuzzy
-#| msgid "Country"
 msgid "Country Summary"
-msgstr "الدولة"
+msgstr ""
 
 #: includes/fetch_data_variation.php:1056
 msgid "Postcode(zip)"
@@ -6186,16 +5817,12 @@ msgid "Variation Products "
 msgstr ""
 
 #: includes/fetch_data_variation.php:1169
-#, fuzzy
-#| msgid "Products"
 msgid "Simple Products "
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/fetch_data_variation.php:1170
-#, fuzzy
-#| msgid "Products"
 msgid "All Products "
-msgstr "المنتجات"
+msgstr ""
 
 #: includes/fetch_data_variation.php:1258
 msgid "Style"
@@ -6220,10 +5847,8 @@ msgid "Variation Custom SKU"
 msgstr ""
 
 #: includes/fetch_data_variation.php:1379
-#, fuzzy
-#| msgid "Order ID"
 msgid "Order Item ID"
-msgstr "رقم الطلب"
+msgstr ""
 
 #: main.php:322 main.php:338 main.php:756
 msgid "Brand"
@@ -6242,10 +5867,8 @@ msgid "Cost of Good($)"
 msgstr ""
 
 #: main.php:764
-#, fuzzy
-#| msgid "Products"
 msgid "Product Taxonimies"
-msgstr "المنتجات"
+msgstr ""
 
 #: main.php:953
 msgid "Choose Inclulde "
@@ -6304,16 +5927,12 @@ msgid "All Orders (Custom Taxonomy, Field)"
 msgstr ""
 
 #: main.php:2262 main.php:2704
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order/Country"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: main.php:2263
-#, fuzzy
-#| msgid "Order Count"
 msgid "Order Per Country"
-msgstr "عدد الطلبات"
+msgstr ""
 
 #: main.php:2328 main.php:2329 main.php:2822
 msgid "Purchased Product by Customer"
@@ -6324,28 +5943,20 @@ msgid "Purchased Category by Customer"
 msgstr ""
 
 #: main.php:2346 main.php:2347
-#, fuzzy
-#| msgid "Shipping"
 msgid "Order Per Shipping"
-msgstr "الشحن"
+msgstr ""
 
 #: main.php:2378 main.php:2379 main.php:2897
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Customer Analysis"
-msgstr "اسم العميل"
+msgstr ""
 
 #: main.php:2382 main.php:2383
-#, fuzzy
-#| msgid "Customer Service Report"
 msgid "Customer in Price Point"
-msgstr "تقرير خدمة العملاء"
+msgstr ""
 
 #: main.php:2385 main.php:2386 main.php:2909
-#, fuzzy
-#| msgid "Last Purchase"
 msgid "Customer/Non Purchase"
-msgstr "آخر شراء"
+msgstr ""
 
 #: main.php:2407 main.php:2408 main.php:2866
 msgid "Summary Stock Planner"
@@ -6364,10 +5975,8 @@ msgid "Project vs Actual Sale"
 msgstr ""
 
 #: main.php:2452 main.php:2453
-#, fuzzy
-#| msgid "Products"
 msgid "Product Qty."
-msgstr "المنتجات"
+msgstr ""
 
 #: main.php:2466
 msgid "Abandoned Carts Data"
@@ -6394,16 +6003,12 @@ msgid "Active Plugin"
 msgstr ""
 
 #: main.php:2503
-#, fuzzy
-#| msgid "Customer Service Report"
 msgid "WooCommerce Advanced Reporting"
-msgstr "تقرير خدمة العملاء"
+msgstr ""
 
 #: main.php:2665
-#, fuzzy
-#| msgid "Order ID"
 msgid "Order"
-msgstr "رقم الطلب"
+msgstr ""
 
 #: main.php:2677
 msgid "تقرير المبيعات للمستودع"
@@ -6434,16 +6039,12 @@ msgid "Purchased Product Qty"
 msgstr ""
 
 #: main.php:2839
-#, fuzzy
-#| msgid "Product SKU"
 msgid "Product Stock Sales"
-msgstr "رمز المنتج (SKU)"
+msgstr ""
 
 #: main.php:2889
-#, fuzzy
-#| msgid "Unregistered Customers"
 msgid "Guest Customer"
-msgstr "العملاء غير المسجلين"
+msgstr ""
 
 #: main.php:3283 main.php:3292
 msgid "Favorite Menus"
@@ -6466,10 +6067,8 @@ msgid "Current Month"
 msgstr ""
 
 #: main.php:3721
-#, fuzzy
-#| msgid "Last Login"
 msgid "Last Month"
-msgstr "آخر دخول"
+msgstr ""
 
 #: main.php:3731
 msgid "Current Year"
@@ -6492,10 +6091,8 @@ msgid "This SKU is for internal use only."
 msgstr ""
 
 #: main.php:4202
-#, fuzzy
-#| msgid "Customer Name"
 msgid "Custom Field"
-msgstr "اسم العميل"
+msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
