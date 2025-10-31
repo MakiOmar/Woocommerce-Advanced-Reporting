@@ -77,6 +77,8 @@
 		// Sanitize and parse input
 		$postdata = isset( $_REQUEST['postdata'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['postdata'] ) ) : '';
 		parse_str( $postdata, $my_array_of_vars );
+		
+		error_log('DEBUG actions.php: pw_orders_status after parse_str = ' . print_r($my_array_of_vars['pw_orders_status'] ?? 'NOT SET', true));
 
 		$table_name = isset( $my_array_of_vars['table_names'] ) ? sanitize_text_field( $my_array_of_vars['table_names'] ) : '';
 
