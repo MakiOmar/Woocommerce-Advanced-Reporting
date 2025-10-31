@@ -2002,12 +2002,21 @@ jQuery( document ).ready(function( $ ) {
         }
 
 
+        var serializedData = $(".search_form_report").serialize();
+        console.log('DEBUG: Form serialized data:', serializedData);
+        console.log('DEBUG: pw_orders_status field value:', $('[name="pw_orders_status[]"]').val());
+        console.log('DEBUG: All selected pw_orders_status:', $('[name="pw_orders_status[]"]:checked').map(function() { return $(this).val(); }).get());
+        
         var pdata = {
             action: "pw_rpt_fetch_data",
-            postdata: $(".search_form_report").serialize(),
+            postdata: serializedData,
             nonce: params.nonce,
         }
 
+        console.log('DEBUG: pdata object:', pdata);
+        
+        // Uncomment the next line to prevent form submission for testing
+        // return false;
 
         //EMPTY CONTROL FIELDS AFTER FETCH DATA AND READY FOR NEXT ACTION
         ////ADDED IN VER4.0
