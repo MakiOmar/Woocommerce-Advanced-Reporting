@@ -49,7 +49,6 @@ if ($file_used == "sql_table") {
     $pw_coupon_used    = $this->pw_get_woo_requests('pw_use_coupon', 'no', true);
     $pw_order_meta_key = $this->pw_get_woo_requests('order_meta_key', '-1', true);
     $pw_order_status   = $this->pw_get_woo_requests('pw_orders_status', '-1', true);
-    error_log('DEBUG: pw_order_status FROM REQUEST: ' . print_r($pw_order_status, true) . ' (is_array: ' . (is_array($pw_order_status) ? 'yes' : 'no') . ')');
     //$pw_order_status  		= "'".str_replace(",","','",$pw_order_status)."'";
 
     $pw_paid_customer = str_replace(",", "','", (string)$pw_paid_customer);
@@ -142,20 +141,14 @@ if ($file_used == "sql_table") {
 
     $pw_order_status = $this->pw_get_form_element_permission('pw_orders_status', $pw_order_status, $key);
 
-    error_log('DEBUG: pw_order_status BEFORE conversion: ' . print_r($pw_order_status, true) . ' (is_array: ' . (is_array($pw_order_status) ? 'yes' : 'no') . ')');
-    
     // Convert array to comma-separated string if needed
     if (is_array($pw_order_status)) {
         $pw_order_status = implode(",", $pw_order_status);
     }
 
-    error_log('DEBUG: pw_order_status AFTER conversion: ' . print_r($pw_order_status, true));
-
     if ($pw_order_status != null && $pw_order_status != '-1') {
         $pw_order_status = "'" . str_replace(",", "','", $pw_order_status) . "'";
     }
-    
-    error_log('DEBUG: pw_order_status FINAL (quoted): ' . print_r($pw_order_status, true));
     ///////////////////////////
 
     $pw_variations_formated = '';
@@ -699,11 +692,6 @@ if ($file_used == "sql_table") {
 
     //echo $sql;
     //print_r($search_fields);
-    
-    error_log('DEBUG fetch_data_details.php SQL: ' . $sql);
-    error_log('DEBUG fetch_data_details.php pw_order_status: ' . $pw_order_status);
-    error_log('DEBUG fetch_data_details.php pw_from_date: ' . $pw_from_date);
-    error_log('DEBUG fetch_data_details.php pw_to_date: ' . $pw_to_date);
 
 
     //CUSTOM WORK - 4227
@@ -934,19 +922,15 @@ if ($file_used == "sql_table") {
     }
 
     $columns          = array_values($columns);
-    error_log('DEBUG: fetch_data_details.php sql_table - About to set table_cols, columns count=' . count($columns));
     $this->table_cols = $columns;
-    error_log('DEBUG: fetch_data_details.php sql_table - table_cols set, count=' . count($this->table_cols));
 
 } elseif ($file_used == "data_table") {
 
     // Initialize table_cols to prevent empty thead when no data
     // Use basic column set as fallback
     if (!isset($this->table_cols) || empty($this->table_cols)) {
-        error_log('DEBUG: fetch_data_details.php - table_cols is empty, setting fallback columns');
         $pw_detail_view = $this->pw_get_woo_requests('pw_view_details', 'no', true);
         $pw_show_cog = $this->pw_get_woo_requests('pw_show_cog', 'no', true);
-        error_log('DEBUG: pw_detail_view = ' . $pw_detail_view . ', pw_show_cog = ' . $pw_show_cog);
         
         if ($pw_detail_view == "yes") {
             $this->table_cols = array(

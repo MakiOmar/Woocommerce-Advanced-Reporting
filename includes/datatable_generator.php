@@ -1798,7 +1798,6 @@
 			// MAIN FUNCTION OF TABLE HTML
 			//////////////////////////////
 			public function table_html($table_name,$search_fields=NULL){
-				error_log('DEBUG table_html: table_name=' . $table_name . ', search_fields=' . ($search_fields ? 'NOT NULL (' . count((array)$search_fields) . ' items)' : 'NULL'));
 				$table_name_total='';
 				$product_count=get_option(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'top_product_post_per_page',5);
 				$order_count=get_option(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'recent_post_per_page',5);
@@ -1920,15 +1919,10 @@
 
 				$chart_table=array("order_summary","sale_order_status","top_5_products","top_5_category","top_5_country","top_5_state","top_5_customer","top_5_coupon","top_5_gateway");
 
-				error_log('DEBUG: Before fetch_sql check - search_fields=' . ($search_fields ? 'NOT NULL' : 'NULL') . ', in_except=' . (in_array($table_name,$except_table) ? 'yes' : 'no'));
 				if($search_fields!=NULL || in_array($table_name,$except_table))
 				{   
-					error_log('DEBUG: Calling fetch_sql for ' . $table_name);
 					$this->search_form_fields=$search_fields;
 					$this->results =$this->fetch_sql($table_name,$search_fields);
-					error_log('DEBUG: fetch_sql returned ' . (is_array($this->results) ? count($this->results) : '0') . ' results');
-				} else {
-					error_log('DEBUG: Skipping fetch_sql - conditions not met');
 				}
 
 				/**************TABLE COLUMNS & CONTROLS************/
@@ -1945,12 +1939,11 @@
 				{
 					$refund_type=$this->refund_status;
 					$this->table_cols =$this->table_columns($refund_type);
-			}else if( in_array ( $table_name,array('details','details_depot', 'details_user_id','details_combined','details_full','details_full_shipping','details_full_shipping_tax','abandoned_cart','abandoned_product','details_product_options','product','product_per_users','category','tags','details_order_country','details_brands','details_tax_field','prod_per_month','variation_per_month','prod_per_country','prod_per_state','country_per_month','payment_per_month','ord_status_per_month','summary_per_month','variation','stock_summary_avg','stock_list','stock_list_sales','variation_stock','tax_reports','customer_role_total_sale','customer_role_top_products','customer_role_bottom_products','details_tickera','stock_zero_level','stock_max_level') ) )
+				}else if( in_array ( $table_name,array('details','details_depot', 'details_user_id','details_combined','details_full','details_full_shipping','details_full_shipping_tax','abandoned_cart','abandoned_product','details_product_options','product','product_per_users','category','tags','details_order_country','details_brands','details_tax_field','prod_per_month','variation_per_month','prod_per_country','prod_per_state','country_per_month','payment_per_month','ord_status_per_month','summary_per_month','variation','stock_summary_avg','stock_list','stock_list_sales','variation_stock','tax_reports','customer_role_total_sale','customer_role_top_products','customer_role_bottom_products','details_tickera','stock_zero_level','stock_max_level') ) )
 			{
 				// For these tables, columns are set inside the fetch file during data_table phase
 				// We always need to pre-set columns BEFORE generating headers
 				if(!isset($this->table_cols)) {
-					error_log('DEBUG: Pre-setting columns for ' . $table_name . ' before header generation');
 					$pw_detail_view = $this->pw_get_woo_requests('pw_view_details', 'no', true);
 					$pw_show_cog = $this->pw_get_woo_requests('pw_show_cog', 'no', true);
 					
@@ -2044,7 +2037,6 @@
 			// or if columns were set by fetch files/fallbacks
 			if($search_fields!=NULL || in_array($table_name,$except_table) || ( !empty($this->table_cols) ))
 			{
-				error_log('DEBUG datatable_generator: table_name=' . $table_name . ', table_cols count=' . count((array)$this->table_cols));
 				foreach((array)$this->table_cols as $cols)
 					{
 
@@ -2053,22 +2045,19 @@
 						if ($cols['status']=='currency'){ $currency_class='currency';}
 
 						if ($cols['status']=='hide'){ $checked='';$display='display:none;';}
-						$cols_controls.= '<label><input type="checkbox" '.$checked.'  data-column="'.$i++.'">'.$cols['lable'].'</label>';
-						$table_cols.= '<th style="'.$display.'" data-class="'.$currency_class.'"><div>'.$cols['lable'].'</div></th>';
+					$cols_controls.= '<label><input type="checkbox" '.$checked.'  data-column="'.$i++.'">'.$cols['lable'].'</label>';
+					$table_cols.= '<th style="'.$display.'" data-class="'.$currency_class.'"><div>'.$cols['lable'].'</div></th>';
 
-					}
 				}
-				error_log('DEBUG datatable_generator: Generated ' . $i . ' column headers');
-				//echo $table_cols;
+			}
+			//echo $table_cols;
 
-				/**************TABLE FETCH DATAS OF TABLE************/
-				error_log('DEBUG: Checking data_table condition - search_fields=' . ($search_fields ? 'NOT NULL' : 'NULL') . ', table_name=' . $table_name . ', in_except=' . (in_array($table_name,$except_table) ? 'yes' : 'no'));
-				if($search_fields!=NULL  || in_array($table_name,$except_table) || $table_name=='dashboard_report')
-				{
-					error_log('DEBUG: Entering data_table section for ' . $table_name);
-					//$pw_null_val = $this->price(0);
-					$pw_null_val = 0;
-					$datatable_value='';
+			/**************TABLE FETCH DATAS OF TABLE************/
+			if($search_fields!=NULL  || in_array($table_name,$except_table) || $table_name=='dashboard_report')
+			{
+				//$pw_null_val = $this->price(0);
+				$pw_null_val = 0;
+				$datatable_value='';
 
 
 					$file_used="data_table";
