@@ -687,6 +687,11 @@ if ($file_used == "sql_table") {
 
     //echo $sql;
     //print_r($search_fields);
+    
+    error_log('DEBUG fetch_data_details.php SQL: ' . $sql);
+    error_log('DEBUG fetch_data_details.php pw_order_status: ' . $pw_order_status);
+    error_log('DEBUG fetch_data_details.php pw_from_date: ' . $pw_from_date);
+    error_log('DEBUG fetch_data_details.php pw_to_date: ' . $pw_to_date);
 
 
     //CUSTOM WORK - 4227
