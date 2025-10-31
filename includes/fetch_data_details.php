@@ -49,6 +49,7 @@ if ($file_used == "sql_table") {
     $pw_coupon_used    = $this->pw_get_woo_requests('pw_use_coupon', 'no', true);
     $pw_order_meta_key = $this->pw_get_woo_requests('order_meta_key', '-1', true);
     $pw_order_status   = $this->pw_get_woo_requests('pw_orders_status', '-1', true);
+    error_log('DEBUG: pw_order_status FROM REQUEST: ' . print_r($pw_order_status, true) . ' (is_array: ' . (is_array($pw_order_status) ? 'yes' : 'no') . ')');
     //$pw_order_status  		= "'".str_replace(",","','",$pw_order_status)."'";
 
     $pw_paid_customer = str_replace(",", "','", (string)$pw_paid_customer);
@@ -141,14 +142,20 @@ if ($file_used == "sql_table") {
 
     $pw_order_status = $this->pw_get_form_element_permission('pw_orders_status', $pw_order_status, $key);
 
+    error_log('DEBUG: pw_order_status BEFORE conversion: ' . print_r($pw_order_status, true) . ' (is_array: ' . (is_array($pw_order_status) ? 'yes' : 'no') . ')');
+    
     // Convert array to comma-separated string if needed
     if (is_array($pw_order_status)) {
         $pw_order_status = implode(",", $pw_order_status);
     }
 
+    error_log('DEBUG: pw_order_status AFTER conversion: ' . print_r($pw_order_status, true));
+
     if ($pw_order_status != null && $pw_order_status != '-1') {
         $pw_order_status = "'" . str_replace(",", "','", $pw_order_status) . "'";
     }
+    
+    error_log('DEBUG: pw_order_status FINAL (quoted): ' . print_r($pw_order_status, true));
     ///////////////////////////
 
     $pw_variations_formated = '';
