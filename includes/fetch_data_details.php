@@ -519,7 +519,6 @@ if ($file_used == "sql_table") {
 
 
 		AND woocommerce_order_itemmeta_var.meta_key = '_variation_id'
-
 		AND pw_woocommerce_order_itemmeta2.meta_key='_line_total'
 		";
 
@@ -923,7 +922,6 @@ if ($file_used == "sql_table") {
 
     $columns          = array_values($columns);
     $this->table_cols = $columns;
-
 } elseif ($file_used == "data_table") {
 
     // Initialize table_cols to prevent empty thead when no data
@@ -1312,7 +1310,7 @@ if ($file_used == "sql_table") {
                     $display_class = 'display:none';
                 }
                 $datatable_value .= ("<td style='" . $display_class . "'>");
-                $datatable_value .= $order->billing_address_1;
+                $datatable_value .= $order->get_billing_address_1();
                 $datatable_value .= ("</td>");
 				
 				//STATE
@@ -1376,7 +1374,7 @@ if ($file_used == "sql_table") {
                     $display_class = 'display:none';
                 }
                 $datatable_value .= ("<td style='" . $display_class . "'>");
-                $datatable_value .= $order->billing_billing_company_vat;
+                $datatable_value .= get_post_meta($order_id, '_billing_company_vat', true);
                 $datatable_value .= ("</td>");
 
                 //Wallet
@@ -1713,7 +1711,6 @@ if ($file_used == "sql_table") {
                 $datatable_value .= ("<td style='" . $display_class . "'>");
                 $datatable_value .= $items->billing_name;
                 $datatable_value .= ("</td>");
-				
 				//Phone
                 $display_class = '';
                 if ($this->table_cols[$index_cols++]['status'] == 'hide') {
@@ -1826,7 +1823,7 @@ if ($file_used == "sql_table") {
                     $display_class = 'display:none';
                 }
                 $datatable_value .= ("<td style='" . $display_class . "'>");
-                $datatable_value .= '';
+                $datatable_value .= $order->get_billing_address_1();
                 $datatable_value .= ("</td>");
 
                 //STATE
@@ -1886,7 +1883,7 @@ if ($file_used == "sql_table") {
                     $display_class = 'display:none';
                 }
                 $datatable_value .= ("<td style='" . $display_class . "'>");
-                $datatable_value .= '';
+                $datatable_value .= get_post_meta($order_id, '_billing_company_vat', true);
                 $datatable_value .= ("</td>");
 
 
@@ -2487,7 +2484,7 @@ if ($file_used == "sql_table") {
                                 $display_class = 'display:none';
                             }
                             $datatable_value .= ("<td style='" . $display_class . "'>");
-                            $datatable_value .= '';
+                            $datatable_value .= $order->get_billing_address_1();
                             $datatable_value .= ("</td>");
 
                             //STATE
@@ -2547,7 +2544,7 @@ if ($file_used == "sql_table") {
                                 $display_class = 'display:none';
                             }
                             $datatable_value .= ("<td style='" . $display_class . "'>");
-                            $datatable_value .= '';
+                            $datatable_value .= get_post_meta($order_id, '_billing_company_vat', true);
                             $datatable_value .= ("</td>");
 
 
@@ -3386,7 +3383,6 @@ if ($file_used == "sql_table") {
 						$pw_table_value = isset($items->product_rate) ? $items->product_rate : 0;
 						$pw_table_value = $pw_table_value == 0 ? $pw_null_val : $pw_table_value;
 					}
-        			
                     $datatable_value .= number_format ( $pw_table_value, 4, ".", "" );
                     // $datatable_value .= $this->price($pw_table_value,
                     //     array("currency" => "no currency", "order_id" => $items->order_id),
@@ -4289,7 +4285,7 @@ if ($file_used == "sql_table") {
                     $display_class = 'display:none';
                 }
                 $datatable_value .= ("<td style='" . $display_class . "'>");
-                $datatable_value .= $order->billing_address_1;
+                $datatable_value .= $order->get_billing_address_1();
                 $datatable_value .= ("</td>");
 
             //STATE
@@ -4745,8 +4741,6 @@ if ($file_used == "sql_table") {
 
         $datatable_value_total .= ("</tr>");
     }
-
-
 } elseif ($file_used == "search_form") {
     ?>
     <form class='alldetails search_form_report' action='' method='post'>

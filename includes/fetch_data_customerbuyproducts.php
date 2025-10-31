@@ -187,7 +187,7 @@
 			$datatable_value.=("<tr>");
 
                 $order = new WC_Order( $items->order_id );
-                $name = $order->billing_first_name.' '.$order->billing_last_name;
+                $name = $order->get_billing_first_name().' '.$order->get_billing_last_name();
 
 
 				//Product SKU
@@ -208,7 +208,7 @@
 				$display_class='';
 				if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
 				$datatable_value.=("<td style='".$display_class."'>");
-					$datatable_value.= $order->billing_email;
+					$datatable_value.= $order->get_billing_email();
 				$datatable_value.=("</td>");
 
 				//Customer Phone

@@ -566,7 +566,7 @@ class PW_Cart_Receipt
         update_post_meta($this->post_id, 'pw_order_id', $order_id);
 
         $order        = wc_get_order($order_id);
-        $post_title   = version_compare(WC_VERSION, '3.0', '<') ? ($order->billing_first_name . ' ' . $order->billing_last_name) : ($order->get_billing_first_name() . ' ' . $order->get_billing_last_name());
+        $post_title   = $order->get_billing_first_name() . ' ' . $order->get_billing_last_name();
 
         $post_updated = array(
             'ID'         => $this->post_id,

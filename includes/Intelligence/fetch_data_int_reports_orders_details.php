@@ -249,7 +249,7 @@
 	foreach($related_array as $related){
 		$order = wc_get_order($related);
 		$date_format        = get_option( 'date_format' );
-		$order_date_r       = $order->order_date;
+		$order_date_r       = method_exists($order, 'get_date_created') ? $order->get_date_created() : get_post_field('post_date', $order_id);
 		$order_date_r=date($date_format,strtotime($order_date_r));
 
 		$pw_table_value=($order->get_total()) == 0 ? $pw_rpt_main_class->price(0) : $pw_rpt_main_class->price($order->get_total());

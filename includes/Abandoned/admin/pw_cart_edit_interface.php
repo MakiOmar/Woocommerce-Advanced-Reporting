@@ -163,11 +163,7 @@ public function cart_status_customer_metabox(){
 
 		$order = new WC_Order($order_id);
 
-		if ( version_compare( WC_VERSION, '3.0', '<' ) ) {
-			echo __( '<p>' . ucwords( $order->billing_first_name . ' ' . $order->billing_last_name ) . ' (' . esc_html__( 'Guest', 'woocommerce_cart_reports' ) . ')</p>' );
-		} else {
 			echo __( '<p>' . ucwords( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ) . ' (' . esc_html__( 'Guest', 'woocommerce_cart_reports' ) . ')</p>' );
-		}
 	}
 	else
 		echo __( '<span style="color:gray";>Name Not Available</span>', 'woocommerce_cart_reports' ) . pw_tooltip(esc_html__('No customer name information available for carts created by non-logged-in Guests.', 'woocommerce_cart_reports'), false);
