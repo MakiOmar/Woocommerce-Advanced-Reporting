@@ -1872,10 +1872,15 @@
 
 				$chart_table=array("order_summary","sale_order_status","top_5_products","top_5_category","top_5_country","top_5_state","top_5_customer","top_5_coupon","top_5_gateway");
 
-
+				error_log('DEBUG: Before fetch_sql check - search_fields=' . ($search_fields ? 'NOT NULL' : 'NULL') . ', in_except=' . (in_array($table_name,$except_table) ? 'yes' : 'no'));
 				if($search_fields!=NULL || in_array($table_name,$except_table))
-				{   $this->search_form_fields=$search_fields;
+				{   
+					error_log('DEBUG: Calling fetch_sql for ' . $table_name);
+					$this->search_form_fields=$search_fields;
 					$this->results =$this->fetch_sql($table_name,$search_fields);
+					error_log('DEBUG: fetch_sql returned ' . (is_array($this->results) ? count($this->results) : '0') . ' results');
+				} else {
+					error_log('DEBUG: Skipping fetch_sql - conditions not met');
 				}
 
 				/**************TABLE COLUMNS & CONTROLS************/
