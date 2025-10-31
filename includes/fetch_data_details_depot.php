@@ -1633,7 +1633,7 @@ if ($file_used == "sql_table") {
                 <?php
                 //$state_codes = $this->pw_get_paying_woo_state('shipping_state','shipping_country');
                 //$this->pw_get_woo_country_of_state();
-                //$this->pw_get_woo_bsn($order->billing_country,$items->billing_state_code);
+                //$this->pw_get_woo_bsn($order->get_billing_country(),$items->billing_state_code);
 
                 $country_data = $this->pw_get_paying_woo_state('billing_country');
 

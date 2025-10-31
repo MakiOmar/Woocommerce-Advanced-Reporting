@@ -218,7 +218,7 @@
 				print_r($cc);
 				if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
 				$datatable_value.=("<td style='".$display_class."'>");
-					$datatable_value.= $order->billing_phone;
+					$datatable_value.= $order->get_billing_phone();
 				$datatable_value.=("</td>");
 
 				//Product Name

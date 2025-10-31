@@ -1288,7 +1288,7 @@ if ($file_used == "sql_table") {
                 $display_class  = '';
                 $country        = $this->pw_get_woo_countries();
 
-                $this_country = $order->billing_country;
+                $this_country = $order->get_billing_country();
                 if($this_country == '') $this_country = $default_country;
 
                 $pw_table_value = isset($country->countries[$this_country]) ? $country->countries[$this_country] : $this_country;
@@ -1304,7 +1304,7 @@ if ($file_used == "sql_table") {
 
                 $state = $order->get_billing_city();
                 $state = $this->pw_get_woo_bsn($this_country, $state);
-//                $state      	= $this->pw_get_woo_bsn($order->billing_country,$items->billing_state);
+//                $state      	= $this->pw_get_woo_bsn($order->get_billing_country(),$items->billing_state);
                 // $pw_table_value = isset($items->billing_state) ? $state: $items->billing_state;
                 if ($this->table_cols[$index_cols++]['status'] == 'hide') {
                     $display_class = 'display:none';
@@ -3118,7 +3118,7 @@ if ($file_used == "sql_table") {
             $display_class  = '';
             $country        = $this->pw_get_woo_countries();
 
-            $this_country = $order->billing_country;
+            $this_country = $order->get_billing_country();
             if($this_country == '') $this_country = $default_country;
 
             $pw_table_value = isset($country->countries[$this_country]) ? $country->countries[$this_country] : $this_country;
@@ -3131,7 +3131,7 @@ if ($file_used == "sql_table") {
 
             //STATE
             $display_class = '';
-            //  $state      	= $this->pw_get_woo_bsn($order->billing_country,$items->billing_state);
+            //  $state      	= $this->pw_get_woo_bsn($order->get_billing_country(),$items->billing_state);
             $state = $order->get_billing_city();
 
             $state = $this->pw_get_woo_bsn($this_country, $state);
@@ -4088,7 +4088,7 @@ if ($file_used == "sql_table") {
                 <?php
                 //$state_codes = $this->pw_get_paying_woo_state('shipping_state','shipping_country');
                 //$this->pw_get_woo_country_of_state();
-                //$this->pw_get_woo_bsn($order->billing_country,$items->billing_state_code);
+                //$this->pw_get_woo_bsn($order->get_billing_country(),$items->billing_state_code);
 
                 $country_data = $this->pw_get_paying_woo_state('billing_country');
 

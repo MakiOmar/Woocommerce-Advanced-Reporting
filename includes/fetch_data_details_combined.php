@@ -855,7 +855,7 @@ elseif($file_used=="data_table"){
             //COUNTRY
             $display_class='';
             $country      	= $this->pw_get_woo_countries();
-            $pw_table_value = isset($country->countries[$order->billing_country]) ? $country->countries[$order->billing_country]: $order->billing_country;
+            $pw_table_value = isset($country->countries[$order->get_billing_country()]) ? $country->countries[$order->get_billing_country()]: $order->get_billing_country();
             if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
             $datatable_value.=("<td style='".$display_class."'>");
             $datatable_value.= $pw_table_value;
@@ -2006,7 +2006,7 @@ elseif($file_used=="data_table"){
 				<?php
 				//$state_codes = $this->pw_get_paying_woo_state('shipping_state','shipping_country');
 				//$this->pw_get_woo_country_of_state();
-				//$this->pw_get_woo_bsn($order->billing_country,$items->billing_state_code);
+				//$this->pw_get_woo_bsn($order->get_billing_country(),$items->billing_state_code);
 				$state_codes = $this->pw_get_paying_woo_state('billing_state','billing_country');
 				$option='';
 				foreach($state_codes as $state){
