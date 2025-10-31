@@ -422,15 +422,16 @@
 	}
 
 
-			//////////////////////////////
-			// GENERATE TABLE COLUMNS
-			//////////////////////////////
-			public function table_columns($table_name){
-				switch($table_name){
+		//////////////////////////////
+		// GENERATE TABLE COLUMNS
+		//////////////////////////////
+		public function table_columns($table_name){
+			$table_column = array(); // Default to empty array
+			switch($table_name){
 
-					case 'dashboard_report':
-						$table_column=array();
-					break;
+				case 'dashboard_report':
+					$table_column=array();
+				break;
 
 					case 'monthly_summary':
 						$table_column=array(

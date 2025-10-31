@@ -51,7 +51,7 @@ if ($file_used == "sql_table") {
     $pw_order_status   = $this->pw_get_woo_requests('pw_orders_status', '-1', true);
     //$pw_order_status  		= "'".str_replace(",","','",$pw_order_status)."'";
 
-    $pw_paid_customer = str_replace(",", "','", $pw_paid_customer);
+    $pw_paid_customer = str_replace(",", "','", (string)$pw_paid_customer);
     //$pw_country_code		= str_replace(",","','",$pw_country_code);
     //$state_code		= str_replace(",","','",$state_code);
     //$pw_country_code		= str_replace(",","','",$pw_country_code);
@@ -3542,7 +3542,7 @@ if ($file_used == "sql_table") {
         $table_name_total = $table_name . "_with_items";
 
         $this->table_cols_total = $this->table_columns_total($table_name_total);
-        if ($pw_show_cog != 'yes') {
+        if ($pw_show_cog != 'yes' && is_array($this->table_cols_total) && count($this->table_cols_total) > 0) {
             ////ADDE IN VER4.0
             /// COST OF GOOD
             unset($this->table_cols_total[count($this->table_cols_total) - 1]);
@@ -3567,7 +3567,7 @@ if ($file_used == "sql_table") {
         $table_name_total = $table_name . "_no_items";
 
         $this->table_cols_total = $this->table_columns_total($table_name_total);
-        if ($pw_show_cog != 'yes') {
+        if ($pw_show_cog != 'yes' && is_array($this->table_cols_total) && count($this->table_cols_total) > 0) {
             ////ADDE IN VER4.0
             /// COST OF GOOD
             unset($this->table_cols_total[count($this->table_cols_total) - 1]);
