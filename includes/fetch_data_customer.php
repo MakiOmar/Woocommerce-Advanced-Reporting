@@ -122,7 +122,7 @@ if($file_used=="sql_table")
         if ($items->customer_id) {
             $datatable_value.= $items->customer_id;
         } else {
-            $datatable_value.= 'زائر';
+            $datatable_value.= esc_html__('Guest', __PW_REPORT_WCREPORT_TEXTDOMAIN__);
         }        
         $datatable_value.=("</td>");
 
@@ -245,14 +245,14 @@ if($file_used=="sql_table")
 		$datatable_value.= $value_unserialized[0]['amount'] == 0 ? $this->price(0) : $this->price($value_unserialized[0]['amount']);;
 		$datatable_value.=("</td>");
 
-        // الصافي
+        // Net
         $display_class='';
         if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
         $datatable_value.=("<td style='".$display_class."'>");
         $datatable_value.=("x");
         $datatable_value.=("</td>");
 
-        // التصنيف+
+        // Classification+
         $display_class='';
         if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
         $datatable_value.=("<td style='".$display_class."'>");

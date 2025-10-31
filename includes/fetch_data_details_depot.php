@@ -714,19 +714,19 @@ if ($file_used == "sql_table") {
     if ($pw_detail_view == "yes") {
 
         $columns = array(
-            array('lable' => esc_html__('رمز المنتج (SKU)', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-            array('lable' => esc_html__('الحجم / المنتج الإضافي', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-            array('lable' => esc_html__('الحجم', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-            array('lable' => esc_html__('الكمية', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Product SKU', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Size / Add-on Product', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Size', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Quantity', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
         );
 
     } else {
 
         $columns = array(
-            array('lable' => esc_html__('رمز المنتج (SKU)', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-            array('lable' => esc_html__('الحجم / المنتج الإضافي', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-            array('lable' => esc_html__('الحجم', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-            array('lable' => esc_html__('الكمية', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Product SKU', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Size / Add-on Product', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Size', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Quantity', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
         );
     }
 
