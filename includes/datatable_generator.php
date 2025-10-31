@@ -1913,7 +1913,9 @@
 				$table_cols='';
 
 			$i=0;
-			if($search_fields!=NULL  || in_array($table_name,$except_table))
+			// Generate headers if we have search fields, an excepted dashboard table,
+			// or if columns were set by fetch files/fallbacks
+			if($search_fields!=NULL || in_array($table_name,$except_table) || ( !empty($this->table_cols) ))
 			{
 				error_log('DEBUG datatable_generator: table_name=' . $table_name . ', table_cols count=' . count((array)$this->table_cols));
 				foreach((array)$this->table_cols as $cols)
