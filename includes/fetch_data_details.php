@@ -917,7 +917,9 @@ if ($file_used == "sql_table") {
     }
 
     $columns          = array_values($columns);
+    error_log('DEBUG: fetch_data_details.php sql_table - About to set table_cols, columns count=' . count($columns));
     $this->table_cols = $columns;
+    error_log('DEBUG: fetch_data_details.php sql_table - table_cols set, count=' . count($this->table_cols));
 
 } elseif ($file_used == "data_table") {
 
