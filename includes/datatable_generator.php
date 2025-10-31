@@ -9,7 +9,7 @@
 			public $sql_int_last_todays;
 			public $top_products;
 			public $sql_int_refund_products;
-			public $search_form_fields='';
+			public $search_form_fields=array();
 			public $table_cols;
 			public $table_cols_total;
 			public $refund_status='refunddetails_status_refunded_main';
