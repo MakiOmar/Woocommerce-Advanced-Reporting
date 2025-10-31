@@ -141,6 +141,11 @@ if ($file_used == "sql_table") {
 
     $pw_order_status = $this->pw_get_form_element_permission('pw_orders_status', $pw_order_status, $key);
 
+    // Convert array to comma-separated string if needed
+    if (is_array($pw_order_status)) {
+        $pw_order_status = implode(",", $pw_order_status);
+    }
+
     if ($pw_order_status != null && $pw_order_status != '-1') {
         $pw_order_status = "'" . str_replace(",", "','", $pw_order_status) . "'";
     }
