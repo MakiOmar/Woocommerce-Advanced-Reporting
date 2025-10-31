@@ -780,7 +780,8 @@ if ($file_used == "sql_table") {
             $fetch_other_data = $this->pw_get_full_post_meta($order_id);
         }
 
-        $pw_detail_view == "no";
+        $pw_detail_view = "no";
+        $part_refund = 0;
 
         if (in_array($items->order_id, $items_render)) {
             continue;
