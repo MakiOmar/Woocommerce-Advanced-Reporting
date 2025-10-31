@@ -1750,6 +1750,7 @@
 			// MAIN FUNCTION OF TABLE HTML
 			//////////////////////////////
 			public function table_html($table_name,$search_fields=NULL){
+				error_log('DEBUG table_html: table_name=' . $table_name . ', search_fields=' . ($search_fields ? 'NOT NULL (' . count((array)$search_fields) . ' items)' : 'NULL'));
 				$table_name_total='';
 				$product_count=get_option(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'top_product_post_per_page',5);
 				$order_count=get_option(__PW_REPORT_WCREPORT_FIELDS_PERFIX__.'recent_post_per_page',5);
@@ -2008,8 +2009,10 @@
 				//echo $table_cols;
 
 				/**************TABLE FETCH DATAS OF TABLE************/
+				error_log('DEBUG: Checking data_table condition - search_fields=' . ($search_fields ? 'NOT NULL' : 'NULL') . ', table_name=' . $table_name . ', in_except=' . (in_array($table_name,$except_table) ? 'yes' : 'no'));
 				if($search_fields!=NULL  || in_array($table_name,$except_table) || $table_name=='dashboard_report')
 				{
+					error_log('DEBUG: Entering data_table section for ' . $table_name);
 					//$pw_null_val = $this->price(0);
 					$pw_null_val = 0;
 					$datatable_value='';
