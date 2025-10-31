@@ -1217,7 +1217,7 @@ if ($file_used == "sql_table") {
                     $display_class = 'display:none';
                 }
                 $datatable_value .= ("<td style='" . $display_class . "'>");
-                $datatable_value .= $items->billing_phone;
+                $datatable_value .= $items->billing_phone ?? '';
                 $datatable_value .= ("</td>");
                 
                 //MDate
@@ -1720,7 +1720,7 @@ if ($file_used == "sql_table") {
                     $display_class = 'display:none';
                 }
                 $datatable_value .= ("<td style='" . $display_class . "'>");
-                $datatable_value .= $items->billing_phone;
+                $datatable_value .= $items->billing_phone ?? '';
                 $datatable_value .= ("</td>");
                 
                 //MDate
@@ -2381,7 +2381,7 @@ if ($file_used == "sql_table") {
                                 $display_class = 'display:none';
                             }
                             $datatable_value .= ("<td style='" . $display_class . "'>");
-                            $datatable_value .= $items->billing_phone;
+                            $datatable_value .= $items->billing_phone ?? '';
                             $datatable_value .= ("</td>");
                             
                             //MDate
@@ -2935,7 +2935,7 @@ if ($file_used == "sql_table") {
                         $display_class = 'display:none';
                     }
                     $datatable_value .= ("<td style='" . $display_class . "'>");
-                    $datatable_value .= $items->billing_phone;
+                    $datatable_value .= $items->billing_phone ?? '';
                     $datatable_value .= ("</td>");
                     
                     //MDate
@@ -3614,7 +3614,7 @@ if ($file_used == "sql_table") {
                                     $display_class = 'display:none';
                                 }
                                 $datatable_value .= ("<td style='" . $display_class . "'>");
-                                $datatable_value .= $items->billing_phone;
+                                $datatable_value .= $items->billing_phone ?? '';
                                 $datatable_value .= ("</td>");
                                 
                                 //MDate
@@ -4182,7 +4182,7 @@ if ($file_used == "sql_table") {
 				$display_class = 'display:none';
 			}
 			$datatable_value .= ("<td style='" . $display_class . "'>");
-			$datatable_value .= $items->billing_phone;
+			$datatable_value .= $items->billing_phone ?? '';
 			$datatable_value .= ("</td>");
             
             //MDate

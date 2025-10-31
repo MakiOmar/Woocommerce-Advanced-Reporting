@@ -3694,14 +3694,14 @@
 	            return true;
             }
 
-			//PUBLIC FUCTIONS
-			function pw_get_prod_sku($order_item_id, $pw_product_id/*,$current_page='',$product_type='-1'*/){
-				$pw_table_value = $this->pw_get_oiv_sku($order_item_id);
-				$pw_table_value = strlen($pw_table_value) > 0 ? $pw_table_value : $this->pw_get_op_sku($pw_product_id);
+		//PUBLIC FUCTIONS
+		function pw_get_prod_sku($order_item_id, $pw_product_id/*,$current_page='',$product_type='-1'*/){
+			$pw_table_value = $this->pw_get_oiv_sku($order_item_id);
+			$pw_table_value = strlen((string)$pw_table_value) > 0 ? $pw_table_value : $this->pw_get_op_sku($pw_product_id);
 
-				$pw_table_value = strlen($pw_table_value) > 0 ? $pw_table_value : 'Not Set';
-				return $pw_table_value;
-			}
+			$pw_table_value = strlen((string)$pw_table_value) > 0 ? $pw_table_value : 'Not Set';
+			return $pw_table_value;
+		}
 
 			function pw_get_oiv_customfields($order_item_id = 0){
 				global $wpdb;
