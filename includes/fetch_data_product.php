@@ -566,7 +566,8 @@ if($file_used=="sql_table")
 		$display_class='';
 		if($this->table_cols[$index_cols++]['status']=='hide') $display_class='display:none';
 		$datatable_value.=("<td style='".$display_class."'>");
-		$datatable_value.= number_format($this->pw_get_prod_stock_($items->order_item_id, $items->product_id),0);
+		$stock_value = $this->pw_get_prod_stock_($items->order_item_id, $items->product_id);
+		$datatable_value.= is_numeric($stock_value) ? number_format($stock_value, 0) : $stock_value;
 		$datatable_value.=("</td>");
 
 		//Amount
