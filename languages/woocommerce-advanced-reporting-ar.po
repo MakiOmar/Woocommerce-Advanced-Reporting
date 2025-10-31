@@ -44,69 +44,69 @@ msgstr ""
 #: class/variation.php:13 class/variation_per_month.php:13
 #: class/variation_stock.php:13
 msgid "Configuration"
-msgstr ""
+msgstr "الإعدادات"
 
 #: class/addons_report.php:6
 msgid "Reporting Add-ons"
-msgstr ""
+msgstr "إضافات التقارير"
 
 #: class/addons_report.php:7
 msgid "No external add-ons available in white label version"
-msgstr ""
+msgstr "لا توجد إضافات خارجية متاحة في النسخة البيضاء"
 
 #: class/addons_report.php:11
 msgid "This is a white-labeled version. Add-ons feed has been removed."
-msgstr ""
+msgstr "هذه نسخة بعلامة بيضاء. تم إزالة موجز الإضافات."
 
 #: class/advertise_other_plugins.php:7 class/report_news.php:12
 msgid "This is a white-labeled version"
-msgstr ""
+msgstr "هذه نسخة بعلامة بيضاء"
 
 #: class/advertise_other_plugins.php:8
 msgid ""
 "External plugin advertisements have been removed from this white label "
 "version."
-msgstr ""
+msgstr "تم إزالة إعلانات الإضافات الخارجية من هذه النسخة."
 
 #: class/customefields.php:12
 msgid "Cost Of Good"
-msgstr ""
+msgstr "تكلفة البضاعة"
 
 #: class/customefields.php:27
 msgid "View"
-msgstr ""
+msgstr "عرض"
 
 #: class/customefields.php:28
 msgid "Set count of view"
-msgstr ""
+msgstr "تعيين عدد المشاهدات"
 
 #: class/customefields.php:33
 msgid "Like"
-msgstr ""
+msgstr "إعجاب"
 
 #: class/customefields.php:34
 msgid "Set count of like"
-msgstr ""
+msgstr "تعيين عدد الإعجابات"
 
 #: class/customefields.php:39
 msgid "Video Url"
-msgstr ""
+msgstr "رابط الفيديو"
 
 #: class/customefields.php:40
 msgid "Set embed video url"
-msgstr ""
+msgstr "تعيين رابط الفيديو المضمن"
 
 #: class/dashboard_report.php:115
 msgid "Sales By Months"
-msgstr ""
+msgstr "المبيعات حسب الأشهر"
 
 #: class/dashboard_report.php:116
 msgid "Sales By Days"
-msgstr ""
+msgstr "المبيعات حسب الأيام"
 
 #: class/dashboard_report.php:117
 msgid "3D Month Chart"
-msgstr ""
+msgstr "رسم بياني ثلاثي الأبعاد للشهر"
 
 #: class/dashboard_report.php:118
 #: includes/Intelligence/fetch_data_int_reports_home.php:914
@@ -118,15 +118,15 @@ msgstr "المنتجات"
 
 #: class/dashboard_report.php:134
 msgid "Click to change theme"
-msgstr ""
+msgstr "انقر لتغيير المظهر"
 
 #: class/dashboard_report.php:188
 msgid "Map"
-msgstr ""
+msgstr "خريطة"
 
 #: class/dashboard_report.php:203
 msgid "Select a year"
-msgstr ""
+msgstr "اختر سنة"
 
 #: class/dashboard_report.php:613
 #, fuzzy
@@ -136,15 +136,15 @@ msgstr "عدد الطلبات"
 
 #: class/dashboard_report.php:621 class/dashboard_report.php:660
 msgid "Less than"
-msgstr ""
+msgstr "أقل من"
 
 #: class/dashboard_report.php:629 class/dashboard_report.php:675
 msgid "and"
-msgstr ""
+msgstr "و"
 
 #: class/dashboard_report.php:636 class/dashboard_report.php:689
 msgid "More than"
-msgstr ""
+msgstr "أكثر من"
 
 #: class/dashboard_report.php:646
 #, fuzzy
@@ -154,11 +154,11 @@ msgstr "عدد الطلبات"
 
 #: class/dashboard_report.php:719
 msgid "Hide Oldest News !"
-msgstr ""
+msgstr "إخفاء الأخبار القديمة!"
 
 #: class/dashboard_report.php:722
 msgid "Show Oldest News !"
-msgstr ""
+msgstr "عرض الأخبار القديمة!"
 
 #: class/mail_class.php:61
 msgid "Proword Once Hourly"
@@ -186,31 +186,31 @@ msgstr ""
 
 #: class/pages_fetch_dashboards.php:20
 msgid "Woocommerce Reporting"
-msgstr ""
+msgstr "تقارير ووكوميرس"
 
 #: class/pages_fetch_dashboards.php:24
 msgid "Extra Add-ons"
-msgstr ""
+msgstr "إضافات إضافية"
 
 #: class/pages_fetch_dashboards.php:31
 msgid "Send Request / Feedback"
-msgstr ""
+msgstr "إرسال طلب / ملاحظات"
 
 #: class/pages_fetch_dashboards.php:57
 msgid "Switch to wordpress dashboard"
-msgstr ""
+msgstr "التبديل إلى لوحة تحكم ووردبريس"
 
 #: class/pages_fetch_dashboards.php:62
 msgid "Expand Window"
-msgstr ""
+msgstr "توسيع النافذة"
 
 #: class/pages_fetch_dashboards.php:92
 msgid "Basics"
-msgstr ""
+msgstr "الأساسيات"
 
 #: class/pages_fetch_dashboards.php:103
 msgid "All Order with Taxonomies & Fields"
-msgstr ""
+msgstr "جميع الطلبات مع التصنيفات والحقول"
 
 #: class/pages_fetch_dashboards.php:113 main.php:2921
 msgid "More Reports"
