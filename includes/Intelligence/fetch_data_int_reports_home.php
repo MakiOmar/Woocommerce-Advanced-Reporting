@@ -42,7 +42,7 @@ if($file_used=="sql_table")
 	$pw_order_status		= $this->pw_get_woo_requests('pw_orders_status','-1',true);
 	//$pw_order_status  		= "'".str_replace(",","','",$pw_order_status)."'";
 
-	$pw_paid_customer		= str_replace(",","','",$pw_paid_customer);
+	$pw_paid_customer		= str_replace(",","','",(string)$pw_paid_customer);
 	//$pw_country_code		= str_replace(",","','",$pw_country_code);
 	//$state_code		= str_replace(",","','",$state_code);
 	//$pw_country_code		= str_replace(",","','",$pw_country_code);

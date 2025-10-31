@@ -11,7 +11,7 @@
 
 		if($pw_paid_customer != NULL  && $pw_paid_customer != '-1')
 		{
-			$pw_paid_customer = "'".str_replace(",", "','",$pw_paid_customer)."'";
+			$pw_paid_customer = "'".str_replace(",", "','",(string)$pw_paid_customer)."'";
 		}
 
 		$pw_billing_post_code	= $this->pw_get_woo_requests('pw_bill_post_code',"-1",true);
