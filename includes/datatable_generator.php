@@ -1272,11 +1272,12 @@
 			//////////////////////////////
 			// GENERATE TABLE TOTAL COLUMNS
 			//////////////////////////////
-			public function table_columns_total($table_name){
-				switch($table_name){
+		public function table_columns_total($table_name){
+			$table_column = array(); // Default to empty array
+			switch($table_name){
 
-					case 'details_no_items':
-						$table_column=array(
+				case 'details_no_items':
+					$table_column=array(
 							array('lable'=> esc_html__('Order Count',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
 							array('lable'=> esc_html__('Gross Amt.',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
 							array('lable'=>	esc_html__('Discount Amt.',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
@@ -2501,7 +2502,7 @@
 	                    //$this->table_cols_total = $this->table_columns_total( $table_name_total );
 
 	                    $table_cols_total = '';
-	                    foreach ( $this->table_cols_total as $cols ) {
+	                    foreach ( (array)$this->table_cols_total as $cols ) {
 		                    $currency_class = '';
 		                    if ( $cols['status'] == 'currency' ) {
 			                    $currency_class = 'currency';
