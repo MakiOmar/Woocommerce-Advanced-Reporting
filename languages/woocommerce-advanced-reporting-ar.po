@@ -214,47 +214,47 @@ msgstr "جميع الطلبات مع التصنيفات والحقول"
 
 #: class/pages_fetch_dashboards.php:113 main.php:2921
 msgid "More Reports"
-msgstr ""
+msgstr "المزيد من التقارير"
 
 #: class/pages_fetch_dashboards.php:124
 msgid "CrossTab"
-msgstr ""
+msgstr "جدول تقاطعي"
 
 #: class/pages_fetch_dashboards.php:134
 msgid "Other"
-msgstr ""
+msgstr "أخرى"
 
 #. Plugin Name of the plugin/theme
 #: class/pages_fetch_dashboards.php:139
 msgid "WooCommerce Advanced Reporting by Makiomar"
-msgstr ""
+msgstr "تقارير ووكوميرس المتقدمة بواسطة مكي عمر"
 
 #: class/pages_fetch_dashboards.php:140
 msgid "White Label Version"
-msgstr ""
+msgstr "نسخة بعلامة بيضاء"
 
 #: class/pages_fetch_dashboards.php:164 class/plugin_active.php:120
 #: main.php:2207 main.php:2208 main.php:2657
 msgid "Dashboard"
-msgstr ""
+msgstr "لوحة التحكم"
 
 #: class/pages_fetch_dashboards.php:170 main.php:2485
 msgid "Activate Plugin"
-msgstr ""
+msgstr "تفعيل الإضافة"
 
 #: class/pages_fetch_dashboards.php:246
 msgid "Edit"
-msgstr ""
+msgstr "تعديل"
 
 #: class/pages_fetch_dashboards.php:287 class/pages_fetch_dashboards.php:314
 #: main.php:1899
 msgid "Access Denied !"
-msgstr ""
+msgstr "الوصول مرفوض!"
 
 #: class/pages_fetch_dashboards.php:288 class/pages_fetch_dashboards.php:315
 #: main.php:1901
 msgid "You have no permisson !! Please Contact site Administrator"
-msgstr ""
+msgstr "ليس لديك صلاحية! يرجى الاتصال بمدير الموقع"
 
 #: class/plugin_active.php:6
 #, fuzzy
@@ -264,7 +264,7 @@ msgstr "آخر شراء"
 
 #: class/plugin_active.php:7
 msgid "Enter Your Purchase Code"
-msgstr ""
+msgstr "أدخل كود الشراء الخاص بك"
 
 #: class/plugin_active.php:15 class/setting_report.php:44
 #: includes/datatable_generator.php:530 includes/datatable_generator.php:772
@@ -303,77 +303,77 @@ msgstr "البريد الإلكتروني"
 
 #: class/plugin_active.php:16
 msgid "Enter Your Valid Email."
-msgstr ""
+msgstr "أدخل بريدك الإلكتروني الصحيح"
 
 #: class/plugin_active.php:85
 msgid "Congratulation, The Plugin has been Activated Successfully !"
-msgstr ""
+msgstr "تهانينا! تم تفعيل الإضافة بنجاح!"
 
 #: class/plugin_active.php:98
 msgid "Unfortunately, The Purchase code is Wrong, Please try Again !"
-msgstr ""
+msgstr "للأسف، كود الشراء خاطئ، يرجى المحاولة مرة أخرى!"
 
 #: class/plugin_active.php:120
 msgid "Congratulation, The Plugin has been Activated Successfully ! Move to "
-msgstr ""
+msgstr "تهانينا! تم تفعيل الإضافة بنجاح! انتقل إلى "
 
 #: class/plugin_active.php:121
 msgid ""
 "Unfortunately, The Purchase code is Wrong or Email is not Valid, Please try "
 "Again !"
-msgstr ""
+msgstr "للأسف، كود الشراء خاطئ أو البريد الإلكتروني غير صحيح، يرجى المحاولة مرة أخرى!"
 
 #: class/plugin_active.php:129
 msgid "Plugin Activate"
-msgstr ""
+msgstr "تفعيل الإضافة"
 
 #: class/plugin_active.php:147
 msgid "Please set email for complete activation in Ver4.0"
-msgstr ""
+msgstr "يرجى تعيين البريد الإلكتروني لإكمال التفعيل في الإصدار 4.0"
 
 #: class/plugin_active.php:173
 msgid "Save Settings"
-msgstr ""
+msgstr "حفظ الإعدادات"
 
 #: class/report_form.php:4
 msgid "Request Form"
-msgstr ""
+msgstr "نموذج الطلب"
 
 #: class/report_form.php:5
 msgid "Send your request / issue for us"
-msgstr ""
+msgstr "أرسل طلبك / مشكلتك لنا"
 
 #: class/report_form.php:13
 msgid "Enter Full Name.."
-msgstr ""
+msgstr "أدخل الاسم الكامل.."
 
 #: class/report_form.php:18
 msgid "Enter Email."
-msgstr ""
+msgstr "أدخل البريد الإلكتروني"
 
 #: class/report_form.php:24
 msgid "Select Subject"
-msgstr ""
+msgstr "اختر الموضوع"
 
 #: class/report_form.php:25 includes/actions.php:1386
 msgid "Send a Request"
-msgstr ""
+msgstr "إرسال طلب"
 
 #: class/report_form.php:26 includes/actions.php:1386
 msgid "Report an issue"
-msgstr ""
+msgstr "الإبلاغ عن مشكلة"
 
 #: class/report_form.php:32
 msgid "Enter Title."
-msgstr ""
+msgstr "أدخل العنوان"
 
 #: class/report_form.php:36
 msgid "Enter Your request / issue..."
-msgstr ""
+msgstr "أدخل طلبك / مشكلتك..."
 
 #: class/report_form.php:41
 msgid "Send"
-msgstr ""
+msgstr "إرسال"
 
 #: class/report_news.php:7
 #, fuzzy
@@ -383,71 +383,71 @@ msgstr "التصنيف"
 
 #: class/report_news.php:8
 msgid "Notification Center"
-msgstr ""
+msgstr "مركز الإشعارات"
 
 #: class/report_news.php:13
 msgid "External news feed has been removed from this white label version."
-msgstr ""
+msgstr "تم إزالة موجز الأخبار الخارجي من هذه النسخة."
 
 #: class/setting_report.php:6 includes/actions.php:436
 msgid "EQUALS"
-msgstr ""
+msgstr "يساوي"
 
 #: class/setting_report.php:7 includes/actions.php:437
 msgid "NOT EQUALS"
-msgstr ""
+msgstr "لا يساوي"
 
 #: class/setting_report.php:8 includes/actions.php:438
 msgid "LESS THEN"
-msgstr ""
+msgstr "أقل من"
 
 #: class/setting_report.php:9 includes/actions.php:439
 msgid "MORE THEN"
-msgstr ""
+msgstr "أكثر من"
 
 #: class/setting_report.php:10 includes/actions.php:440
 msgid "EQUAL AND MORE"
-msgstr ""
+msgstr "يساوي أو أكثر"
 
 #: class/setting_report.php:11 includes/actions.php:441
 msgid "LESS AND EQUAL"
-msgstr ""
+msgstr "أقل أو يساوي"
 
 #: class/setting_report.php:14 includes/actions.php:444
 msgid "EXACTLY LIKE"
-msgstr ""
+msgstr "مطابق تماماً"
 
 #: class/setting_report.php:15 includes/actions.php:445
 msgid "LIKE"
-msgstr ""
+msgstr "مشابه"
 
 #: class/setting_report.php:38
 msgid "General Settings"
-msgstr ""
+msgstr "الإعدادات العامة"
 
 #: class/setting_report.php:50 main.php:2477
 msgid "Add-ons"
-msgstr ""
+msgstr "الإضافات"
 
 #: class/setting_report.php:56
 msgid "Target"
-msgstr ""
+msgstr "الهدف"
 
 #: class/setting_report.php:62
 msgid "Translate"
-msgstr ""
+msgstr "ترجمة"
 
 #: class/setting_report.php:68
 msgid "License info"
-msgstr ""
+msgstr "معلومات الترخيص"
 
 #: class/setting_report.php:84
 msgid "System Settings"
-msgstr ""
+msgstr "إعدادات النظام"
 
 #: class/setting_report.php:91
 msgid "Shop Order Status"
-msgstr ""
+msgstr "حالة طلبات المتجر"
 
 #: class/setting_report.php:92 class/setting_report.php:326
 msgid ""
