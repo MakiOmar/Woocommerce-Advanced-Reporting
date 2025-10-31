@@ -74,8 +74,9 @@
 			PW_Report_AWR_Helpers::json_error( 'Insufficient permissions', 403 );
 		}
 
-		// Sanitize and parse input
-		$postdata = isset( $_REQUEST['postdata'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['postdata'] ) ) : '';
+		// Parse input first, then sanitize individual values
+		// DO NOT use sanitize_text_field on the entire string as it breaks array syntax []
+		$postdata = isset( $_REQUEST['postdata'] ) ? wp_unslash( $_REQUEST['postdata'] ) : '';
 		parse_str( $postdata, $my_array_of_vars );
 		
 		error_log('DEBUG actions.php: pw_orders_status after parse_str = ' . print_r($my_array_of_vars['pw_orders_status'] ?? 'NOT SET', true));
