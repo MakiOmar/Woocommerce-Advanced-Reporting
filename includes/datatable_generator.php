@@ -352,19 +352,67 @@
 						require("fetch_data_projected_actual_sale.php");
 					break;
 
-					case 'tax_reports':
-						require("fetch_data_tax_reports.php");
-					break;
-
-
-
-				//CUSTOM WORK - 12412
-				case 'product_variation_qty':
-					require("fetch_data_product_variation_qty.php");
+				case 'tax_reports':
+					require("fetch_data_tax_reports.php");
 				break;
 
-			}
+				case 'details':
+					require("fetch_data_details.php");
+				break;
+
+				case 'details_depot':
+					require("fetch_data_details_depot.php");
+				break;
+
+				case 'details_user_id':
+					require("fetch_data_details_user_id.php");
+				break;
+
+				case 'details_combined':
+					require("fetch_data_details_combined.php");
+				break;
+
+				case 'details_full':
+					require("fetch_data_details_full.php");
+				break;
+
+				case 'details_full_shipping':
+					require("fetch_data_details_full_shipping.php");
+				break;
+
+				case 'details_full_shipping_tax':
+					require("fetch_data_details_full_shipping_tax.php");
+				break;
+
+				case 'details_tickera':
+					require("fetch_data_details_tickera.php");
+				break;
+
+				case 'details_product_options':
+					require("fetch_data_details_product_options.php");
+				break;
+
+				case 'details_brands':
+					require("fetch_data_details_brands.php");
+				break;
+
+				case 'details_tax_field':
+					require("fetch_data_details_tax_field.php");
+				break;
+
+				case 'details_order_country':
+					require("fetch_data_details_per_country.php");
+				break;
+
+
+
+			//CUSTOM WORK - 12412
+			case 'product_variation_qty':
+				require("fetch_data_product_variation_qty.php");
+			break;
+
 		}
+	}
 
 		if(isset($sql)) {
 			$wpdb->query('SET SQL_BIG_SELECTS = 1');
