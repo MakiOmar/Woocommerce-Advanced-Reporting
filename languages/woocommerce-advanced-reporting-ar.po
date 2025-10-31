@@ -138,9 +138,6 @@ msgstr "الحجم / المنتج الإضافي"
 msgid "Size"
 msgstr "الحجم"
 
-msgid "Wallet / Discount"
-msgstr "المحفظة / الخصم"
-
 msgid "Warehouse Sales Report"
 msgstr "تقرير المبيعات للمستودع"
 
@@ -149,4 +146,7 @@ msgstr "تقرير خدمة العملاء"
 
 msgid "Unregistered Customers"
 msgstr "العملاء غير المسجلين"
+
+msgid "Guest"
+msgstr "زائر"
 
