@@ -765,23 +765,23 @@
 
 					case 'customer':
 						$table_column=array(
-							array('lable'=>esc_html__('معرف العميل',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('اسم العميل',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('الرقم الضريبي',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Customer ID',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Customer Name',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Tax ID',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
 							//array('lable'=>esc_html__('Billing Last Name',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('البريد الإلكتروني',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('الجوال',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('العنوان',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('المدينة',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('الدولة',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('عدد الطلبات',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('الإجمالي',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'currency'),
-							array('lable'=>esc_html__('آخر شراء',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('آخر دخول',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('عضو منذ',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('إجمالي الاسترجاع',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('الصافي',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('التصنيف',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Email',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Mobile',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Address',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('City',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Country',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Grand Total',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'currency'),
+							array('lable'=>esc_html__('Last Purchase',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Last Login',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Member Since',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Total Refund',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Net',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Classification',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
 						);
 					break;
 
@@ -1603,10 +1603,10 @@
 
 					case 'customer':
 						$table_column=array(
-							array('lable'=>esc_html__('عدد العملاء',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('عدد الطلبات',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
-							array('lable'=>esc_html__('إجمالي الطلبات',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'currency'),
-							array('lable'=>esc_html__('متوسط الفاتورة',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'currency')
+							array('lable'=>esc_html__('Customer Count',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Order Count',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'show'),
+							array('lable'=>esc_html__('Total Orders',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'currency'),
+							array('lable'=>esc_html__('Average Invoice',__PW_REPORT_WCREPORT_TEXTDOMAIN__),'status'=>'currency')
 						);
 						break;
 
@@ -1825,8 +1825,8 @@
 					'top_5_gateway'			=> sprintf(esc_html__( "Top %s Payment Gateway",__PW_REPORT_WCREPORT_TEXTDOMAIN__),$gateway_count),
 					"recent_5_order"		=> sprintf(esc_html__( "Recent %s Orders",__PW_REPORT_WCREPORT_TEXTDOMAIN__),$order_count),
 					'details'				=> esc_html__( "All Orders",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
-					'details_depot'			=> esc_html__( "تقرير المبيعات للمستودع",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
-					'details_user_id'			=> esc_html__( "تقرير  خدمة العملاء",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
+					'details_depot'			=> esc_html__( "Warehouse Sales Report",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
+					'details_user_id'			=> esc_html__( "Customer Service Report",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
 
                     //CUSTOM WORK - 522
                     'details_combined'				=> esc_html__( "Combined Orders",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
@@ -1875,7 +1875,7 @@
 					'stock_summary_avg'				=> esc_html__( "Summary Stock Planner Based On Average Sales",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
 
 					'customer'				=> esc_html__( "Customer",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
-					'customer_guest'			=> esc_html__( "العملاء غير المسجلين",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
+					'customer_guest'			=> esc_html__( "Unregistered Customers",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
 					'billingcountry'		  => esc_html__( "Billing Country",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
 					'billingstate'			=> esc_html__( "Billing State",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
 					'billingcity'			=> esc_html__( "Billing City",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
@@ -1951,58 +1951,58 @@
 					
 					if ($pw_detail_view == "yes") {
 						$this->table_cols = array(
-							array('lable' => esc_html__('رقم الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('رقم الفاتورة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('اسم العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('رقم الهاتف', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('تاريخ التعديل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('تاريخ الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الدولة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('العنوان', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('المدينة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الحالة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('وسيلة الدفع', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الرقم الضريبي', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('المحفظة / خصم', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
-							array('lable' => esc_html__('القسيمة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('المنتجات', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Order ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Invoice Number', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Customer Name', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Phone Number', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Modified Date', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Order Date', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Country', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Address', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('City', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Status', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Payment Method', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Tax ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Wallet / Discount', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+							array('lable' => esc_html__('Coupon', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Products', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 							array('lable' => esc_html__('SKU', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('التصنيفات', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('مسمى الحجم', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الأحجام', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الكمية', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('السعر', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('المجموع', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('خصم القسيمة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الشحن', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
-							array('lable' => esc_html__('القيمة المضافة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الإجمالي', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+							array('lable' => esc_html__('Categories', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Size Name', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Sizes', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Quantity', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Price', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Total', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Coupon Discount', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Shipping', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+							array('lable' => esc_html__('VAT', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Grand Total', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
 							array('lable' => esc_html__('Invoice Action', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 						);
 						if ($pw_show_cog == 'yes') {
 							$this->table_cols[] = array('lable' => esc_html__('C.O.G', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency');
 							$this->table_cols[] = array('lable' => esc_html__('Profit', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency');
 						}
-						$this->table_cols[] = array('lable' => esc_html__('ملاحظات العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show');
+						$this->table_cols[] = array('lable' => esc_html__('Customer Notes', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show');
 					} else {
 						$this->table_cols = array(
-							array('lable' => esc_html__('رقم الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('رقم الفاتورة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('اسم العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('رقم الهاتف', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('تاريخ التعديل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('تاريخ الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الدولة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('العنوان', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('المدينة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('الحالة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Order ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Invoice Number', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Customer Name', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Phone Number', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Modified Date', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Order Date', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Country', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Address', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('City', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Status', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 							array('lable' => esc_html__('Tax Name', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 							array('lable' => esc_html__('Shipping Method', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('وسيلة الدفع', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('المحفظة / خصم', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
+							array('lable' => esc_html__('Payment Method', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Wallet / Discount', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
 							array('lable' => esc_html__('Order Currency', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('القسيمة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-							array('lable' => esc_html__('المنتجات', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Coupon', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+							array('lable' => esc_html__('Products', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 							array('lable' => esc_html__('Gross Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
 							array('lable' => esc_html__('Order Discount Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
 							array('lable' => esc_html__('Cart Discount Amt.', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'currency'),
@@ -2576,9 +2576,9 @@
 					'top_5_gateway'			=> sprintf(esc_html__( "Top %s Payment Gateway",__PW_REPORT_WCREPORT_TEXTDOMAIN__),$gateway_count),
 					"recent_5_order"		=> sprintf(esc_html__( "Recent %s Orders",__PW_REPORT_WCREPORT_TEXTDOMAIN__),$order_count),
 					'details'				=> esc_html__( "All Orders",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
-					'details_depot'			=> esc_html__( "تقرير المبيعات للمستودع",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
-					'details_user_id'		=> esc_html__( "تقرير  خدمة العملاء",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
-					'customer_guest'			=> esc_html__( "العملاء غير المسجلين",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
+					'details_depot'			=> esc_html__( "Warehouse Sales Report",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
+					'details_user_id'		=> esc_html__( "Customer Service Report",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
+					'customer_guest'			=> esc_html__( "Unregistered Customers",__PW_REPORT_WCREPORT_TEXTDOMAIN__),
 
 
                     //CUSTOM WORK - 12679

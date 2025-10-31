@@ -718,8 +718,8 @@ if ($file_used == "sql_table") {
     if ($pw_detail_view == "yes") {
 
         $columns = array(
-            array('lable' => esc_html__('رقم الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-            array('lable' => esc_html__('رقم الفاتورة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Order ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Invoice Number', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
             array('lable' => esc_html__('اسم العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 			array('lable' => esc_html__('رقم الهاتف', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 			array('lable' => esc_html__('تاريخ التعديل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
@@ -835,8 +835,8 @@ if ($file_used == "sql_table") {
     } else {
 
         $columns = array(
-            array('lable' => esc_html__('رقم الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-            array('lable' => esc_html__('رقم الفاتورة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Order ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+            array('lable' => esc_html__('Invoice Number', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
             array('lable' => esc_html__('اسم العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 			array('lable' => esc_html__('رقم الهاتف', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
 			array('lable' => esc_html__('تاريخ التعديل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
@@ -932,8 +932,8 @@ if ($file_used == "sql_table") {
         
         if ($pw_detail_view == "yes") {
             $this->table_cols = array(
-                array('lable' => esc_html__('رقم الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-                array('lable' => esc_html__('رقم الفاتورة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('Order ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('Invoice Number', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
                 array('lable' => esc_html__('اسم العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
                 array('lable' => esc_html__('رقم الهاتف', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
                 array('lable' => esc_html__('تاريخ التعديل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
@@ -967,8 +967,8 @@ if ($file_used == "sql_table") {
             $this->table_cols[] = array('lable' => esc_html__('ملاحظات العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show');
         } else {
             $this->table_cols = array(
-                array('lable' => esc_html__('رقم الطلب', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
-                array('lable' => esc_html__('رقم الفاتورة', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('Order ID', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
+                array('lable' => esc_html__('Invoice Number', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
                 array('lable' => esc_html__('اسم العميل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
                 array('lable' => esc_html__('رقم الهاتف', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),
                 array('lable' => esc_html__('تاريخ التعديل', __PW_REPORT_WCREPORT_TEXTDOMAIN__), 'status' => 'show'),

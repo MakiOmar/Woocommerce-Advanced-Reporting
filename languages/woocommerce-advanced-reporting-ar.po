@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Advanced Reporting\n"
+"POT-Creation-Date: 2025-10-31 13:45+0000\n"
+"PO-Revision-Date: 2025-10-31 13:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Manual\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+
+msgid "Order ID"
+msgstr "رقم الطلب"
+
+msgid "Invoice Number"
+msgstr "رقم الفاتورة"
+
+msgid "Customer Name"
+msgstr "اسم العميل"
+
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+msgid "Modified Date"
+msgstr "تاريخ التعديل"
+
+msgid "Order Date"
+msgstr "تاريخ الطلب"
+
+msgid "Country"
+msgstr "الدولة"
+
+msgid "Address"
+msgstr "العنوان"
+
+msgid "City"
+msgstr "المدينة"
+
+msgid "Status"
+msgstr "الحالة"
+
+msgid "Payment Method"
+msgstr "وسيلة الدفع"
+
+msgid "Tax ID"
+msgstr "الرقم الضريبي"
+
+msgid "Wallet / Discount"
+msgstr "المحفظة / خصم"
+
+msgid "Coupon"
+msgstr "القسيمة"
+
+msgid "Products"
+msgstr "المنتجات"
+
+msgid "Categories"
+msgstr "التصنيفات"
+
+msgid "Size Name"
+msgstr "مسمى الحجم"
+
+msgid "Sizes"
+msgstr "الأحجام"
+
+msgid "Quantity"
+msgstr "الكمية"
+
+msgid "Price"
+msgstr "السعر"
+
+msgid "Total"
+msgstr "المجموع"
+
+msgid "Coupon Discount"
+msgstr "خصم القسيمة"
+
+msgid "Shipping"
+msgstr "الشحن"
+
+msgid "VAT"
+msgstr "القيمة المضافة"
+
+msgid "Grand Total"
+msgstr "الإجمالي"
+
+msgid "Customer Notes"
+msgstr "ملاحظات العميل"
+
+msgid "Customer ID"
+msgstr "معرف العميل"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Mobile"
+msgstr "الجوال"
+
+msgid "Order Count"
+msgstr "عدد الطلبات"
+
+msgid "Last Purchase"
+msgstr "آخر شراء"
+
+msgid "Last Login"
+msgstr "آخر دخول"
+
+msgid "Member Since"
+msgstr "عضو منذ"
+
+msgid "Total Refund"
+msgstr "إجمالي الاسترجاع"
+
+msgid "Net"
+msgstr "الصافي"
+
+msgid "Classification"
+msgstr "التصنيف"
+
+msgid "Customer Count"
+msgstr "عدد العملاء"
+
+msgid "Total Orders"
+msgstr "إجمالي الطلبات"
+
+msgid "Average Invoice"
+msgstr "متوسط الفاتورة"
+
+msgid "Product SKU"
+msgstr "رمز المنتج (SKU)"
+
+msgid "Size / Add-on Product"
+msgstr "الحجم / المنتج الإضافي"
+
+msgid "Size"
+msgstr "الحجم"
+
+msgid "Wallet / Discount"
+msgstr "المحفظة / الخصم"
+
+msgid "Warehouse Sales Report"
+msgstr "تقرير المبيعات للمستودع"
+
+msgid "Customer Service Report"
+msgstr "تقرير خدمة العملاء"
+
+msgid "Unregistered Customers"
+msgstr "العملاء غير المسجلين"
+
