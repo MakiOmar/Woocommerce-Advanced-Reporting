@@ -5418,7 +5418,7 @@
 							$coupons[] = $value->order_item_name;
 						}
 						if(count($coupons)>0){
-							$coupons_code = implode($coupons,", ");
+							$coupons_code = implode(", ", $coupons);
 						}
 					}
 
