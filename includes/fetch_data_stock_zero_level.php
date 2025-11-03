@@ -120,7 +120,7 @@
                         foreach ( $attributes as $att ) {
                             $product_name_var[] = wc_attribute_label($att['name'])." : ". $variations[ "attribute_" . $att['name'] ];
                         }
-                        $product_name.=implode($product_name_var," - ");
+                        $product_name.=implode(" - ", $product_name_var);
                     }
                 }
 

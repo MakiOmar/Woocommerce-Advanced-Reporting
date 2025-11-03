@@ -1062,7 +1062,7 @@ if ( ! class_exists('pw_report_wcreport_class')) {
                 }
                 if (count($term_links) > 0) {
                     return '<div class="pw_intelligence_product_category">
-                            ' . implode($term_links, "") . '
+                            ' . implode("", $term_links) . '
                         </div>';
                 } else {
                     return '<div class="pw_intelligence_product_category">
@@ -1825,7 +1825,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 $table_data = $order_items[0]->fvalue;
                 $table_data = unserialize($table_data);
                 if (is_array($table_data)) {
-                    $table_data = implode($table_data, ",");
+                    $table_data = implode(",", $table_data);
                 } else {
                     $table_data = $order_items[0]->fvalue;
                 }
@@ -1852,7 +1852,7 @@ where pitems.order_id='$order_id' AND pmeta.meta_key='_wc_eco_fields_value' AND 
                 $table_data = $order_items[0]->fvalue;
                 $table_data = unserialize($table_data);
                 if (is_array($table_data)) {
-                    $table_data = implode($table_data, ",");
+                    $table_data = implode(",", $table_data);
                 } else {
                     $table_data = $order_items[0]->fvalue;
                 }
